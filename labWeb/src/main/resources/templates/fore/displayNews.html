@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>news_passage</title>
+</head>
+<body>
+<div class="passage" th:id="${response.htmlid}">
+    <span class="passage_title" th:text="${response.title}"></span>
+    <div class="passage_anx">
+        <label>发布者：<span th:text="${response.publisher}"></span></label>
+        <label>发表时间：<span th:text="${response.date}"></span></label>
+        <label>浏览次数：<span th:text="${response.count}"></span></label>
+        <label>类型：<span th:text="${response.type}"></span></label>
+    </div>
+    <div class="passage_abstract" th:text="${response.abstractText}"></div>
+    <div class="passage_text" th:text="${response.content}"></div>
+</div>
+</body>
+</html>

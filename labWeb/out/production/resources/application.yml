@@ -1,0 +1,44 @@
+server:
+  port: 9002
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/labweb
+    username: root
+    password: 1367356
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+#  jpa:
+#    show-sql: true
+
+#  data:
+#    elasticsearch:
+#      cluster-nodes: localhost:9300
+  devtools:
+    restart:
+      enabled: true
+  http:
+    multipart:
+      max-file-size: 100Mb           #上传文件的大小限制
+      maxRequestSize: 1000Mb
+
+# 解决ftp外网无法连接
+ftp:
+  host: 192.168.100.91
+  port: 21
+  username: uftp
+  password: 1367356
+  basePath: /home/uftp   #基础路径
+  imagesPath: /imagePath         #图片上传路径
+  displayImage: /home/ftp/imagePath   #图片加载路径   = basePath+imageUpload
+
+ftpFile:
+  publicFilePath: /public
+  privateFilePath: /private
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml   #Mapper所在的配置文件路径，进行扫描
+  config-location: classpath:mybatis/mybatis-config.xml  # mybaits-config文件
+#  type-aliases-package: com.liyafei.dao.pojo  # pojo所在的包，与表一一对应
