@@ -3,10 +3,13 @@ package com.li.controller;
 import com.li.pojo.User;
 import com.li.service.UserService;
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -81,9 +84,10 @@ public class UserController {
 
 //    @PreAuthorize("hasAuthority('SUPER')")
     @RequestMapping(value = "/selectUser", method = RequestMethod.GET)  //提交注册
-    public String selectUserList(Model model,int page) {
+    public String selectUserList(Model model,int page,int pageSize) {
 
-        List<User> users = userService.selectUserList(page);
+        RowBounds rowBounds = new RowBounds(page, pageSize);
+        List<User> users = userService.selectUserList(rowBounds);
 //        int i=userService.deleteUser(uid);
 //        System.out.println("registrationPost");
 //        String result = this.userService.registerUserAccount(user);
@@ -97,6 +101,14 @@ public class UserController {
 //    @RequestMapping(value = "/admin/admin", method = RequestMethod.GET)
 //    public String deletePost() {
 //        return "admin/admin";
+//    }
+
+
+
+//    //获取登录用户名
+//    public void getUser() {
+//        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+//        String username = auth.getName();
 //    }
 
 }

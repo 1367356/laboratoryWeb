@@ -28,14 +28,15 @@ dependencies {
             "mysql:mysql-connector-java:5.1.35",
             'org.apache.commons:commons-lang3:3.4',
             'org.apache.commons:commons-pool2',
+            'commons-net:commons-net:3.1',    //ftp依赖
             'org.apache.logging.log4j:log4j-core:2.7',
             "org.springframework.boot:spring-boot-starter-thymeleaf",
             "net.sourceforge.nekohtml:nekohtml",
             'com.alibaba:druid-spring-boot-starter:1.1.6',   //druid连接池
             'org.springframework.boot:spring-boot-starter-security',
-            'org.thymeleaf.extras:thymeleaf-extras-springsecurity4'
+            'org.thymeleaf.extras:thymeleaf-extras-springsecurity4',
+            'javax.validation:validation-api:2.0.0.Final'  //对bean的字段进行验证
     )
-    compile('commons-net:commons-net:3.1')
-//    runtime ("org.apache.tomcat.embed:tomcat-embed-jasper")
+    runtime ("org.apache.tomcat.embed:tomcat-embed-jasper")
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

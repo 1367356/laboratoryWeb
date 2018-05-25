@@ -11,7 +11,7 @@ public class InsertParameter {
     private String pid;  //pid
     private String id;   //id
     private long htmlid;  //前台根据当前系统毫秒时间生成
-    private Timestamp date;  //数据库中使用timestamp,默认为now()  ,post.setDateCreated(new Timestamp(System.currentTimeMillis())). 数据库sql `date_created`       DATETIME     NOT NULL,
+    private String date;  //数据库中使用timestamp,默认为now()  ,post.setDateCreated(new Timestamp(System.currentTimeMillis())). 数据库sql `date_created`       DATETIME     NOT NULL,
     //        <result property="dateCreated" column="date_created"/>
     private String publisher;   //默认
     private String title;
@@ -67,11 +67,11 @@ public class InsertParameter {
         this.htmlid = htmlid;
     }
 
-    public Timestamp getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Timestamp date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -103,13 +103,22 @@ public class InsertParameter {
         return count;
     }
 
+
+    public String getAbstractText() {
+        return abstractText;
+    }
+
+    public void setAbstractText(String abstractText) {
+        this.abstractText = abstractText;
+    }
+
     @Override
     public String toString() {
         return "InsertParameter{" +
                 "pid='" + pid + '\'' +
                 ", id='" + id + '\'' +
                 ", htmlid=" + htmlid +
-                ", date=" + date +
+                ", date='" + date + '\'' +
                 ", publisher='" + publisher + '\'' +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
@@ -118,13 +127,5 @@ public class InsertParameter {
                 ", count=" + count +
                 ", titleImage='" + titleImage + '\'' +
                 '}';
-    }
-
-    public String getAbstractText() {
-        return abstractText;
-    }
-
-    public void setAbstractText(String abstractText) {
-        this.abstractText = abstractText;
     }
 }

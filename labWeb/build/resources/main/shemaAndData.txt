@@ -1,0 +1,73 @@
+drop table if exists newslist;
+create table newslist(
+	htmlid bigint not null,
+	pid varchar(25) not null,
+	id varchar(25) not null,
+	title varchar(255) not null,
+	date_created date not null,
+	titleImage varchar(255),
+	primary key(htmlid)
+	)default charset=utf8;
+
+insert into newslist values(234,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(235,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(236,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(237,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(238,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(239,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(231,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(232,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(233,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(244,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(254,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(264,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(274,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(284,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+insert into newslist values(294,'1','1','��Ŀ','2017-02-08','http://www.shiyanshi.com/my.jpg');
+
+
+drop table if exists news;
+create table news(
+	htmlid bigint not null,
+	count integer,
+	publisher varchar(30),
+	title varchar(255),
+	type varchar(30),
+	abstractText text default null,
+	content text default null,
+	date_created date default null,
+	unique key `index_id`(`htmlid`),
+	foreign key(`htmlid`) references newslist(`htmlid`)
+	)default charset=utf8;
+
+insert into news values(234,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(235,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(236,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(237,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(238,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(239,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(231,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(232,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+
+insert into news values(233,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(244,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(254,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(264,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(274,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ���ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(284,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');
+insert into news values(294,1,'admin','����','type','abstract','ֻ��Ҫ����̬���� Collections.sort ����һ��List�����Լ�һ���Ƚ�������ָ��˳�����С�ͨ���������Ǵ���һ�������ıȽ�������Ȼ���䴫�ݸ�sort������
+��Java 8 �����û��Ҫʹ�����ִ�ͳ����������ķ�ʽ�ˣ�Java 8�ṩ�˸������﷨��lambda���ʽ��','2017-04-08');

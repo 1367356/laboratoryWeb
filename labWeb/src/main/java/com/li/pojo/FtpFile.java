@@ -1,5 +1,6 @@
 package com.li.pojo;
 
+import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
 
 /**
@@ -11,7 +12,7 @@ public class FtpFile {
     private String uploadUser;   //上传用户名 ，通过安全管理器获取
     private String description;  //文件描述
     private String filename; //文件名称后台获取
-    private Timestamp date;  //上传时间，后台获取
+    private String date;  //上传时间，后台获取
 
     @Override
     public String toString() {
@@ -20,8 +21,16 @@ public class FtpFile {
                 ", uploadUser='" + uploadUser + '\'' +
                 ", description='" + description + '\'' +
                 ", filename='" + filename + '\'' +
-                ", date=" + date +
+                ", date='" + date + '\'' +
                 '}';
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getId() {
@@ -32,13 +41,6 @@ public class FtpFile {
         this.id = id;
     }
 
-    public Timestamp getDate() {
-        return date;
-    }
-
-    public void setDate(Timestamp date) {
-        this.date = date;
-    }
 
     public String getUploadUser() {
         return uploadUser;

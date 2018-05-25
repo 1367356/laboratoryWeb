@@ -8,9 +8,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
@@ -38,8 +41,8 @@ public class NewsImageController {
     @Value("${ftp.basePath}")     //基础路径
     private String basePath;
 
-    @Value("${ftp.imagesPath}")     //基础路径
-    private String imagePath;
+//    @Value("${ftp.imagesPath}")     //基础路径
+//    private String imagePath;
 
     @Value("${ftp.imagesBasePath}")     //基础路径
     private String imagesBasePath;
@@ -47,32 +50,30 @@ public class NewsImageController {
 
 //    int port = Integer.parseInt(sport);
 
-    /**
-     *图片上传
-     * @param file 文件
-     * @throws IOException 遗传
-     */
-    @RequestMapping("/uploadImage")
-    @ResponseBody
-    public String uploadImage(@RequestParam("file") MultipartFile file) throws IOException {
-
-        Long l = System.currentTimeMillis();
-//        String filename=l.toString();
-        String filename = file.getOriginalFilename();//文件名
-        int i = filename.indexOf(".");
-        String suffix = filename.substring(i);
-
-
-//        String filename = request.getParameter("filename");
-
-        InputStream in = file.getInputStream();
-        boolean isSucesse= FtpUtil.uploadFile(host,port,username,password,imagesBasePath,imagePath,l+suffix,in);
-        System.out.println(isSucesse);
-
-        return "displayImage/"+l+suffix;
-
-        //上传成功定位到哪里，将状态数据放回到哪里
-    }
+//    /**
+//     *图片上传
+//     * @param file 文件
+//     * @throws IOException 遗传
+//     */
+//    @RequestMapping(value = "/uploadImage",method = RequestMethod.POST)
+//    @ResponseBody
+//    public String uploadImage(@RequestParam("file") MultipartFile file) throws IOException {
+//
+//        Long l = System.currentTimeMillis();
+////        String filename=l.toString();
+//        String filename = file.getOriginalFilename();//文件名
+//        int i = filename.indexOf(".");
+//        String suffix = filename.substring(i);
+////        String filename = request.getParameter("filename");
+//
+//        InputStream in = file.getInputStream();
+//        boolean isSucesse= FtpUtil.uploadFile(host,port,username,password,imagesBasePath,imagePath,l+suffix,in);
+//        System.out.println(isSucesse);
+//
+//        return "displayImage/"+l+suffix;
+//
+//        //上传成功定位到哪里，将状态数据放回到哪里
+//    }
 
 
     /**
@@ -89,10 +90,34 @@ public class NewsImageController {
         try {
 //            return ResponseEntity.ok(resourceLoader.getResource("file:" + Paths.get(basePath+imagePath, filename).toString()));
 //            return ResponseEntity.ok(resourceLoader.getResource("file:" + Paths.get(basePath+imagePath, filename).toString()));
-            return ResponseEntity.ok(resourceLoader.getResource("file:" + Paths.get(imagesBasePath+imagePath, filename).toString()));
+            return ResponseEntity.ok(resourceLoader.getResource("file:" + Paths.get(imagesBasePath, filename).toString()));
         } catch (Exception e) {
             return ResponseEntity.notFound().build();
         }
+    }
+
+
+
+    //上传的方法,成功，中英文都可以
+    @RequestMapping(method = RequestMethod.POST, value = "/uploadNewsImage")
+    public String handleFileUpload(@RequestParam("file") MultipartFile file,
+                                   RedirectAttributes redirectAttributes, HttpServletRequest request) {
+//        System.out.println(request.getParameter("member"));
+        if (!file.isEmpty()) {
+
+            try {
+                Files.copy(file.getInputStream(), Paths.get(imagesBasePath, file.getOriginalFilename()));
+                redirectAttributes.addFlashAttribute("message",
+                        "You successfully uploaded " + file.getOriginalFilename() + "!");
+            } catch (IOException|RuntimeException e) {
+                redirectAttributes.addFlashAttribute("message", "Failued to upload " + file.getOriginalFilename() + " => " + e.getMessage());
+            }
+        } else {
+            redirectAttributes.addFlashAttribute("message", "Failed to upload " + file.getOriginalFilename() + " because it was empty");
+        }
+
+//        return "redirect:/redirect";
+        return "home";
     }
 
 }

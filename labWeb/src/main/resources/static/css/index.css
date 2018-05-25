@@ -1,0 +1,37 @@
+/*slideshow*/
+.slideshow{
+	width: 980px;
+	height: 356PX;
+	overflow: hidden;
+}
+.slideshow ul{
+	position: relative;
+	background-color: #f3f3f3;
+}
+.slideshow ul li{
+	width: 980px;
+	text-align: center;
+}
+.slideshow ul li img{
+	width: 800px;
+}
+.slideshow ul span.arrow_left,
+.slideshow ul span.arrow_right{
+	position: absolute;
+	top: 170px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.slideshow ul span.arrow_left{
+	left: 20px;
+	background: url(../img/arrow.png) no-repeat;
+	background-size: 40px;
+	transform: rotate(270deg);
+}
+.slideshow ul span.arrow_right{
+	right: 20px;
+	background: url(../img/arrow.png) no-repeat;
+	background-size: 40px;
+	transform: rotate(90deg);
+}

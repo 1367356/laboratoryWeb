@@ -10,7 +10,7 @@ public class NewsList {
     private String pid;   //上方导航栏 标识
     private String id;    //左方导航栏标识
     private String title;  //新闻标题
-    private Timestamp date;  //新闻发布日期
+    private String date;  //新闻发布日期
     private String titleImage;  //标题图
 
     @Override
@@ -65,11 +65,11 @@ public class NewsList {
         this.title = title;
     }
 
-    public Timestamp getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Timestamp date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

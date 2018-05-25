@@ -9,6 +9,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +22,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -60,8 +64,19 @@ public class FtpFileController {
     @RequestMapping("/private/uploadFile")
     public String uploadPrivateFile(@RequestParam("file") MultipartFile file, FtpFile uploadParameter) throws IOException {
 
-        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        uploadParameter.setDate(timestamp);
+//        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+//        uploadParameter.setDate(timestamp);
+
+        if (uploadParameter.getDate() == null) {
+            Date current_date = new Date();
+            //设置日期格式化样式为：yyyy-MM-dd
+            SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            //格式化当前日期
+            String date = SimpleDateFormat.format(current_date.getTime());
+
+            //        Timestamp date = new Timestamp(System.currentTimeMillis());
+            uploadParameter.setDate(date);
+        }
 //        String filename=l.toString();
         String filename = file.getOriginalFilename();//文件名，作为主键
 //        filename = URLEncoder.encode(filename, "UTF-8");
@@ -73,7 +88,11 @@ public class FtpFileController {
         uploadParameter.setId("ftp://"+host+":"+port+privateFilePath+"/"+id);  //设置上传文件名
 
         //通过Spring Security 获取登录用户名
-        String userName = "spring security";
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userName = auth.getName();
+
+//        String userName = "spring security";
         uploadParameter.setUploadUser(userName);
 
 
@@ -109,8 +128,19 @@ public class FtpFileController {
         if (file == null || uploadParameter.getDescription() == null) {
             return "error/404";
         }
-        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        uploadParameter.setDate(timestamp);
+//        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+//        uploadParameter.setDate(timestamp);
+
+        if (uploadParameter.getDate() == null) {
+            Date current_date = new Date();
+            //设置日期格式化样式为：yyyy-MM-dd
+            SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            //格式化当前日期
+            String date = SimpleDateFormat.format(current_date.getTime());
+
+            //        Timestamp date = new Timestamp(System.currentTimeMillis());
+            uploadParameter.setDate(date);
+        }
 //        String filename=l.toString();
         String filename = file.getOriginalFilename();//文件名，作为主键
 //        filename = URLEncoder.encode(filename, "UTF-8");
@@ -215,14 +245,30 @@ public class FtpFileController {
     @RequestMapping("/private/queryFile")
     public String queryPrivateFile(Model model,String page) {
         List<FtpFile> files=null;
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName();
         try {
             int ipage = Integer.parseInt(page);
-            files=ftpFileService.queryPublicFile(ipage);
+            files=ftpFileService.queryPrivateFile(ipage,username);
         }catch (Exception e){
             return "error/404";
         }
         model.addAttribute("response", files);
         return "/displayFile";
+    }
+
+    /**
+     * 我的文件，用户自己的私有文件
+     * @return 展示html
+     */
+    @RequestMapping("/myFile")
+    public String myFile() {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName();
+
+        //根据用户名获取该用户的文件
+
+        return "home";
     }
 
 

@@ -12,7 +12,8 @@
         uid,username,password,roles,description
     </sql>
     <select id="selectUserList" parameterType="string" resultMap="userMap">
-        SELECT <include refid="baseColumns"></include> FROM user limit 20*#{page} 20
+        <!--SELECT <include refid="baseColumns"></include> FROM user limit 20*#{page} 20-->
+        SELECT <include refid="baseColumns"></include> FROM user
     </select>
 
     <insert id="save" parameterType="com.li.pojo.User">

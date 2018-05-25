@@ -14,18 +14,8 @@ public class News implements Serializable{
     private String type;     //类型
     private String abstractText;   //摘要
     private String content;    //新闻内容.html形式
-    private Timestamp date;    //  发布日期
+    private String date;    //  发布日期
 
-    public News(long htmlid, int count, String publisher, String title, String type, String abstractText, String content, Timestamp date) {
-        this.htmlid = htmlid;
-        this.count = count;
-        this.publisher = publisher;
-        this.title = title;
-        this.type = type;
-        this.abstractText = abstractText;
-        this.content = content;
-        this.date = date;
-    }
 
     @Override
     public String toString() {
@@ -97,11 +87,11 @@ public class News implements Serializable{
         this.content = content;
     }
 
-    public Timestamp getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Timestamp date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

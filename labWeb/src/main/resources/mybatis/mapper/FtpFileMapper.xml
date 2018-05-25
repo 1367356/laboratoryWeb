@@ -7,7 +7,7 @@
         <result property="filename" column="filename" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="uploaduser" column="uploaduser" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="description" column="description" jdbcType="VARCHAR" javaType="java.lang.String"/>
-        <result property="date" column="date_created" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp"/>
+        <result property="date" column="date_created"/>
     </resultMap>
 
     <sql id="Base_Column_List" >
@@ -23,7 +23,7 @@
     </select>
 
     <select id="queryPrivateFile" resultMap="FtpFileResultMap">
-        select <include refid="Base_Column_List" /> from FtpPrivateFile limit 10*#{page} 10
+        select <include refid="Base_Column_List" /> from (select * from FtpPrivateFile where uploaduser=#{username})t1 limit 10*#{page} 10
     </select>
     <!---->
     <!--<select id="queryNews" parameterType="java.lang.Long" resultMap="NewsResultMap" >-->

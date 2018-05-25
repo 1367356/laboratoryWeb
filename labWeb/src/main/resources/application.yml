@@ -30,11 +30,10 @@ ftp:
   port: 21
   username: uftp
   password: 1367356
-  basePath: /home/uftp           #基础路径
-  imagesBasePath: /home/liyafei/myfile
-  imagesPath: /imagePath         #图片上传路径
-  displayImage: /home/ftp/imagePath   #图片加载路径   = basePath+imageUpload
-
+  basePath: /home/uftp           #ftp基础路径
+  imagesBasePath: /home/liyafei/myfile/labweb/imagePath  #新闻图片路径
+#  imagesPath: /imagePath         #图片上传路径
+#  displayImage: /home/ftp/imagePath   #图片加载路径   = basePath+imageUpload
 ftpFile:
   publicFilePath: /public
   privateFilePath: /private

@@ -19,8 +19,8 @@ import java.util.List;
 /**
  * 页面展示控制器
  */
+//@RequestMapping("main")
 @Controller
-@RequestMapping("main/fore")
 public class ForeController {
 
     Logger logger = LogManager.getLogger(ForeController.class);
@@ -38,22 +38,21 @@ public class ForeController {
         try {
             int ipage = Integer.parseInt(page);
             newsLists = manageService.queryByCategory(pid, id, ipage);
-
         } catch (Exception e) {
             return "error/403";
         }
 
         if (newsLists.size() != 1) {
             model.addAttribute("response",newsLists);
-            return "fore/new_list";
-//            return newsLists.toString();
+            logger.debug("返回到news_info");
+            return "front/news_info";
         }
 
         NewsList newsList = newsLists.get(0);
         long htmlid = newsList.getHtmlid();
         News news = foreService.queryNews(htmlid);
         model.addAttribute("response", news);
-        return "fore/displayNews";
+        return "front/news_content";
 //        return newsLists.toString();
     }
 
@@ -65,12 +64,12 @@ public class ForeController {
         count=count+1;
         foreService.updateCount(htmlid, count);
         model.addAttribute("response", news);
-        return "fore/displayNews";
+        return "front/news_content";
     }
 
 
     @RequestMapping("/home")
     public String home() {
-        return "home";
+        return "front/news_info";
     }
 }

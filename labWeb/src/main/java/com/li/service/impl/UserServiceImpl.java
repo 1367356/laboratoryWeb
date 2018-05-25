@@ -3,6 +3,7 @@ package com.li.service.impl;
 import com.li.dao.UserMapper;
 import com.li.pojo.User;
 import com.li.service.UserService;
+import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -46,7 +47,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> selectUserList(int page) {
-        return userMapper.selectUserList(page);
+    public List<User> selectUserList(RowBounds rowBounds) {
+        return userMapper.selectUserList(rowBounds);
     }
 }

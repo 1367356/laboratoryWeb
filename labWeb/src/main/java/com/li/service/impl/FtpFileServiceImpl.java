@@ -24,7 +24,7 @@ public class FtpFileServiceImpl implements FtpFileService{
         return ftpFileMapper.queryPublicFile(page);
     }
     @Override
-    public List<FtpFile> queryPrivateFile(int page) throws Exception{
-        return ftpFileMapper.queryPrivateFile(page);
+    public List<FtpFile> queryPrivateFile(int page,String username) throws Exception{
+        return ftpFileMapper.queryPrivateFile(page,username);
     }
 }

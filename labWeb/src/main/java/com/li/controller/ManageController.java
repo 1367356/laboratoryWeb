@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -49,8 +51,17 @@ public class ManageController {
     public String insert(Model model,InsertParameter parameter) {
 
         logger.debug(parameter.getAbstractText());
-        Timestamp date = new Timestamp(System.currentTimeMillis());
-        parameter.setDate(date);
+
+        if (parameter.getDate() == null) {
+            Date current_date = new Date();
+            //设置日期格式化样式为：yyyy-MM-dd
+            SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            //格式化当前日期
+            String date = SimpleDateFormat.format(current_date.getTime());
+
+    //        Timestamp date = new Timestamp(System.currentTimeMillis());
+            parameter.setDate(date);
+        }
         long htmlid = System.currentTimeMillis();
         parameter.setHtmlid(htmlid);
 
@@ -114,6 +125,14 @@ public class ManageController {
     }
 
 
+    /**
+     * 后台查询列表，就直接返回到列表界面
+     * @param model
+     * @param pid
+     * @param id
+     * @param page
+     * @return
+     */
     @RequestMapping("/queryBackList")
     public String query(Model model,String pid,String id,String page) {
         List<NewsList> newsLists=null;
@@ -125,6 +144,7 @@ public class ManageController {
             newsLists = manageService.queryByCategory(pid, id, ipage);
 
         } catch (Exception e) {
+
             return "error/403";
         }
             model.addAttribute("response",newsLists);
@@ -143,7 +163,6 @@ public class ManageController {
      * @return           响应体
      */
     @RequestMapping(value = "/backQuery",method = RequestMethod.GET)
-    @ResponseBody
     public String query(Model model,String htmlid) {
 
         long lhtmlid = Long.parseLong(htmlid);
@@ -156,9 +175,9 @@ public class ManageController {
 //        }
 
         model.addAttribute("response",news);
-//        return "fore/displayNews";
-        logger.debug(news.getContent());
-        return news.toString();
+        return "fore/displayNews";
+//        logger.debug(news.getContent());
+//        return news.toString();
     }
 
 }

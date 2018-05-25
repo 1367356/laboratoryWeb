@@ -22,7 +22,7 @@
         <result property="title" column="title" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="abstractText" column="abstractText" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="content" column="content" jdbcType="VARCHAR" javaType="java.lang.String"/>
-        <result property="date" column="date_created" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp"/>
+        <result property="date" column="date_created"/>
     </resultMap>
 
     <!--<resultMap id="CategoryResultMap" type="com.qingwenwei.persistence.model.Category">-->
@@ -42,12 +42,12 @@
     <select id="queryNews" parameterType="java.lang.Long" resultMap="NewsResultMap" >
         select
         <include refid="Base_Column_List" />
-        from NEWS
+        from news
         where htmlid=#{htmlid};
     </select>
 
     <update id="updateCount">
-        update NEWS set count=#{count} where htmlid=#{htmlid}
+        update news set count=#{count} where htmlid=#{htmlid}
     </update>
 
 </mapper>

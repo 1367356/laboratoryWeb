@@ -2,143 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9ce91-f763-4a54-a122-139bdaab490a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_1_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_1_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_druid_1_1_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_druid_spring_boot_starter_1_1_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_net_commons_net_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_35.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ognl_ognl_3_0_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_4_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_core_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_jdbc_8_5_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_juli_8_5_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_2_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_groovy_groovy_2_4_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_validator_5_3_6_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_21_0_GA.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_4_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_cache_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_security_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_extras_thymeleaf_extras_springsecurity4_2_1_3_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_thymeleaf_2_1_6_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_thymeleaf_spring4_2_1_6_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_unbescape_unbescape_1_1_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_17.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xerces_xercesImpl_2_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xml_apis_xml_apis_1_4_01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ForeMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/FtpFileMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ManageMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ResponseEntity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/MyUserDetailsService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ForeService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ForeServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/FtpFileServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/log4j2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/logs/debug.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mybatis-config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/addNews.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/error/403.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/error/404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/displayNews.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/new_list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jdt_ecj_3_12_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/shemaAndData.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/index.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/news.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/arrow_h.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/pengzhenming.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/search_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/show_10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/show_20.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/show_30.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/show_40.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/show_50.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/uestc_back.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/webLogo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/jquery-3.0.0.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/前端开发手册.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_info.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/前端开发手册.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/laboratoryWeb_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/laboratoryWeb_main.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/laboratoryWeb_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/laboratoryWeb_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/annotation-processors.bin" />
+      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/labWeb/.gradle/workspace-id.txt.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/workspace-id.txt.lock" />
       <change beforePath="$PROJECT_DIR$/labWeb/build.gradle" afterPath="$PROJECT_DIR$/labWeb/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ForeController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ForeController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpFileController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpFileController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ManageController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ManageController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/NewsImageController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/NewsImageController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/UserController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/FtpFileMapper.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/FtpFileMapper.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/UserMapper.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/UserMapper.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/FtpFile.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/FtpFile.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/InsertParameter.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/InsertParameter.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/News.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/News.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/NewsList.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/NewsList.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/FtpFileService.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/FtpFileService.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/UserService.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/FtpFileServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/FtpFileServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ManageServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ManageServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.tar" afterPath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.tar" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.zip" afterPath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.zip" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar.original" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/application.yml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/application.yml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/data.sql" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/data.sql" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ForeMapper.xml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ForeMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/FtpFileMapper.xml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/FtpFileMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ManageMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/schema.sql" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/schema.sql" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/scripts/laboratoryWeb" afterPath="$PROJECT_DIR$/labWeb/build/scripts/laboratoryWeb" />
+      <change beforePath="$PROJECT_DIR$/labWeb/build/scripts/laboratoryWeb.bat" afterPath="$PROJECT_DIR$/labWeb/build/scripts/laboratoryWeb.bat" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ForeController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ForeController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ManageController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ManageController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/NewsImageController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/NewsImageController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/FtpFileMapper.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/FtpFileMapper.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/UserMapper.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/UserMapper.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/FtpFile.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/FtpFile.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/InsertParameter.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/InsertParameter.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/News.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/News.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/NewsList.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/NewsList.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/FtpFileService.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/FtpFileService.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/UserService.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/FtpFileServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/FtpFileServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ManageServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ManageServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/application.yml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/data.sql" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/data.sql" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ForeMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ForeMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/FtpFileMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/FtpFileMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ManageMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/schema.sql" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/schema.sql" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/FtpFileMapper.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/FtpFileMapper.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/FtpFileServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/FtpFileServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" afterPath="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/labWeb/.gradle/" />
     <ignored path="$PROJECT_DIR$/labWeb/build/" />
@@ -194,21 +174,19 @@
       <file leaf-file-name="FtpFileController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="65" column="50" lean-forward="false" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+            <state relative-caret-position="264">
+              <caret line="134" column="43" lean-forward="false" selection-start-line="134" selection-start-column="43" selection-end-line="134" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java">
+      <file leaf-file-name="ManageController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="147" column="31" lean-forward="true" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,38 +194,68 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="189">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FtpUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java">
+      <file leaf-file-name="shemaAndData.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/shemaAndData.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="864">
+              <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html">
+      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="21" column="96" lean-forward="false" selection-start-line="21" selection-start-column="96" selection-end-line="21" selection-end-column="96" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml">
+      <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+            <state relative-caret-position="588">
+              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ResponseEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringBootLabApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -256,38 +264,8 @@
       <file leaf-file-name="ForeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FtpFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsImageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="45" />
+            <state relative-caret-position="216">
+              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -310,6 +288,10 @@
       <find>点击</find>
       <find>发布于</find>
       <find>com.li.dao.User</find>
+      <find>trans</find>
+      <find>FtpFile</find>
+      <find>main/</find>
+      <find>NEWS</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -551,8 +533,8 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/init.gradle" value="3855063258" />
-        <entry key="$PROJECT_DIR$/labWeb" value="6098257715602" />
-        <entry key="$PROJECT_DIR$/labWeb/build.gradle" value="741411967" />
+        <entry key="$PROJECT_DIR$/labWeb" value="6098329672319" />
+        <entry key="$PROJECT_DIR$/labWeb/build.gradle" value="1597386490" />
         <entry key="$PROJECT_DIR$/labWeb/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/labWeb/settings.gradle" value="1027715158" />
       </map>
@@ -681,24 +663,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ManaParameter.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/GetListByPageMapper.xml" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ManaResponse.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabWebApplication.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/RecParameter.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ManageMapper.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/error/404.html" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/error/403.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ForeService.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ForeServiceImpl.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ForeMapper.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/static/home.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/displayNews.html" />
@@ -706,40 +679,48 @@
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/new_list.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FileUploadParameter.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpUploadParameter.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/User.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/FtpFileServiceImpl.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/FtpFileMapper.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
         <option value="$PROJECT_DIR$/labWeb/build.gradle" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/test.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_info.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" />
+        <option value="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/shemaAndData.txt" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/User.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="250" />
-    <option name="y" value="8" />
-    <option name="width" value="1276" />
-    <option name="height" value="1030" />
+    <option name="x" value="-15" />
+    <option name="width" value="1550" />
+    <option name="height" value="1106" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -836,43 +817,6 @@
               <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="li" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="li" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="li" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="li" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -896,18 +840,14 @@
               <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -926,11 +866,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\templates" />
+      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\static" />
+      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources" />
       <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\mybatis\mapper" />
       <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\java\com\li\security" />
-      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\templates\fore" />
-      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\templates\background" />
-      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.li.dao" />
@@ -1167,23 +1107,23 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.49315068" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18944845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28417265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2410072" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11151079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16255365" sideWeight="0.8417266" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27306867" sideWeight="0.8417266" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.49315068" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43045563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14216739" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46282974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12553649" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49315068" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1205,266 +1145,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.13.RELEASE/a6f8399503df590a81926cf33dc787b6629edad3/spring-jdbc-4.3.13.RELEASE-sources.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="130" column="45" lean-forward="false" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ForeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/RecParameter.java" />
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ManaResponse.java" />
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ResponseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ForeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/home.html" />
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/addNews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/displayNews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/new_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FileUploadParameter.java" />
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" />
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="38" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/8cc516e03d35ecf8f4ca71511f7961f1a9339820/commons-net-3.1-sources.jar!/org/apache/commons/net/ftp/FTPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="2356" column="29" lean-forward="false" selection-start-line="2356" selection-start-column="14" selection-end-line="2356" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/test/java/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/error/403.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/error/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.13.RELEASE/d225d6480b69dc70a04e332a348b448bf276f7f3/spring-web-4.3.13.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-          <folding>
-            <element signature="e#2710#2711#0" expanded="false" />
-            <element signature="e#2741#2742#0" expanded="false" />
-            <element signature="e#5033#5034#0" expanded="false" />
-            <element signature="e#5114#5115#0" expanded="false" />
-            <element signature="e#8235#8236#0" expanded="false" />
-            <element signature="e#8288#8289#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="312" column="38" lean-forward="false" selection-start-line="312" selection-start-column="38" selection-end-line="312" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="e#767#768#0" expanded="false" />
-            <element signature="e#800#801#0" expanded="false" />
-            <element signature="e#852#853#0" expanded="false" />
-            <element signature="e#896#897#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ManageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/FtpFileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/FtpFileMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/security/MyUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#1683#1684#0" expanded="false" />
-            <element signature="e#1717#1718#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
-            <element signature="e#1817#1818#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ForeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1473,60 +1153,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1298#1299#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1411#1412#0" expanded="false" />
-            <element signature="e#1465#1466#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/FtpFileMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/FtpFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/security/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="39" column="106" lean-forward="false" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="106" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="351">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java">
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="534">
+          <caret line="110" column="43" lean-forward="false" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/labWeb/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="128">
+          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/前端开发手册.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1539,68 +1265,308 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/displayNews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ManageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="108" lean-forward="false" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/fore/new_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3839">
+          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/news_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="96" column="45" lean-forward="false" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/news_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/meta.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4752">
+          <caret line="176" column="22" lean-forward="false" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="80" column="38" lean-forward="false" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="50" column="50" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ForeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/test/java/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="31" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="115" column="18" lean-forward="false" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+            <element signature="e#1606#1607#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="54">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/FtpFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="91">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#766#767#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
+            <element signature="e#838#839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+          <folding>
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2009#2010#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/NewsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="503">
+          <caret line="67" column="29" lean-forward="false" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+          <folding>
+            <element signature="e#1418#1419#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1490#1491#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="65" column="50" lean-forward="false" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="324">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="189">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java">
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="45" />
+        <state relative-caret-position="357">
+          <caret line="21" column="96" lean-forward="false" selection-start-line="21" selection-start-column="96" selection-end-line="21" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="134" column="43" lean-forward="false" selection-start-line="134" selection-start-column="43" selection-end-line="134" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/shemaAndData.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="147" column="31" lean-forward="true" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
           <folding />
         </state>
       </provider>
