@@ -7,6 +7,10 @@ import java.sql.Timestamp;
  * 新闻
  */
 public class News implements Serializable{
+
+    private String id;
+    private String pid;
+
     private long htmlid;  //新闻id,用于标识新闻
     private int count;   //浏览次数
     private String publisher;  //发布者
@@ -16,19 +20,39 @@ public class News implements Serializable{
     private String content;    //新闻内容.html形式
     private String date;    //  发布日期
 
-
     @Override
     public String toString() {
         return "News{" +
-                "htmlid=" + htmlid +
+                "id='" + id + '\'' +
+                ", pid='" + pid + '\'' +
+                ", htmlid=" + htmlid +
                 ", count=" + count +
                 ", publisher='" + publisher + '\'' +
                 ", title='" + title + '\'' +
                 ", type='" + type + '\'' +
                 ", abstractText='" + abstractText + '\'' +
                 ", content='" + content + '\'' +
-                ", date=" + date +
+                ", date='" + date + '\'' +
                 '}';
+    }
+
+    public News() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 
     public long getHtmlid() {

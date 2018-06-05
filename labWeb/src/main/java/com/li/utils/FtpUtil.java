@@ -78,6 +78,7 @@ public class FtpUtil {
 			ftp.setFileType(FTP.BINARY_FILE_TYPE);
 			//上传文件
 			if (!ftp.storeFile(filename, input)) {
+				logger.debug("上传失败");
 				return result;
 			}
 			input.close();

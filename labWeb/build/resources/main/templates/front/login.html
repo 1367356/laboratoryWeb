@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+		<title>后台管理系统</title>
+		<link rel="stylesheet" type="text/css" href="/css/login.css">
+
+	</head>
+
+	<body>
+		<header>
+			<div class="header_main">
+				<ul class="header_nav">
+					<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
+					<li><a href="http://k19847n443.51mypc.cn:37109/home">实验室主页</a></li>
+				</ul>
+			</div>
+		</header>
+		<section class="main">
+		    <div class="login_img"><img src="img/login-img.png" /></div>
+		    <div class="login_box">
+		        <div class="login_logo"><a href="#"><img src="/img/login_logo.png" /></a></div>
+				<div class="login_name"><p>后台管理系统</p></div>
+				<form class="login_form" action="main/xxx">
+					<input name="username" type="text" value="用户名" onfocus="this.value=''" onblur="if(this.value==''){this.value='用户名'}">
+					<span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>
+					<input name="password" type="password" id="password" style="display: none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};">
+					<input value="登录" type="submit">
+				</form>
+		    </div>
+		</section>
+		<footer>
+		<div class="foot_content">
+			<div class="lab_name">图形图像与信号处理应用研究室</div>
+			<div class="lab_phone">联系电话：×××-××××××××</div>
+			<div class="lab_address">地址：电子科技大学沙河校区逸夫楼</div>
+			<p class="studio">技术支持：智行工作室</p>
+		</div>
+	</footer>
+	</body>
+</html>

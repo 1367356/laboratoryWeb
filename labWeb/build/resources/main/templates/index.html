@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/head :: head">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<script type="text/javascript" src="/js/index.js"></script>
+</head>
+
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><img src="/img/webLogo.png"></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<section class="slideshow">
+			<ul>
+				<span class="arrow_left"></span>
+				<li><img src="/img/show_10.jpg" alt=""></li>
+				<li><img src="/img/show_20.jpg" alt=""></li>
+				<li><img src="/img/show_30.jpg" alt=""></li>
+				<li><img src="/img/show_40.jpg" alt=""></li>
+				<li><img src="/img/show_50.jpg" alt=""></li>
+				<span class="arrow_right"></span>
+			</ul>
+		</section>
+		<section class="main_content">
+			<div class="left_content">
+				<div class="for_one">
+					<h3>团队负责人</h3>
+					<section class="master_content">
+						<a href=""><img src="/img/pengzhenming.jpg">
+						<span>彭真明教授</span></a>
+						<!-- <span><strong>邮箱：</strong>zmpeng@uestc.edu.cn</span> -->
+						<span><strong>个人简介：</strong>彭真明(1966-)，博士，教授，博士生导师，湖南保靖人。</span>
+					</section>
+				</div>
+				<div class="for_two">
+					<h3>科研成果</h3>
+					<span class="more">更多&gt;&gt;</span>
+					<ul class="list_block">
+						<li><a href="">2018年专利申请（持续更新）</a><span>2018-04-08</span></li>
+						<li><a href="">2018年发表学术论文（持续更新中）</a><span>2018-01-02</span></li>
+						<li><a href="">2017年发表学术论文</a><span>2017-02-10</span></li>
+						<li><a href="">2017年专利申请</a><span>2017-02-04</span></li>
+						<li><a href="">企业合作（横向）课题</a><span>2016-03-31</span></li>
+						<li><a href="">2016年发表学术论文</a><span>2016-03-04</span></li>
+						<li><a href="">2016年专利申请</a><span>2016-03-03</span></li>
+						<li><a href="">2015年发表学术论文</a><span>2015-11-06</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="center_content">
+				<div class="for_one">
+					<h3>通知公告</h3>
+					<span class="more">更多&gt;&gt;</span>
+					<ul class="list_block">
+						<li><a href="">【开题报告会】关于实验室博士学位论文公开开题的通知</a><span>2018-05-21</span></li>
+						<li><a href="">【GISPA论坛】第094期</a><span>2018-05-16</span></li>
+						<li><a href="">【GISPA论坛】第093期</a><span>2018-05-09</span></li>
+						<li><a href="">【GISPA论坛】第092期</a><span>2018-05-02</span></li>
+						<li><a href="">【GISPA论坛】第091期</a><span>2018-04-24</span></li>
+						<li><a href="">【GISPA论坛】第090期</a><span>2018-04-18</span></li>
+						<li><a href="">【GISPA论坛】第089期</a><span>2018-04-10</span></li>
+						<li><a href="">【GISPA论坛】第088期</a><span>2018-03-27</span></li>
+					</ul>
+				</div>
+				<div class="for_two">
+					<h3>热点新闻</h3>
+					<span class="more">更多&gt;&gt;</span>
+					<ul class="list_block">
+						<li><a href="">【学子风采】IDIPLAB硕士生在IEEE Photonics Journal发表论文</a><span>2018-04-08</span></li>
+						<li><a href="">【教学简报】电子科技大学首届“晶石杯”软件技能竞赛颁奖典礼成功举行</a><span>2017-07-04</span></li>
+						<li><a href="">【教学简报】电子科技大学首届“晶石杯”软件技能竞赛正式启动</a><span>2017-03-31</span></li>
+						<li><a href="">【学子风采】实验室组织师生开展户外素质拓展训练</a><span>2017-01-19</span></li>
+						<li><a href="">【教学简报】实验室举行2017届本科毕业设计开题答辩会</a><span>2017-01-03</span></li>
+						<li><a href="">【师情话意】彭真明教授:不以“出身”论成败，不以“考分”论英雄</a><span>2016-12-15</span></li>
+						<li><a href="">【桃李春风】彭真明：认真做事，干一行爱一行</a><span>2016-11-27</span></li>
+						<li><a href="">【教学简报】光电大一新生到GISPALAB实验室参观学习</a><span>2016-11-26</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="right_content">
+				<div class="right_cooperation">
+					<h3>合作交流</h3>
+					<ul class="cooperation_list">
+						<li><a href="">我的UCSC访学经历</a></li>
+						<li><a href="">眼科专家曲超教授再次来实验室讲学及开展合作交流</a></li>
+						<li><a href="">张建中教授谈如何给地球做CT</a></li>
+						<li><a href="">实验室师生赴省医院放射科参观、学习和交流</a></li>
+						<li><a href="">省医院眼科专家曲超教授来实验室交流</a></li>
+						<li><a href="">实验室召开企业合作课题方案设计论证评审会</a></li>
+						<li><a href="">北京诺克斯达石油科技有限公司领导到访我实验室</a></li>
+						<li><a href="">实验室博士生参加“地下储层和流体的地球物理成像”国际研讨会</a></li>
+					</ul>
+				</div>
+				<div class="right_links">
+					<h3>友情链接</h3>
+					<ul class="links_list">
+						<li><a href="">科学网-老马迷图</a></li>
+						<li><a href="">光电信息学院</a></li>
+						<li><a href="">研招网-招生信息</a></li>
+						<li><a href="">国家自然科学基金委员会</a></li>
+					</ul>
+				</div> 
+				<div>
+					<h3>资料下载</h3>
+				</div>
+			</div>
+		</section>
+	</section>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

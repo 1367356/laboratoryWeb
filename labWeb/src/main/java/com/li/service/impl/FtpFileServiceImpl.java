@@ -21,10 +21,32 @@ public class FtpFileServiceImpl implements FtpFileService{
 
     @Override
     public List<FtpFile> queryPublicFile(int page) throws Exception{
+        page=(page-1)*10;
         return ftpFileMapper.queryPublicFile(page);
     }
     @Override
     public List<FtpFile> queryPrivateFile(int page,String username) throws Exception{
+        page=(page-1)*10;
         return ftpFileMapper.queryPrivateFile(page,username);
+    }
+
+    @Override
+    public int uploadPrivateFileParam(FtpFile uploadParameter) {
+        return ftpFileMapper.uploadPrivateFileParam(uploadParameter);
+    }
+
+    @Override
+    public int uploadPublicFileParam(FtpFile uploadParameter) {
+        return ftpFileMapper.uploadPublicFileParam(uploadParameter);
+    }
+
+    @Override
+    public int deletePublicFile(String id) {
+        return ftpFileMapper.deletePublicFile(id);
+    }
+
+    @Override
+    public int deletePrivateFile(String id) {
+        return ftpFileMapper.deletePrivateFile(id);
     }
 }

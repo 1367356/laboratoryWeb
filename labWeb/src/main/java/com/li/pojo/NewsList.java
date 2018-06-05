@@ -12,6 +12,7 @@ public class NewsList {
     private String title;  //新闻标题
     private String date;  //新闻发布日期
     private String titleImage;  //标题图
+    private String type;
 
     @Override
     public String toString() {
@@ -20,9 +21,18 @@ public class NewsList {
                 ", pid='" + pid + '\'' +
                 ", id='" + id + '\'' +
                 ", title='" + title + '\'' +
-                ", date=" + date +
+                ", date='" + date + '\'' +
                 ", titleImage='" + titleImage + '\'' +
+                ", type='" + type + '\'' +
                 '}';
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getTitleImage() {

@@ -9,11 +9,12 @@ import java.util.Set;
  * 实验室网站用户
  */
 public class User {
+
     public int id;
-    public String userName;
-    public String password;
-    public String roles;
-    public String description;
+    public String userName;    //用户名
+    public String password;    //密码
+    public String roles;       //角色，普通用户或管理员
+    public String description;  //用户描述
 
     public int getId() {
         return id;

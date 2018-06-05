@@ -44,7 +44,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
         		.authorizeRequests()
 				.antMatchers("/main/**").permitAll()
-        		.antMatchers("/user/settings").authenticated() // order matters
+				.antMatchers("/user/**").authenticated()
+				.antMatchers("/FtpFileController/**").authenticated()
+				.antMatchers("/background/**").authenticated()
         		.antMatchers("/", "/js/**", "/css/**","/avatar/**", "/images/**", "/fonts/**", "/bootstrap-select/**", "/bootstrap-datetimepicker/**", "/custom/**", "/daterangepicker/**", "/chartjs/**").permitAll() // these paths are configure not to require any authentication
         		.antMatchers("/post/**").permitAll() // all posts are allowed to be viewed without authentication
 //        		.antMatchers("/user/**").permitAll() // all user profiles are allowed to be viewed without authentication
@@ -65,7 +67,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .logout()
 	            .invalidateHttpSession(true)
 	            .clearAuthentication(true)
-	            .logoutSuccessUrl("/?logout")
+	            .logoutSuccessUrl("/?logout")           //登出
 				.permitAll();
     }
 }

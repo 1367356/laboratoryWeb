@@ -75,4 +75,9 @@ public class ManageServiceImpl implements ManageService{
         }
         return true;
     }
+
+    @Override
+    public int selectCount(String pid, String id) {
+        return manageMapper.selectCount(pid,id);
+    }
 }

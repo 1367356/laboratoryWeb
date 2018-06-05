@@ -26,4 +26,7 @@ public interface ManageMapper {
     News backQuery(Long htmlid);
 
     int update(@Param("newsParameter") InsertParameter parameter);
+
+    int selectCount(@Param("pid") String pid, @Param("id") String id);
+
 }

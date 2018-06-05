@@ -14,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -29,31 +30,46 @@ public class ForeController {
     @Autowired
     ForeServiceImpl foreService;
 
+    /**
+     * 测试各个html文件用。
+     * @param model
+     * @return
+     */
+    @RequestMapping("home")
+    public String home(Model model) {
+        return "home";
+    }
+
     @RequestMapping("/querybycategory")
-    public String query(Model model,String pid,String id,String page) {
-        List<NewsList> newsLists=null;
+    public String query(Model model, String pid, String id, String page) {
+        List<NewsList> newsLists = null;
         if (pid == null || id == null || page == null) {
-            return "error/404";
+            return "message/404";
         }
         try {
             int ipage = Integer.parseInt(page);
             newsLists = manageService.queryByCategory(pid, id, ipage);
+            if (pid.equals("1") && id.equals("1")) {
+                long htmlid = newsLists.get(0).getHtmlid();
+                News news=foreService.queryNews(htmlid);  //查询新闻
+                model.addAttribute("response", news.getContent());
+                logger.debug("实验室简介");
+                return "front/intro";
+            }
         } catch (Exception e) {
-            return "error/403";
+            return "message/403";
         }
-
-        if (newsLists.size() != 1) {
-            model.addAttribute("response",newsLists);
-            logger.debug("返回到news_info");
-            return "front/news_info";
-        }
-
-        NewsList newsList = newsLists.get(0);
-        long htmlid = newsList.getHtmlid();
-        News news = foreService.queryNews(htmlid);
-        model.addAttribute("response", news);
-        return "front/news_content";
-//        return newsLists.toString();
+        int count = manageService.selectCount(pid, id);
+        logger.debug("pid=" + pid + "id=" + id + "的总数count:" + count);
+        int totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
+        model.addAttribute("response", newsLists);
+        model.addAttribute("totalpage", totalpage);
+        model.addAttribute("page", page);
+        model.addAttribute("pid", pid);
+        model.addAttribute("id", id);
+        logger.debug("返回到news_info");
+        return "front/news_info";
+//        }
     }
 
     @RequestMapping("/queryNews")
@@ -64,12 +80,23 @@ public class ForeController {
         count=count+1;
         foreService.updateCount(htmlid, count);
         model.addAttribute("response", news);
+
         return "front/news_content";
     }
 
 
-    @RequestMapping("/home")
-    public String home() {
-        return "front/news_info";
+    @RequestMapping("/index")
+//    @ResponseBody
+    public String index(Model model) {
+        List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
+        List<NewsList> newsLists2 = manageService.queryByCategory("1", "2", 1);
+        List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
+        List<NewsList> newsLists4 = manageService.queryByCategory("1", "6", 1);
+        model.addAttribute("response1", newsLists1);
+        model.addAttribute("response2", newsLists2);
+        model.addAttribute("response3", newsLists3);
+        model.addAttribute("response4", newsLists4);
+
+        return "front/index";
     }
 }

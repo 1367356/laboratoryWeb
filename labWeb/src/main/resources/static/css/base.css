@@ -134,7 +134,7 @@ section.main{
 /*main_content*/
 .main .main_content{
 	min-height: 400px;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	margin: 10px 0;
 	overflow: hidden;
 }
@@ -199,6 +199,12 @@ footer .foot_content .studio{
 	border-bottom: 1px solid #dadfe3;
 	line-height: 50px;
 }
+.main_content .content_nav li.active{
+	background-color: #086aa3;
+}
+.main_content .content_nav li.active a{
+	color: #fff;
+}
 .main_content .content_nav .nav_li a{
 	font-size: 15px;
 	color: #0e2b8a;
@@ -250,13 +256,15 @@ footer .foot_content .studio{
 	padding-right: 10px;
 }
 /*底部分页*/
-.main_content .content_right .content_buttom{
-	margin-top: 40px;
-	margin-right: 35px;
+.main_content .content_right .content_button{
+	/*margin-top: 40px;
+	margin-right: 35px;*/
+	margin-bottom: 20px;
 	float: right;
 }
-.main_content .content_right .content_buttom span,
-.main_content .content_right .content_buttom input{
+.main_content .content_right .content_button a,
+.main_content .content_right .content_button label,
+.main_content .content_right .content_button input{
 	display: inline-block;
 	font-size: 14px;
 	padding: 0 10px;
@@ -266,7 +274,7 @@ footer .foot_content .studio{
 	color: #515151;
 	margin-left: 20px;
 }
-.main_content .content_right .content_buttom .page_num{
+.main_content .content_right .content_button.page_num{
 	width: 50px;
 }
 .main_content .content_right::after{

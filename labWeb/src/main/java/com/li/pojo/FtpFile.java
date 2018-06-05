@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 public class FtpFile {
 
     private String id;    //134352334.avi 相当于别名，用于删除时定位文件
+    private String downloadLink;   //下载链接
     private String uploadUser;   //上传用户名 ，通过安全管理器获取
     private String description;  //文件描述
     private String filename; //文件名称后台获取
@@ -18,11 +19,20 @@ public class FtpFile {
     public String toString() {
         return "FtpFile{" +
                 "id='" + id + '\'' +
+                ", downloadLink='" + downloadLink + '\'' +
                 ", uploadUser='" + uploadUser + '\'' +
                 ", description='" + description + '\'' +
                 ", filename='" + filename + '\'' +
                 ", date='" + date + '\'' +
                 '}';
+    }
+
+    public String getDownloadLink() {
+        return downloadLink;
+    }
+
+    public void setDownloadLink(String downloadLink) {
+        this.downloadLink = downloadLink;
     }
 
     public String getDate() {

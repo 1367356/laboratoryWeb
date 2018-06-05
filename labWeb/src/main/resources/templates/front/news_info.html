@@ -1,100 +1,34 @@
-<!--#### 新闻公告（热点新闻＋通知公告）
--   通知公告
--   教学简报
--   科研快讯
--   桃李春风
--   学子风采
--->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-	<meta charset="UTF-8">
-	<title>电子科技大学图形图像与信号应用处理研究室</title>
-	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
-	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
-	<link rel="stylesheet" type="text/css" href="/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/css/news.css">
+<head th:include="fragments/head :: head">
 </head>
+<link rel="stylesheet" type="text/css" href="/css/news.css">
+<script type="text/javascript" src="/js/news.js"></script>
 <body>
-	<header>
-		<div class="h_main">
-			<ul class="header_nav">
-				<li><a href="">学校主页</a></li>
-				<li><a href="">管理登陆</a></li>
-			</ul>
-			<form class="search_box" action="">
-				<input type="text" placeholder="搜索" class="search" name="word" />
-				<button class="search_button" type="submit"/></button>
-			</form>
-		</div>
-	</header>
+	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
-		<div class="logo"><img src="img/webLogo.png"></div>
-		<nav>
-			<ul>
-				<li class="nav_item"><a href="querybycategory?id=1&pid=1&page=1">实验室简介</a></li><!--
-				--><li class="nav_item">
-					<a href="querybycategory?id=1&pid=2&page=1">新闻公告</a>
-					<ul class="child_nav">
-						<li class="child_item"><a href="querybycategory?id=1&pid=2&page=1">通知公告</a></li>
-						<li class="child_item"><a href="querybycategory?id=2&pid=2&page=1">教学简报</a></li>
-						<li class="child_item"><a href="querybycategory?id=3&pid=2&page=1">科研快讯</a></li>
-						<li class="child_item"><a href="querybycategory?id=4&pid=2&page=1">桃李春风</a></li>
-						<li class="child_item"><a href="querybycategory?id=5&pid=2&page=1">学子风采</a></li>
-					</ul>
-				</li><!--
-				--><li class="nav_item">
-					<a href="querybycategory?id=1&pid=3&page=1">科学研究</a>
-					<ul class="child_nav">
-						<li class="child_item"><a href="querybycategory?id=1&pid=3&page=1">研究领域</a></li>
-						<li class="child_item"><a href="querybycategory?id=2&pid=3&page=1">科研项目</a></li>
-						<li class="child_item"><a href="querybycategory?id=3&pid=3&page=1">学术论文</a></li>
-						<li class="child_item"><a href="querybycategory?id=4&pid=3&page=1">获奖</a></li>
-						<li class="child_item"><a href="querybycategory?id=5&pid=3&page=1">专利</a></li>
-					</ul>
-				</li><!--
-				--><li class="nav_item">
-					<a href="querybycategory?id=1&pid=4&page=1">科研团队</a>
-					<ul class="child_nav">
-						<li class="child_item"><a href="querybycategory?id=1&pid=4&page=1">团队教师</a></li>
-						<li class="child_item"><a href="querybycategory?id=2&pid=4&page=1">博士后</a></li>
-						<li class="child_item"><a href="querybycategory?id=3&pid=4&page=1">在读博士</a></li>
-						<li class="child_item"><a href="querybycategory?id=4&pid=4&page=1">在读硕士</a></li>
-						<li class="child_item"><a href="querybycategory?id=5&pid=4&page=1">光电菁英</a></li>
-						<li class="child_item"><a href="querybycategory?id=6&pid=4&page=1">毕业学生</a></li>
-					</ul>
-				</li><!--
-				--><li class="nav_item">
-					<a href="querybycategory?id=1&pid=5&page=1">人才培养</a>
-					<ul class="child_nav">
-						<li class="child_item"><a href="querybycategory?id=1&pid=5&page=1">本科教学</a></li>
-						<li class="child_item"><a href="querybycategory?id=2&pid=5&page=1">菁英计划</a></li>
-						<li class="child_item"><a href="querybycategory?id=3&pid=5&page=1">研究生</a></li>
-					</ul>
-				</li><!--
-				--><li class="nav_item"><a href="querybycategory?id=1&pid=6&page=1">合作交流</a></li><!--
-				--><li class="nav_item"><a href="querybycategory?id=1&pid=7&page=1">资料下载</a></li><!--
-				--><li class="nav_item"><a href="querybycategory?id=1&pid=8&page=1">留言板</a></li>
-			</ul>
-		</nav>
+		<div class="logo"><img src="/img/webLogo.png"></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
 		<!--新闻列表-->
 		<section class="main_content">
 			<div class="content_nav">
-				<div class="nav_head">新闻公告</div>
+				<span id="nav_pid" hidden th:text="${pid}">2</span>
+				<span id="nav_id" hidden th:text="${id}">1</span>
+				<!-- <div class="nav_head">新闻公告</div>
 				<ul class="nav_ul">
-					<li class="nav_li"><a href="querybycategory?id=1&pid=2&page=1">通知公告</a></li>
-					<li class="nav_li"><a href="querybycategory?id=2&pid=2&page=1">教学简报</a></li>
-					<li class="nav_li"><a href="querybycategory?id=3&pid=2&page=1">科研快讯</a></li>
-					<li class="nav_li"><a href="querybycategory?id=4&pid=2&page=1">桃李春风</a></li>
-					<li class="nav_li"><a href="querybycategory?id=5&pid=2&page=1">学子风采</a></li>
-				</ul>
+					<li class="nav_li"><a href="main/querybycategory?id=1&pid=2&page=1">通知公告</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=2&pid=2&page=1">教学简报</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=3&pid=2&page=1">科研快讯</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=4&pid=2&page=1">桃李春风</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=5&pid=2&page=1">学子风采</a></li>
+				</ul> -->
 			</div>
 
 			<div class="content_right">
 				<div class="content_head">通知公告</div>
 				<div class="content_list">
 					<ul>
-						<li th:each="list : ${response}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank"><span th:text="${list.title}"></span></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
 						</li>
 						<!-- <li><a href="news_content.html" target="_blank">【开题报告会】关于实验室博士学位论文公开开题的通知 </a><span>2018-05-21</span></li>
 						<li><a href="">【GISPA论坛】第094期</a><span>2018-05-21</span></li>
@@ -109,23 +43,18 @@
 					</ul>
 				</div>
 				
-				<div class="content_buttom">
-					<span>当前第一页 共xx页</span>
-					<input type="button" class="next_page" value="下一页">
+				<div class="content_button">
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/querybycategory(id=${id},pid=${pid},page=${page-1})}">上一页</a></span>
+					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/querybycategory(id=${id},pid=${pid},page=${page+1})}">下一页</a></span>
+					<!-- <input type="button" class="next_page" value="下一页"> -->
 					<input type="text" class="page_num">
-					<input type="button" class="" ="jump_page" value="跳转">
+					<input type="button" class="jump_page" value="跳转">
 				</div>
 			</div>
 		</section>
 		
 	</section>
-	<footer>
-		<div class="foot_content">
-			<div class="lab_name">图形图像与信号处理应用研究室</div>
-			<div class="lab_phone">联系电话：×××-××××××××</div>
-			<div class="lab_address">地址：电子科技大学沙河校区逸夫楼</div>
-			<p class="studio">技术支持：智行工作室</p>
-		</div>
-	</footer>
+	<footer th:replace="fragments/footer :: footer"></footer>
 </body>
 </html>

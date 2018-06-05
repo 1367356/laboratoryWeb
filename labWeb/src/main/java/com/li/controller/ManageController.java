@@ -21,8 +21,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+//当返回前台传过来的参数时，直接在model中添加该参数即可。
 @Controller
-@RequestMapping("/main/back")
+@RequestMapping("/background")
+@PreAuthorize("hasAuthority('ADMIN')")
 public class ManageController {
 
     Logger logger = LogManager.getLogger(ManageController.class);
@@ -34,10 +36,9 @@ public class ManageController {
 
     /**
      * 向数据库添加一条新闻
-     * @return           响应体
      */
 //    @PreAuthorize("hasAuthority('SUPER')")  //需要管理员权限，才能执行该路径
-    @RequestMapping(value = "/addNews",method = RequestMethod.GET)
+    @RequestMapping(value = "/insert",method = RequestMethod.GET)
     public String insert(Model model) {
         return "background/addNews";
     }
@@ -73,11 +74,11 @@ public class ManageController {
         }
 
         if (!insert) {
-            return "error/404";
+            return "message/404";
         }
         News news = foreService.queryNews(htmlid);
         model.addAttribute("response", news);
-        return "fore/displayNews";
+        return "front/news_content";
     }
 
     /**
@@ -90,7 +91,7 @@ public class ManageController {
         long lhtmlid = Long.parseLong(htmlid);
         int i=manageService.delete(lhtmlid);
         if (i != 1) {
-            return "error/404";
+            return "message/404";
         }
         List<NewsList> list=manageService.queryByCategory(pid,id,page);
         model.addAttribute("response",list);
@@ -107,7 +108,7 @@ public class ManageController {
         long lhtmlid = Long.parseLong(htmlid);
         News news = manageService.backQuery(lhtmlid);
         model.addAttribute("response",news);
-        return "background/backUpdate";
+        return "background/updateNews";
     }
     /**
      * 修改一条新闻
@@ -118,7 +119,7 @@ public class ManageController {
 
         int i=manageService.update(parameter);
         if (i != 1) {
-            return "error/404";
+            return "message/404";
         }
         model.addAttribute("response",parameter);
         return "background/backUpdate";
@@ -137,7 +138,7 @@ public class ManageController {
     public String query(Model model,String pid,String id,String page) {
         List<NewsList> newsLists=null;
         if (pid == null || id == null || page == null) {
-            return "error/404";
+            return "message/404";
         }
         try {
             int ipage = Integer.parseInt(page);
@@ -145,7 +146,7 @@ public class ManageController {
 
         } catch (Exception e) {
 
-            return "error/403";
+            return "message/403";
         }
             model.addAttribute("response",newsLists);
             return "background/back_new_list";
@@ -154,7 +155,7 @@ public class ManageController {
 //        long htmlid = newsList.getHtmlid();
 //        News news = foreService.queryNews(htmlid);
 //        model.addAttribute("response", news);
-//        return "fore/displayNews";
+//        return "front/displayNews";
 //        return newsLists.toString();
     }
 
@@ -171,13 +172,12 @@ public class ManageController {
 
 
 //        if (i != 1) {
-//            return "error/404";
+//            return "message/404";
 //        }
 
         model.addAttribute("response",news);
-        return "fore/displayNews";
+        return "front/displayNews";
 //        logger.debug(news.getContent());
 //        return news.toString();
     }
-
 }

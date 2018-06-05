@@ -16,14 +16,14 @@
   </sql>
 
   <insert id="insertNews" parameterType="com.li.pojo.InsertParameter">
-    insert into news(htmlid,count,publisher,title,type,abstractText,content,date_created) values
-    (#{newsParameter.htmlid},#{newsParameter.count},#{newsParameter.publisher},#{newsParameter.title},
+    insert into news(pid,id,htmlid,count,publisher,title,type,abstractText,content,date_created) values
+    (#{newsParameter.pid},#{newsParameter.id},#{newsParameter.htmlid},#{newsParameter.count},#{newsParameter.publisher},#{newsParameter.title},
     #{newsParameter.type},#{newsParameter.abstractText},#{newsParameter.content},#{newsParameter.date})
   </insert>
 
   <!--插入-->
   <insert id="insertNewsList" parameterType="com.li.pojo.InsertParameter">
-    insert into newslist values(#{newsListParameter.htmlid},#{newsListParameter.pid},#{newsListParameter.id},#{newsListParameter.title},#{newsListParameter.date},#{newsListParameter.titleImage})
+    insert into newslist values(#{newsListParameter.htmlid},#{newsListParameter.pid},#{newsListParameter.id},#{newsListParameter.title},#{newsListParameter.date},#{newsListParameter.titleImage},#{newsListParameter.type})
   </insert>
 
   <!--从列表中删除一条新闻-->
@@ -44,6 +44,10 @@
     select max(htmlid) from news
   </select>
 
+  <select id="selectCount" resultType="java.lang.Integer">
+    select count(*) from newslist where pid=#{pid} and id=#{id}
+  </select>
+
   <!--查询News-->
   <!--<select id="backQuery" resultMap="News" parameterType="java.lang.Long">-->
     <!--select <include refid="newsColumn"/> from NEWS where htmlid=#{htmlid}-->
@@ -60,6 +64,7 @@
     abstract=#{newsParameter.abstractText},
     content#{newsParameter.content},
     date_created=#{newsParameter.date}
+    where htmlid=#{newsParameter.htmlid}
   </update>
 
 

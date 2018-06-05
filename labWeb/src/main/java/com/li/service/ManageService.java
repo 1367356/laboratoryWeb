@@ -23,4 +23,6 @@ public interface ManageService {
     int update(InsertParameter parameter);  //更新post
 
     boolean insert(InsertParameter parameter) throws Exception;  //向数据库中添加新闻，包括news和newslist
+
+    int selectCount(String pid, String id);
 }

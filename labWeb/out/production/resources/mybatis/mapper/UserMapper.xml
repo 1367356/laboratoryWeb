@@ -11,6 +11,11 @@
     <sql id="baseColumns">
         uid,username,password,roles,description
     </sql>
+
+    <select id="findByUserName" resultType="com.li.pojo.User">
+        select * from user where username=#{username}
+    </select>
+
     <select id="selectUserList" parameterType="string" resultMap="userMap">
         <!--SELECT <include refid="baseColumns"></include> FROM user limit 20*#{page} 20-->
         SELECT <include refid="baseColumns"></include> FROM user
@@ -23,4 +28,8 @@
     <delete id="deleteUser" parameterType="java.lang.Integer">
         delete from user where uid=#{uid}
     </delete>
+
+    <update id="modifyPassword">
+        update user set password=#{password} where username=#{username}
+    </update>
 </mapper>

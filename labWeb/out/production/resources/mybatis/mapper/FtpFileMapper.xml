@@ -3,27 +3,45 @@
 <mapper namespace="com.li.dao.FtpFileMapper" >
 
     <resultMap id="FtpFileResultMap" type="com.li.pojo.FtpFile">
+        <result property="downloadLink" column="downloadLink" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="id" column="id" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="filename" column="filename" jdbcType="VARCHAR" javaType="java.lang.String"/>
-        <result property="uploaduser" column="uploaduser" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="uploadUser" column="uploaduser" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="description" column="description" jdbcType="VARCHAR" javaType="java.lang.String"/>
         <result property="date" column="date_created"/>
     </resultMap>
 
     <sql id="Base_Column_List" >
-        id,filename, uploaduser, description, date_created
+        downloadLink,id,filename, uploaduser, description, date_created
     </sql>
 
     <insert id="uploadFileParam" parameterType="com.li.pojo.FtpFile">
-        insert into FtpPublicFile values(#{parameter.id},#{parameter.filename},#{parameter.uploadUser},#{parameter.description},#{parameter.date});
+        insert into FtpPublicFile values(#{parameter.downloadLink},#{parameter.id},#{parameter.filename},#{parameter.uploadUser},#{parameter.description},#{parameter.date});
     </insert>
 
-    <select id="queryPublicFile" resultMap="FtpFileResultMap">
-        select <include refid="Base_Column_List" /> from FtpPublicFile limit 10*#{page} 10
+    <!-- 上传私有文件参数 -->
+    <insert id="uploadPrivateFileParam" parameterType="com.li.pojo.FtpFile">
+        insert into FtpPrivateFile values(#{privateFileParameter.downloadLink},#{privateFileParameter.id},#{privateFileParameter.filename},#{privateFileParameter.uploadUser},#{privateFileParameter.description},#{privateFileParameter.date});
+    </insert>
+    <!-- 上传公有文件参数 -->
+    <insert id="uploadPublicFileParam" parameterType="com.li.pojo.FtpFile">
+        insert into FtpPublicFile values(#{publicFileParameter.downloadLink},#{publicFileParameter.id},#{publicFileParameter.filename},#{publicFileParameter.uploadUser},#{publicFileParameter.description},#{publicFileParameter.date});
+    </insert>
+    <!-- 根据id删除私有文件 -->
+    <delete id="deletePrivateFile" parameterType="java.lang.String">
+        delete from FtpPrivateFile where id=#{id}
+    </delete>
+    <!-- 根据id删除公有文件 -->
+    <delete id="deletePublicFile" parameterType="java.lang.String">
+        delete from FtpPublicFile where id=#{id}
+    </delete>
+    <!--查询私有文件-->
+    <select id="queryPrivateFile" resultMap="FtpFileResultMap">
+        select <include refid="Base_Column_List" /> from (select * from FtpPrivateFile where uploaduser=#{username})t1 limit #{page},10
     </select>
 
-    <select id="queryPrivateFile" resultMap="FtpFileResultMap">
-        select <include refid="Base_Column_List" /> from (select * from FtpPrivateFile where uploaduser=#{username})t1 limit 10*#{page} 10
+    <select id="queryPublicFile" resultMap="FtpFileResultMap">
+        select * from FtpPublicFile limit #{page},10
     </select>
     <!---->
     <!--<select id="queryNews" parameterType="java.lang.Long" resultMap="NewsResultMap" >-->

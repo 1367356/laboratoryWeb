@@ -10,9 +10,10 @@ CREATE TABLE `NEWSLIST`(
   `htmlid`              BIGINT       NOT NULL,
   `pid`                 VARCHAR(5) NOT NULL,
   `id`               VARCHAR(5) NOT NULL,
-  `title`            VARCHAR(255) NOT NULL,
+  `title`            VARCHAR(255) DEFAULT NULL,
   `date_created`       date     NOT NULL,
-  `titleImage`       VARCHAR(50),
+  `titleImage`       VARCHAR(50) DEFAULT NULL,
+  `type`             VARCHAR(20) DEFAULT NULL,
   PRIMARY KEY (`htmlid`)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
@@ -20,6 +21,8 @@ CREATE TABLE `NEWSLIST`(
 DROP TABLE IF EXISTS `NEWS`;
 CREATE TABLE `NEWS` (
 -- htmlid使用当前毫秒值作为值
+   `pid`                varchar(3) not null,
+   `id`                 varchar(3) not null,
   `htmlid`              BIGINT       NOT NULL,
   `count`               INTEGER,
   `publisher`           VARCHAR(255) DEFAULT 'admin',
@@ -33,22 +36,24 @@ CREATE TABLE `NEWS` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 -- ftp文件描述
-DROP TABLE IF EXISTS `FtpFile`;
+DROP TABLE IF EXISTS `FtpPublicFile`;
 CREATE TABLE `FtpPublicFile`(
+`downloadLink`         varchar(100)  not null,
    `id`                   varchar(50)    not null,
-  `filename`              varchar(255)    primary key  NOT NULL,
+  `filename`              varchar(255)     NOT NULL,
   `uploaduser`                 VARCHAR(25) NOT NULL,
-  `description`               VARCHAR(255) NOT NULL,
+  `description`               VARCHAR(255) default NULL,
   `date_created`       date     NOT NULL
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 -- ftp文件描述
-DROP TABLE IF EXISTS `FtpFile`;
+DROP TABLE IF EXISTS `FtpPrivateFile`;
 CREATE TABLE `FtpPrivateFile`(
+    `downloadLink`         varchar(100)  not null,
    `id`                   varchar(50)    not null,
-  `filename`              varchar(255)    primary key  NOT NULL,
+  `filename`              varchar(255)     NOT NULL,
   `uploaduser`                 VARCHAR(25) NOT NULL,
-  `description`               VARCHAR(255) NOT NULL,
+  `description`               VARCHAR(255) default NULL,
   `date_created`       date     NOT NULL
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 

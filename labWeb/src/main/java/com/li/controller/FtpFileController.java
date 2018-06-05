@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,7 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-@RequestMapping("ftp")
+@RequestMapping("FtpFileController")
 public class FtpFileController {
 
     Logger logger = LogManager.getLogger(FtpFileController.class);
@@ -62,10 +63,7 @@ public class FtpFileController {
      * @throws IOException 遗传
      */
     @RequestMapping("/private/uploadFile")
-    public String uploadPrivateFile(@RequestParam("file") MultipartFile file, FtpFile uploadParameter) throws IOException {
-
-//        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-//        uploadParameter.setDate(timestamp);
+    public String uploadPrivateFile(Model model,@RequestParam("file") MultipartFile file, FtpFile uploadParameter) throws IOException {
 
         if (uploadParameter.getDate() == null) {
             Date current_date = new Date();
@@ -73,8 +71,6 @@ public class FtpFileController {
             SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             //格式化当前日期
             String date = SimpleDateFormat.format(current_date.getTime());
-
-            //        Timestamp date = new Timestamp(System.currentTimeMillis());
             uploadParameter.setDate(date);
         }
 //        String filename=l.toString();
@@ -84,34 +80,31 @@ public class FtpFileController {
         int i1 = filename.lastIndexOf(".");
         String suffix = filename.substring(i1);
         String id=System.currentTimeMillis()+suffix;
-        ftp://192.168.100.91/public/vsftpd.conf
-        uploadParameter.setId("ftp://"+host+":"+port+privateFilePath+"/"+id);  //设置上传文件名
+//        ftp://192.168.100.91/public/vsftpd.conf
+        uploadParameter.setId(id);  //设置上传文件名
 
-        //通过Spring Security 获取登录用户名
-
+        uploadParameter.setDownloadLink("ftp://uftp:1367356@"+host+":"+port+privateFilePath+"/"+id);
+//        uploadParameter.setId("ftp://"+host+":"+port+privateFilePath+"/"+id);  //设置上传文件名?
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String userName = auth.getName();
 
-//        String userName = "spring security";
         uploadParameter.setUploadUser(userName);
-
-
-//        String filename = request.getParameter("filename");
-
         InputStream in = file.getInputStream();
         boolean isSucesse= FtpUtil.uploadFile(host,port,username,password,basePath,privateFilePath,id,in);
         if(isSucesse){
             try {
-                 int i = ftpFileService.uploadFileParam(uploadParameter);  //org.springframework.dao.DuplicateKeyException  出现异常
-                return "home"; //上传成功页面
+                 int i = ftpFileService.uploadPrivateFileParam(uploadParameter);  //org.springframework.dao.DuplicateKeyException  出现异常
+                model.addAttribute("response", "文件上传成功");
+                return "message/200"; //上传成功页面
             } catch (Exception e) {
-                return "error/404";
+                model.addAttribute("response", "出现异常"+e.toString());
+                return "message/404";
             }
         }
         //将参数添加到数据库
 //        System.out.println(isSucesse);
-
-        return "error/404"; //上传成功页面
+        model.addAttribute("response", "私有文件上传失败");
+        return "message/404"; //上传成功页面
 
         //上传成功定位到哪里，将状态数据放回到哪里
     }
@@ -123,22 +116,21 @@ public class FtpFileController {
      * @throws IOException 遗传
      */
     @RequestMapping("/public/uploadFile")
-    public String uploadPublicFile(@RequestParam("file") MultipartFile file, FtpFile uploadParameter) throws IOException {
-
-        if (file == null || uploadParameter.getDescription() == null) {
-            return "error/404";
+    public String uploadPublicFile(Model model,@RequestParam("file") MultipartFile file, FtpFile uploadParameter) throws IOException {
+        if (uploadParameter.getDescription() == null) {
+            uploadParameter.setDescription(file.getOriginalFilename());
         }
-//        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-//        uploadParameter.setDate(timestamp);
-
+        if(file == null){
+            logger.debug("file==null");
+            model.addAttribute("response", "文件不能为空");
+            return "message/404";
+        }
         if (uploadParameter.getDate() == null) {
             Date current_date = new Date();
             //设置日期格式化样式为：yyyy-MM-dd
             SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             //格式化当前日期
             String date = SimpleDateFormat.format(current_date.getTime());
-
-            //        Timestamp date = new Timestamp(System.currentTimeMillis());
             uploadParameter.setDate(date);
         }
 //        String filename=l.toString();
@@ -150,16 +142,14 @@ public class FtpFileController {
         int i1 = filename.lastIndexOf(".");
         String suffix = filename.substring(i1);
         String id=System.currentTimeMillis()+suffix;
+        uploadParameter.setId(id);  //设置上传id
 
-//        uploadParameter.setId(id);  //设置上传文件名
-        uploadParameter.setId("ftp://"+host+":"+port+publicFilePath+"/"+id);  //设置上传文件名
+        uploadParameter.setDownloadLink("ftp://uftp:1367356@"+host+":"+port+publicFilePath+"/"+id);
 
         //通过Spring Security 获取登录用户名
-        String userName = "spring security";
-        uploadParameter.setUploadUser(userName);
-
-
-//        String filename = request.getParameter("filename");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userName = auth.getName();
+        uploadParameter.setUploadUser(userName);  //上传人
 
         InputStream in = file.getInputStream();
         boolean isSucesse= FtpUtil.uploadFile(host,port,username,password,basePath,publicFilePath,id,in);
@@ -167,17 +157,72 @@ public class FtpFileController {
         if (isSucesse) {
             try {
                 //将参数添加到数据库
-                int i = ftpFileService.uploadFileParam(uploadParameter);  //org.springframework.dao.DuplicateKeyException  出现异常
-                return "sucess/200"; //上传成功定位到哪里，将状态数据放回到哪里
+                int i = ftpFileService.uploadPublicFileParam(uploadParameter);  //org.springframework.dao.DuplicateKeyException  出现异常
+                model.addAttribute("response", "文件上传成功");
+                return "message/200"; //上传成功定位到哪里，将状态数据放回到哪里
             }catch (Exception e){
-                return "error/404";
+                model.addAttribute("response", "出现异常" + e.toString());
+                return "message/404";
             }
         }
-
-        return "error/404"; //上传成功页面
-
-
+        model.addAttribute("response", "文件上传失败");
+        return "message/404"; //上传成功页面
     }
+
+    /**
+     * 根据给定的文件名进行删除
+     * Description: 从FTP服务器删除公有文件
+     * @param id 要删除的文件名,11111.avi
+     * @return
+     */
+    @RequestMapping("/deletePublicFile")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public String deletePublicFile(Model model,String id) throws IOException {
+        boolean isSucess = FtpUtil.deleteFile(host, port, username, password, basePath + publicFilePath, id);
+        if (isSucess) {
+            int i=ftpFileService.deletePublicFile(id);
+            //数据库删除
+            model.addAttribute("response","删除文件成功");
+            return "message/200";
+        }
+        model.addAttribute("response", "删除文件失败");
+        return "message/404";
+    }
+
+    @RequestMapping("/deletePrivateFile")
+    public String deletePrivateFile(Model model,String id) throws IOException {
+        boolean isSucess = FtpUtil.deleteFile(host, port, username, password, basePath + publicFilePath, id);
+        if (isSucess) {
+            int i=ftpFileService.deletePrivateFile(id);
+            //数据库删除
+            model.addAttribute("response","删除文件成功");
+            return "message/200";
+        }
+        model.addAttribute("response", "删除文件失败");
+        return "message/404";
+    }
+
+    /**
+     * 私有文件(我的文件)查询
+     * @param page
+     * @return
+     */
+    @RequestMapping("/private/queryFile")
+    public String queryPrivateFile(Model model,String page) {
+        List<FtpFile> files=null;
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName();
+        try {
+            int ipage = Integer.parseInt(page);
+            files=ftpFileService.queryPrivateFile(ipage,username);
+        }catch (Exception e){
+            model.addAttribute("response", "查询私有文件失败");
+            return "message/404";
+        }
+        model.addAttribute("response", files);
+        return "front/privateFile";
+    }
+
 
 
     /**
@@ -200,76 +245,4 @@ public class FtpFileController {
 //        }
 //        return "下载失败";
 //    }
-
-    /**
-     * 根据给定的文件名进行删除
-     * Description: 从FTP服务器删除文件
-     * @param filename 要删除的文件名
-     * @return
-     */
-    @RequestMapping("/deleteFile")
-    @ResponseBody
-    public String deleteFile(String filename) throws IOException {
-        boolean isSucess = FtpUtil.deleteFile(host, port, username, password, basePath + publicFilePath, filename);
-        if (isSucess) {
-            //数据库删除
-        return "删除成功";
-
-        }
-        return "删除失败";
-    }
-
-    /**
-     * 公有文件查询
-     * @param page
-     * @return
-     */
-    @RequestMapping("/public/queryFile")
-    public String queryPublicFile(Model model,String page) {
-        List<FtpFile> files=null;
-        try {
-            int ipage = Integer.parseInt(page);
-            files=ftpFileService.queryPublicFile(ipage);
-        }catch (Exception e){
-            return "error/404";
-        }
-        model.addAttribute("response", files);
-        return "/displayFile";
-    }
-
-    /**
-     * 公有文件查询
-     * @param page
-     * @return
-     */
-    @RequestMapping("/private/queryFile")
-    public String queryPrivateFile(Model model,String page) {
-        List<FtpFile> files=null;
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String username = auth.getName();
-        try {
-            int ipage = Integer.parseInt(page);
-            files=ftpFileService.queryPrivateFile(ipage,username);
-        }catch (Exception e){
-            return "error/404";
-        }
-        model.addAttribute("response", files);
-        return "/displayFile";
-    }
-
-    /**
-     * 我的文件，用户自己的私有文件
-     * @return 展示html
-     */
-    @RequestMapping("/myFile")
-    public String myFile() {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String username = auth.getName();
-
-        //根据用户名获取该用户的文件
-
-        return "home";
-    }
-
-
 }
