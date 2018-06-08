@@ -49,4 +49,14 @@ public class FtpFileServiceImpl implements FtpFileService{
     public int deletePrivateFile(String id) {
         return ftpFileMapper.deletePrivateFile(id);
     }
+
+    @Override
+    public int selectPublicCount() {
+        return ftpFileMapper.selectPublicCount();
+    }
+
+    @Override
+    public int selectPrivateCount(String username) {
+        return ftpFileMapper.selectPrivateCount(username);
+    }
 }

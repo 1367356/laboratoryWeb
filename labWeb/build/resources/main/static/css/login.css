@@ -11,11 +11,12 @@
 	box-sizing: border-box; 
 }
 body { 
+	position: relative;
 	min-width: 1150px;
-	height:100%;
 	margin: 0 auto;
 	background-image: url(../img/uestc_back.png); 
 	background-size: cover; 
+	overflow: hidden;
 }
 a { 
 	color:#27A9E3; 
@@ -43,16 +44,16 @@ header .header_main .header_nav a{
 	font-size: 1.2em;
 }
 /* main */
-.main{
+section.main{
 	width: 1000px;
 	margin: 0 auto;
-	padding: 10% 0;
-
+	overflow: hidden;
 }
 	/* left */
 .main .login_img {
 	float: left;
 	width: 40%;
+	margin-top: 30px;
 }
 .main .login_img img{
 	width: 460px;
@@ -67,7 +68,7 @@ header .header_main .header_nav a{
 	border-radius: 6px;
 	background-color: #fff;
 	margin-left: 50px;
-	margin-top: 50px;
+	margin-top: 80px;
 	position: relative;
 }
 .main .login_box .login_logo{ 
@@ -105,6 +106,7 @@ header .header_main .header_nav a{
 .main .login_box .login_form{
 	display: block;
 	margin: 0 50px;
+	border: 0;
 }
 
 #password_text{
@@ -162,9 +164,9 @@ footer{
 	width: 100%;
 	height: 150px;
 	clear: both;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
-	background-color: rgba(18, 46, 103,.7);
+	background-color: rgba(18, 46, 103,.8);
 }
 footer .foot_content{
 	width: 980px;

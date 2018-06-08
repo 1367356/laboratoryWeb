@@ -8,7 +8,7 @@
 <body>
 	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
-		<div class="logo"><img src="/img/webLogo.png"></div>
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
 		<!--新闻列表-->
 		<section class="main_content">
@@ -33,17 +33,22 @@
 							<th>日期</th>
 						</tr>
 						<tr th:each='list : ${response}'>
-							<td colspan="3"><a th:href="@{${list.downloadLink}}" download="${list.filename}"><span th:text='${list.filename}'></span></a></td>
+							<td colspan="3"><a th:href="@{${list.downloadLink}}" download="vsftpd"><span th:text='${list.filename}'></span></a></td>
 							<td th:text='${list.uploadUser}'></td>
 							<td th:text='${list.date}'></td>
 						</tr>
+						<!--<tr th:each='list : ${response}'>-->
+							<!--<td colspan="3"><a th:href="@{${list.downloadLink}}" download="下载"><span th:text='${list.filename}'></span></a></td>-->
+							<!--<td th:text='${list.uploadUser}'></td>-->
+							<!--<td th:text='${list.date}'></td>-->
+						<!--</tr>-->
 					</table>
 				</div>
 
 				<div class="content_button">
-					<span th:if="${page gt 1}"><a class="next_page" th:href="@{/ftp/public/queryFile(page=${page-1})}">上一页</a></span>
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/ftp/public/queryFile(page=${page}-1)}">上一页</a></span>
 					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
-					<span th:if="${totalpage gt page}"><a class="next_page" th:href="@{/ftp/public/queryFile(page=${page+1})}">下一页</a></span>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/ftp/public/queryFile(page=${page}+1)}">下一页</a></span>
 					<!-- <input type="button" class="next_page" value="下一页"> -->
 					<input type="text" class="page_num">
 					<input type="button" class="jump_page" value="跳转">
@@ -52,7 +57,7 @@
 		</section>
 		<div id="show_upload">
 			<div class="upload_head">文件上传
-				<img src="img/close.png">
+				<img src="/img/close.png">
 			</div>
 			<div sec:authorize="isAuthenticated()">
 				<form action="/FtpFileController/public/uploadFile" method="post" enctype="multipart/form-data">

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/head :: head">
+</head>
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+<link rel="stylesheet" type="text/css" href="/css/file.css">
+<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="/js/file.js"></script>
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<!--资料列表-->
+		<section class="main_content">
+			<div class="content_nav">
+				<div class="nav_head">资料下载</div>
+				<ul class="nav_ul">
+					<li class="nav_li"><a href="/ftp/public/queryFile?page=1">公有资料</a></li>
+					<li class="nav_li active"><a href="#">私有资料</a></li>
+					<li class="nav_li"><a href="/user/selectUser?page=1">用户管理</a></li>
+				</ul>
+			</div>
+
+			<div class="content_right">
+				<div class="content_head">
+					<span>私有资料</span>
+					<input type="button" name="upload" value="上传" class="pri_load">
+				</div>
+				<div class="content_list" id="private_list">
+					<table>
+						<tr>
+							<th colspan="3">标题</th>
+							<th>上传人</th>
+							<th>日期</th>
+						</tr>
+						<tr th:each='list : ${response}'>
+							<td colspan="3"><a th:href="@{${list.downloadLink}}" download="vsftpd"><span th:text='${list.filename}'></span></a></td>
+							<td th:text='${list.uploadUser}'></td>
+							<td th:text='${list.date}'><a th:href="@{/FtpFileController/deletePrivateFile(id=${list.id})}" class="delete"></a></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="content_button">
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}-1)}">上一页</a></span>
+					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}+1)}">下一页</a></span>
+					<!-- <input type="button" class="next_page" value="下一页"> -->
+					<input type="text" class="page_num">
+					<input type="button" class="jump_page" value="跳转">
+				</div>
+			</div>
+		</section>
+		<div class="show_upload" id="private">
+			<div class="upload_head">私有资料上传
+				<img src="/img/close.png">
+			</div>
+			<form action="/FtpFileController/private/uploadFile" method="post" enctype="multipart/form-data">
+					<input type="file" name="file">
+					<span class="file_style">
+						<span class="left_btn">选择文件</span>
+						<span class="right_text"></span>
+					</span>
+					<input type="submit" name="confirm" value="确定">
+			</form>
+		</div>
+	</section>
+	<div id="bg"></div>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

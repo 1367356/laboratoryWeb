@@ -61,7 +61,7 @@ CREATE TABLE `FtpPrivateFile`(
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) DEFAULT NULL,
+  `username` varchar(255) UNIQUE DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `description` TEXT DEFAULT NULL,
   `roles` varchar(200) DEFAULT 'USER',

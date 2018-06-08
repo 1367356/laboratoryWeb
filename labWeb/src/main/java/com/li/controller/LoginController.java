@@ -19,7 +19,7 @@ public class LoginController {
     @PreAuthorize("hasAuthority('ADMIN')")  //后台页面
     public String login() {
         System.out.println("home");
-        return "background/background";  //后台主页
+        return "home";  //后台主页
 //        return "home";  //主页
     }
 
@@ -29,7 +29,7 @@ public class LoginController {
     public String displayLoginPage(Model model) {
         System.out.println("进入");
         model.addAttribute("title", "用户登陆");
-        return "user-login"; //登录界面，验证没通过。
+        return "front/login"; //登录界面，验证没通过。
     }
 
     /**

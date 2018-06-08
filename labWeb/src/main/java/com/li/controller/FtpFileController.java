@@ -54,7 +54,7 @@ public class FtpFileController {
     @Value("${ftpFile.publicFilePath}")     //公有文件位置
     private String publicFilePath;
 
-    @Value("${ftpFile.privateFilePath}")     //公有文件位置
+    @Value("${ftpFile.privateFilePath}")     //私有文件位置
     private String privateFilePath;
 
     /**
@@ -140,6 +140,10 @@ public class FtpFileController {
         uploadParameter.setFilename(filename);  //设置上传文件名
 
         int i1 = filename.lastIndexOf(".");
+        if (i1 < 0) {
+            model.addAttribute("response", "文件名命名不正确");
+            return "message/404";
+        }
         String suffix = filename.substring(i1);
         String id=System.currentTimeMillis()+suffix;
         uploadParameter.setId(id);  //设置上传id
@@ -178,7 +182,14 @@ public class FtpFileController {
     @RequestMapping("/deletePublicFile")
     @PreAuthorize("hasAuthority('ADMIN')")
     public String deletePublicFile(Model model,String id) throws IOException {
-        boolean isSucess = FtpUtil.deleteFile(host, port, username, password, basePath + publicFilePath, id);
+        logger.debug(basePath + publicFilePath);
+        boolean isSucess = false;
+        try {
+            isSucess = FtpUtil.deleteFile(host, port, username, password,publicFilePath, id);
+        } catch (Exception e) {
+            model.addAttribute("response", "删除文件失败");
+            return "message/404";
+        }
         if (isSucess) {
             int i=ftpFileService.deletePublicFile(id);
             //数据库删除
@@ -191,12 +202,18 @@ public class FtpFileController {
 
     @RequestMapping("/deletePrivateFile")
     public String deletePrivateFile(Model model,String id) throws IOException {
-        boolean isSucess = FtpUtil.deleteFile(host, port, username, password, basePath + publicFilePath, id);
+        boolean isSucess = false;
+        try {
+            isSucess = FtpUtil.deleteFile(host, port, username, password, privateFilePath, id);
+        } catch (Exception e) {
+            model.addAttribute("response", "删除文件失败");
+            return "message/404";
+        }
         if (isSucess) {
             int i=ftpFileService.deletePrivateFile(id);
             //数据库删除
             model.addAttribute("response","删除文件成功");
-            return "message/200";
+            return "message/200";  //返回到后台消息页面
         }
         model.addAttribute("response", "删除文件失败");
         return "message/404";
@@ -212,14 +229,20 @@ public class FtpFileController {
         List<FtpFile> files=null;
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
+        int count=0;
+        int totalpage=0;
         try {
             int ipage = Integer.parseInt(page);
             files=ftpFileService.queryPrivateFile(ipage,username);
+            count = ftpFileService.selectPrivateCount(username);
+            totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
         }catch (Exception e){
             model.addAttribute("response", "查询私有文件失败");
             return "message/404";
         }
         model.addAttribute("response", files);
+        model.addAttribute("totalpage",totalpage);
+        model.addAttribute("page", page);
         return "front/privateFile";
     }
 

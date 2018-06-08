@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/head :: head">
+</head>
+<link rel="stylesheet" type="text/css" href="/css/team.css">
+<script type="text/javascript" src="/js/news.js"></script>
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<!--新闻列表-->
+		<section class="main_content">
+			<div class="content_nav">
+				<span id="nav_pid" hidden th:text="${pid}">2</span>
+				<span id="nav_id" hidden th:text="${id}">1</span>
+				<!-- <div class="nav_head">新闻公告</div>
+				<ul class="nav_ul">
+					<li class="nav_li"><a href="main/querybycategory?id=1&pid=2&page=1">通知公告</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=2&pid=2&page=1">教学简报</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=3&pid=2&page=1">科研快讯</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=4&pid=2&page=1">桃李春风</a></li>
+					<li class="nav_li"><a href="main/querybycategory?id=5&pid=2&page=1">学子风采</a></li>
+				</ul> -->
+			</div>
+			<div class="news_content">
+				<div class="content_head">团队教师</div>
+				<div class="content_list">
+					<ul id = "team_list">
+						<li th:each="list : ${response}">
+							<a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" >
+								<div class = "photo"><img th:src="@{list.titleImage}"><span th:text="${list.title}"></span></div><p th:text="${list.abstractText}"></p>
+							</a>
+						</li>
+						<!--
+						<li>
+							<a href="">
+								<div class = "photo"><img src = "http://gispalab.uestc.edu.cn/u/cms/www/201508/23094229n0c3.jpg"><span>彭真明教授</span></div><p>彭真明(1966-)，博士，教授，博士生导师，湖南保靖人。美国电气与电子工程师协会（IEEE） 会员，美国光学学会（OSA）会员，中国宇航学会会员，中国光学工程学会委员，中国石油学会物探专委会委员，《石油地球物理勘探》编委。</p>
+							</a>
+						</li>
+						-->
+					</ul>
+				</div>
+				
+				<div class="content_button">
+					<span th:if="${page}  &gt; 1"><a class="next_page" th:href="@{/ftp/public/queryFile(page=${page-1})}">上一页</a></span>
+					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/ftp/public/queryFile(page=${page+1})}">下一页</a></span>
+					<!-- <input type="button" class="next_page" value="下一页"> -->
+					<input type="text" class="page_num">
+					<input type="button" class="jump_page" value="跳转">
+				</div>
+			</div>
+		</section>
+		
+	</section>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

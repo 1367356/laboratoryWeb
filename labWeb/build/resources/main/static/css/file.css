@@ -1,0 +1,329 @@
+.main .main_content{
+	height: 800px;
+	background-color: #fff;
+}
+/*------导航------base.css*/
+
+/*------表格主体------*/
+.main_content .content_right {
+	float: left;
+	width: 72%;
+}
+.main_content .content_right .content_head{
+	height: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #09588a;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 20px;
+	padding-top: 35px;
+	margin-bottom: 14px;
+}
+.main_content .content_right .content_head input[name='upload'],
+.main_content .content_right .content_head input[name='revise']{
+	float: right;
+	margin-right: 10px;
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #515151;
+	cursor: pointer;
+	background-color: transparent;
+}
+.main_content .content_right .content_list table{
+	width: 100%;
+	table-layout: fixed;
+	display: table;
+	margin-bottom: 100px;
+}
+.main_content .content_right .content_list table th{
+	font-size: 17px;
+	color: white;
+	height: 48px;
+	/*background-color: rgba(43,147,194,.8);*/
+	background-color: rgba(9,88,138,.9);
+	border-left: 1px solid #E4E4E4;
+	text-align: center;
+}
+.main_content .content_right .content_list table tr{
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.main_content .content_right .content_list table tr:nth-of-type(odd){
+	background-color: rgba(245,243,243,.7);
+}
+.main_content .content_right .content_list table td{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+	padding-right: 5px;
+	border-left: 1px solid #E4E4E4;
+}
+#public_list table td:first-Child,
+#private_list table td:first-Child{
+	text-align: left;
+	border-left: none;
+}
+.main_content .content_right .content_list table td a{
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*用户管理表格*/
+#user_list table th:first-Child,
+#user_list table td:first-Child{
+	border-left: none;
+}
+#user_list table th:last-Child,
+#user_list table td:last-Child{
+	width: 20px;
+	border-left: none;
+}
+#user_list table td:nth-last-Child(2){
+	text-align: left;
+}
+
+/*上传*/
+.show_upload {
+	display: none; 
+	width: 400px; 
+	height: 300px;
+	margin: 0 auto; 
+	border: 1px solid #999; 
+	position: absolute; 
+	top: 40%; 
+	left: 40%; 
+	z-index: 3; 
+	background: #fff;
+	border-radius: 5px;
+}
+.show_upload .upload_head{
+	height: 50px;
+	background-color: rgba(9,88,138,.9);
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 23px;
+	letter-spacing: 5px;
+}
+.show_upload .upload_head img{
+	position: absolute;
+	right: 3px;
+	top: 9px;
+	cursor: pointer;
+	background-color: transparent;
+	border: transparent;
+}
+.show_upload form input{
+	display: block;
+	margin: 0 auto;
+}
+.show_upload form input[name='file']{
+	position: absolute;
+	left: 50px;
+	top: 110px;
+	width: 300px;
+	height: 50px;
+	font-size: 18px;
+	opacity: 0;
+}
+.show_upload form .file_style{
+	display: block;
+	width: 300px;
+	height: 50px;
+	margin: 50px auto;
+	border: 1px solid rgba(9,88,138,.9);
+	border-radius: 3px;
+}
+.show_upload form .file_style .left_btn{
+	width: 80px;
+	line-height: 50px;
+	border-right: 1px solid rgba(9,88,138,.9);
+	display: block;
+	text-align: center;
+	float: left;
+}
+.show_upload form .file_style .right_text{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	padding-top: 0;
+	padding-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.show_upload form .file_style .not_null{
+	color: red;
+	display: none;
+}
+.show_upload form .tips_1,.show_upload form .tips_2{
+	color: red;
+	font-size: 14px;
+	position: absolute;
+	bottom: 10px;
+	left: 105px;
+	display: none;
+}
+.show_upload form input[name='confirm']{
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	letter-spacing: 10px;
+	text-align: center;
+	color: #fff;
+	border: none;
+	background-color: rgba(9,88,138,.9);
+	border-radius: 3px;
+	margin: 0 auto;
+	padding-left: 18px;
+}
+.show_upload form input[name='confirm']:hover{
+	color: rgba(9,88,138,.9);
+	background-color: #fff;
+	border: 1px solid rgba(9,88,138,.9);
+	border-radius: 3px;
+}
+
+/*基于上传修改 添加用户,修改密码*/
+#user{
+	height: 450px;
+}
+#user .file_style,#re_pwd .file_style{
+	width: 370px;
+	height: 40px;
+	border: none;
+	margin: 20px auto;
+}
+#user .file_style .left_btn,#re_pwd .file_style .left_btn{
+	width: 120px;
+	line-height: 40px;
+	/*border: 1px solid rgba(9,88,138,.9);*/
+	text-align: right;
+	border-right: none;
+	border-radius: 3px 0 0 3px;
+}
+#user form .file_style input,#re_pwd form .file_style input{
+	width: 220px;
+	height: 40px
+	line-height: 40px;
+	font-size: 17px;
+	color: gray;
+	display: inline-block;
+	padding: 10px 0 5px 5px;
+	border: none;
+	border-bottom: 1px solid rgba(9,88,138,.9);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#re_pwd{
+	height: 370px;
+}
+#re_pwd .file_style{
+	margin: 30px auto;
+}
+
+#bg{
+	background: #000; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width: 100%; 
+	filter: alpha(opacity=10); 
+	opacity: 0.3; 
+	display: block; 
+	z-index: 2;
+}
+/*------表格底部------base.css*/
+/*------删除------*/
+.main_content .content_right .content_list table td a.delete{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	float: right;
+	margin-top: 13px;
+	vertical-align: middle;
+	background: url(../img/delete.png) center no-repeat;
+	background-size: 20px;
+	cursor: pointer;
+}
+#user_list table td a.delete{
+	margin-top: 0;
+}
+.main_content .content_right .content_list table td a.delete:hover{
+	background: url(../img/delete_r.png) center no-repeat;
+	background-size: 20px;
+    animation: shake 0.5s;
+    -o-animation: shake 0.5s;
+    -webkit-animation: shake 0.5s;
+    -moz-animation: shake 0.5s;
+}
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-o-keyframes shake {
+    /* Opera */
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-webkit-keyframes shake {
+    /* Safari 和 Chrome */
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-moz-keyframes shake {
+    /* Firefox */
+    0%, 100% {
+        -moz-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}

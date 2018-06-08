@@ -11,8 +11,8 @@ public class NewsList {
     private String id;    //左方导航栏标识
     private String title;  //新闻标题
     private String date;  //新闻发布日期
-    private String titleImage;  //标题图
-    private String type;
+    private String titleImage;  //标题图,可以作为科研团队中的头像
+    private String type;        //文章类型
 
     @Override
     public String toString() {

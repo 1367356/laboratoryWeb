@@ -33,16 +33,53 @@ public class FtpController {
     @RequestMapping("/public/queryFile")
     public String queryPublicFile(Model model,String page) {
         List<FtpFile> files=null;
+
+        int count=0;
+        int totalpage=0;
+
         try {
             int ipage = Integer.parseInt(page);
             logger.debug("ipage"+ipage);
             files=ftpFileService.queryPublicFile(ipage);
+            count = ftpFileService.selectPublicCount();
+            totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
         }catch (Exception e){
             e.printStackTrace();
             model.addAttribute("response","查询公共文件出现异常");
             return "message/404";
         }
+        model.addAttribute("totalpage", totalpage);
+        model.addAttribute("page", page);
         model.addAttribute("response", files);
         return "front/publicFile";  //展示公有文件的页面
+    }
+    /**
+     * 后台系统公有文件查询
+     * @param page
+     * @return
+     */
+    @PreAuthorize("hasAuthority('ADMIN')")
+    @RequestMapping("/public/queryBackgroundPublicFile")
+    public String queryBackgroundPublicFile(Model model,String page) {
+        List<FtpFile> files=null;
+
+        int count=0;
+        int totalpage=0;
+
+        try {
+            int ipage = Integer.parseInt(page);
+            logger.debug("ipage"+ipage);
+            files=ftpFileService.queryPublicFile(ipage);
+            count = ftpFileService.selectPublicCount();
+            totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
+        }catch (Exception e){
+            e.printStackTrace();
+            model.addAttribute("response","查询公共文件出现异常");
+            return "message/404";
+        }
+        model.addAttribute("totalpage", totalpage);
+        model.addAttribute("page", page);
+        model.addAttribute("response", files);
+        return "background/publicFile";  //展示公有文件的页面
     }
 }

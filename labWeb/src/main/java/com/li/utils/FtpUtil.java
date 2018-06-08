@@ -164,7 +164,7 @@ public class FtpUtil {
 	 * @return
 	 */
 	public static boolean deleteFile(String host, int port, String username, String password, String remotePath,
-			String fileName) {
+			String fileName) throws Exception{
 		boolean result = false;
 		FTPClient ftp = new FTPClient();
 		try {
@@ -179,14 +179,15 @@ public class FtpUtil {
 				ftp.disconnect();
 				return result;
 			}
-			ftp.changeWorkingDirectory(remotePath);// 转移到FTP服务器目录
+			logger.debug("remotePath："+remotePath);
+//			remotePath=new String(remotePath.getBytes(),"ISO-8859-1");
+			boolean b = ftp.changeWorkingDirectory(remotePath);// 转移到FTP服务器目录,转换不到
+			logger.debug(b);
 			FTPFile[] fs = ftp.listFiles();
-			logger.debug(fileName);
+
+			logger.debug("fileName"+fileName);
 			for (FTPFile ff : fs) {
-//                String name = ff.getName();
-//                name = URLEncoder.encode(ff.getName(), "UTF-8");
-                logger.debug(ff.getName());
-				if (ff.getName().substring(0,ff.getName().lastIndexOf(".")).equals(fileName.substring(0,fileName.lastIndexOf(".")))) {
+				if (ff.getName().equals(fileName)) {
                     logger.debug("删除"+fileName);
 					ftp.deleteFile(ff.getName());
 					result = true;

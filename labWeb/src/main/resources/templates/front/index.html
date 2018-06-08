@@ -15,7 +15,7 @@
 <body>
 	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
-		<div class="logo"><img src="/img/webLogo.png"></div>
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
 		<section class="slideshow">
 			<ul>
@@ -41,9 +41,9 @@
 				</div>
 				<div class="for_two">
 					<h3>科研成果</h3>
-					<span class="more"><a href="/main/querybycategory?id=2&pid=3&page=1">更多&gt;&gt;</a></span>
+					<span class="more"><a href="/querybycategory?id=2&pid=3&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response1}" ><a th:href="@{/main/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response1}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
@@ -51,26 +51,26 @@
 			<div class="center_content">
 				<div class="for_one">
 					<h3>通知公告</h3>
-					<span class="more"><a href="/main/querybycategory?id=1&pid=2&page=1">更多&gt;&gt;</a></span>
+					<span class="more"><a href="/querybycategory?id=1&pid=2&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response2}" ><a th:href="@{/main/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response2}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
 				<div class="for_two">
 					<h3>热点新闻</h3>
-					<span class="more"><a href="/main/querybycategory?id=2&pid=2&page=1">更多&gt;&gt;</a></span>
+					<span class="more"><a href="/querybycategory?id=2&pid=2&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response3}" ><a th:href="@{/main/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response3}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="right_content">
 				<div class="right_cooperation">
-					<h3><a href="/main/querybycategory?id=1&pid=6&page=1">合作交流</a></h3>
+					<h3><a href="/querybycategory?id=1&pid=6&page=1">合作交流</a></h3>
 					<ul class="cooperation_list">
-						<li th:each="list : ${response4}" ><a th:href="@{/main/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response4}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
@@ -84,7 +84,7 @@
 					</ul>
 				</div> 
 				<div>
-					<h3><a href="/main/querybycategory?id=1&pid=7&page=1">资料下载</a></h3>
+					<h3><a href="/ftp/public/queryFile?page=1">资料下载</a></h3>
 				</div>
 			</div>
 		</section>

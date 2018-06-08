@@ -42,6 +42,7 @@ public class ForeController {
 
     @RequestMapping("/querybycategory")
     public String query(Model model, String pid, String id, String page) {
+        logger.debug(page);
         List<NewsList> newsLists = null;
         if (pid == null || id == null || page == null) {
             return "message/404";
@@ -67,6 +68,10 @@ public class ForeController {
         model.addAttribute("page", page);
         model.addAttribute("pid", pid);
         model.addAttribute("id", id);
+//        if(pid.equals("4")){
+//            logger.debug("返回到科研团队");
+//            return "front/team_info";
+//        }
         logger.debug("返回到news_info");
         return "front/news_info";
 //        }
@@ -91,7 +96,7 @@ public class ForeController {
         List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
         List<NewsList> newsLists2 = manageService.queryByCategory("1", "2", 1);
         List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
-        List<NewsList> newsLists4 = manageService.queryByCategory("1", "6", 1);
+        List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
         model.addAttribute("response1", newsLists1);
         model.addAttribute("response2", newsLists2);
         model.addAttribute("response3", newsLists3);

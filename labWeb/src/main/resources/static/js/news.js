@@ -61,7 +61,7 @@ $(document).ready(function() {
 	$('.jump_page').click(function(event) {
 		var page = $('input.page_num').val();
 		if(page){
-			$(location).attr('href', '/querybycategory?id=' + nav_pid + '&pid=' + nav_id + '&page=' + page);
+			$(location).attr('href', '/querybycategory?id=' + nav_id + '&pid=' + nav_pid + '&page=' + page);
 		}
 	});
 });

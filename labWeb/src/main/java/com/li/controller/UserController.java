@@ -78,16 +78,16 @@ public class UserController {
      * 用户列表
      * @param model
      * @param page
-     * @param pageSize
      * @return
      */
     @PreAuthorize("hasAuthority('ADMIN')")
     @RequestMapping(value = "/selectUser", method = RequestMethod.GET)  //提交注册
-    public String selectUserList(Model model,int page,int pageSize) {
-        pageSize=10;
+    public String selectUserList(Model model,int page) {
+        int pageSize=10;
         RowBounds rowBounds = new RowBounds(page, pageSize);
         List<User> users = userService.selectUserList(rowBounds);
-        return "admin/user-registration-result";
+        model.addAttribute("response", users);
+        return "background/userManage";
     }
 
     /**
@@ -97,6 +97,12 @@ public class UserController {
      */
     @RequestMapping(value = "/modifyPassword", method = RequestMethod.GET)
     public String modifyPassword(Model model) {
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userName = auth.getName();
+
+        model.addAttribute("response", userName);
+
         return "front/modifyPassword";
     }
 

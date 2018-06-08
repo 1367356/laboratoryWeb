@@ -21,4 +21,8 @@ public interface FtpFileMapper {
     int deletePublicFile(String id);
 
     int deletePrivateFile(String id);
+
+    int selectPublicCount();
+
+    int selectPrivateCount(String username);
 }

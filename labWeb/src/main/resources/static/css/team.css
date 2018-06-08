@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+.main .main_content{
+	overflow: hidden;
+}
+
+#team_list .photo {
+	display: inline-block;
+	float: left;
+	width: 110px;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+#team_list img {
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	height: 120px;
+	width: 90px;
+	display: block;
+}
+#team_list p {
+	word-wrap: break-word; 
+	word-break: normal; 
+	line-height: 170%;
+}
+
+/*
+.photo_container {
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	width: 140px;
+	padding: 10px;
+	margin: 5px 10px;
+	background-color: #f5f5f5;
+}
+.photo_container:hover {
+	background-color: #ddd;
+}
+.photo {
+	height: 160px;
+	width: 120px;
+	border-radius: 50%;
+}
+.tag {
+	height: 30px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 17px;
+	color: #444;
+	margin-bottom: 5px;
+}
+*/

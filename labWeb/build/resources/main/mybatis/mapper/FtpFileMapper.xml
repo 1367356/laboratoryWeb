@@ -43,6 +43,15 @@
     <select id="queryPublicFile" resultMap="FtpFileResultMap">
         select * from FtpPublicFile limit #{page},10
     </select>
+
+    <!-- 查询页数 -->
+    <select id="selectPublicCount" resultType="java.lang.Integer">
+        select count(*) from FtpPublicFile
+    </select>
+
+    <select id="selectPrivateCount" resultType="java.lang.Integer">
+        select count(*) from FtpPrivateFile where uploaduser=#{username}
+    </select>
     <!---->
     <!--<select id="queryNews" parameterType="java.lang.Long" resultMap="NewsResultMap" >-->
         <!--select-->

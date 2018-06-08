@@ -1,4 +1,20 @@
 @charset "utf-8";
+tml, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+ font-family: Helvetica,Tahoma,Arial,"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","WenQuanYi Micro Hei";
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: none; }
+/*ol { padding-left: 1.4em; list-style: decimal; }*/
+/*ul { padding-left: 1.4em; list-style:square; }*/
+q:before, q:after { content:''; }
+a{text-decoration: none;outline: none;}
+li{list-style: none;}
+button,input{outline: none;}
 /* CSS Document */
 * { 
 	font: 13px/1.5 '微软雅黑'; 
@@ -41,13 +57,18 @@ header .header_main .header_nav li{
 header .header_main .header_nav a{
 	color: #fff;
 	font-size: 1.2em;
+	padding: 2px 5px 4px 5px;
+}
+header .header_main .header_nav a:hover{
+	border: 1px solid #fff;
+	border-radius: 3px;
 }
 /* main */
 .main{
 	width: 1000px;
+	height: 720px;
 	margin: 0 auto;
 	padding: 10% 0;
-
 }
 	/* left */
 .main .login_img {
@@ -102,12 +123,15 @@ header .header_main .header_nav a{
 	color:#444; 
 	padding:10px 0 20px;
 }
-.main .login_box .login_form{
+.main .login_box form {
 	display: block;
-	margin: 0 50px;
+	margin: 0 auto;
 }
-
-#password_text{
+.main .login_box form fieldset {
+	border: none;
+	margin: 5px 10px;
+}
+.main .login_box form fieldset .form-group input { 
 	border: 1px solid #DCDEE0; 
 	vertical-align: middle; 
 	border-radius: 3px; 
@@ -121,28 +145,34 @@ header .header_main .header_nav a{
 	display: block; 
 	line-height:50px;
 }
-input[type=text], input[type=password] { 
-	border: 1px solid #DCDEE0; 
-	vertical-align: middle; 
-	border-radius: 3px; 
-	height: 50px; 
-	padding: 0px 16px; 
-	font-size: 14px; 
-	color: #888; 
-	outline:none; 
-	width:100%;
-	margin-bottom: 15px;
-	display: block; 
-	line-height:50px;
+.main .login_box form fieldset .form-group input:focus{
+	border: 1px solid  rgba(18, 46, 103,.7);
 }
-input[type=text]:focus, input[type=password]:focus{ 
-	border: 1px solid #93defe; 
+.main .login_box form fieldset .form-group input[type=checkbox]{
+	width: 18px;
+	display: inline-block;
+	float: left;
+	margin-top: -20px;
+	margin-right: 5px;
 }
-input[type=submit], input[type=button] { 
+.main .login_box form fieldset .form-group span{
+	float: left;
+	margin-top: -5px;
+	letter-spacing: 1px;
+	color: #888;
+}
+.main .login_box form fieldset .form-group a{
+	float: right;
+}
+.main .login_box form fieldset .form-group a span:hover{
+	color:  rgba(18, 46, 103,.7);
+}
+.main .login_box form fieldset input[type=submit] { 
 	display: inline-block; 
 	vertical-align: middle; 
 	padding: 12px 24px; 
 	margin: 0px; 
+	margin-top: -10px;
 	font-size:16px; 
 	line-height: 24px; 
 	text-align: center; 
@@ -157,13 +187,26 @@ input[type=submit], input[type=button] {
 	outline:none; 
 	width:100%; 
 }
+.main .login_box form fieldset input[type=submit]:hover{
+	color: #ffffff; 
+	background-color: rgba(18, 46, 103,.5); 
+}
+.main .login_box form fieldset .alert span{
+	color: red;
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 15px;
+}
 /* footer */
 footer{
 	width: 100%;
-	height: 150px;
+	height: 200px;
 	clear: both;
-	position: fixed;
-	bottom: 0;
+	overflow: hidden;
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
 	background-color: rgba(18, 46, 103,.7);
 }
 footer .foot_content{

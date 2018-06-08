@@ -17,4 +17,8 @@ public interface FtpFileService {
     int deletePublicFile(String id);
 
     int deletePrivateFile(String id);
+
+    int selectPublicCount();
+
+    int selectPrivateCount(String username);
 }

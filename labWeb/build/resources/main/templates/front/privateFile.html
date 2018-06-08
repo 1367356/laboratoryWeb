@@ -7,7 +7,7 @@
 <body>
 	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
-		<div class="logo"><img src="/img/webLogo.png"></div>
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
 		<!--新闻列表-->
 		<section class="main_content">
@@ -40,9 +40,9 @@
 				</div>
 
 				<div class="content_button">
-					<span th:if="${page gt 1}"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page-1})}">上一页</a></span>
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}-1)}">上一页</a></span>
 					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
-					<span th:if="${totalpage gt page}"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page+1})}">下一页</a></span>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}+1)}">下一页</a></span>
 					<!-- <input type="button" class="next_page" value="下一页"> -->
 					<input type="text" class="page_num">
 					<input type="button" class="jump_page" value="跳转">
