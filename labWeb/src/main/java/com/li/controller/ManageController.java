@@ -85,7 +85,7 @@ public class ManageController {
      * 删除一条新闻
      * @return           响应体
      */
-    @RequestMapping("/delete")
+    @RequestMapping("/deleteNews")
     public String delete(Model model, String pid,String id,int page,String htmlid) {
 
         long lhtmlid = Long.parseLong(htmlid);
@@ -102,7 +102,7 @@ public class ManageController {
      * 修改一条新闻
      * @return           响应体
      */
-    @RequestMapping(value = "/update",method = RequestMethod.GET)
+    @RequestMapping(value = "/updateNews",method = RequestMethod.GET)
     public String update(Model model, String htmlid) {
 
         long lhtmlid = Long.parseLong(htmlid);
@@ -114,7 +114,7 @@ public class ManageController {
      * 修改一条新闻
      * @return           响应体
      */
-    @RequestMapping(value = "/update",method = RequestMethod.POST)
+    @RequestMapping(value = "/updateNews",method = RequestMethod.POST)
     public String update(Model model, InsertParameter parameter) {
 
         int i=manageService.update(parameter);
@@ -134,7 +134,7 @@ public class ManageController {
      * @param page
      * @return
      */
-    @RequestMapping("/queryBackList")
+    @RequestMapping("/querybyBackList")
     public String query(Model model,String pid,String id,String page) {
         List<NewsList> newsLists=null;
         if (pid == null || id == null || page == null) {
@@ -149,7 +149,16 @@ public class ManageController {
             return "message/403";
         }
             model.addAttribute("response",newsLists);
-            return "background/back_new_list";
+            int count = manageService.selectCount(pid, id);
+            logger.debug("pid=" + pid + "id=" + id + "的总数count:" + count);
+            int totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
+            model.addAttribute("totalpage", totalpage);
+            model.addAttribute("page", page);
+            model.addAttribute("pid", pid);
+            model.addAttribute("id", id);
+            logger.debug("querybyBackList");
+
+            return "background/manage_info";
 
 //        NewsList newsList = newsLists.get(0);
 //        long htmlid = newsList.getHtmlid();

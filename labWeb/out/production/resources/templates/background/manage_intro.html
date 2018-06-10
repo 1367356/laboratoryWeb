@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/head :: head">
+</head>
+<link rel="stylesheet" type="text/css" href="/css/intro.css">
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><img src="/img/webLogo.png"></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<section class="main_content">
+			<div class="intro_head">实验室简介<span id="edit">保存</span></div>
+			<!-- <div class="intro_content" th:utext="${response}">
+				 
+			</div> -->
+		</section>
+	</section>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
