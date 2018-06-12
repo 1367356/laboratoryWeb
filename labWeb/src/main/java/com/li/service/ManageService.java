@@ -12,7 +12,7 @@ public interface ManageService {
 
     int insertNewsList(InsertParameter parameter);  //向索引列表中添加
 
-    int delete(long htmlid);
+    int delete(long htmlid) throws Exception;
 
     List<NewsList> queryByCategory(String pid, String id, int page);
 

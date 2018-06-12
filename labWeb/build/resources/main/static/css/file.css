@@ -66,24 +66,27 @@
 	padding-right: 5px;
 	border-left: 1px solid #E4E4E4;
 }
-#public_list table td:first-Child,
-#private_list table td:first-Child{
-	text-align: left;
-	border-left: none;
-}
 .main_content .content_right .content_list table td a{
 	font-size: 15px;
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
 }
-/*用户管理表格*/
-#user_list table th:first-Child,
-#user_list table td:first-Child{
+#public_list table td:first-Child, #private_list table td:first-Child{
+	text-align: left;
 	border-left: none;
 }
-#user_list table th:last-Child,
-#user_list table td:last-Child{
+#public_list table th:nth-last-Child(2), #private_list table th:nth-last-Child(2),
+#public_list table td:nth-last-Child(2), #private_list table td:nth-last-Child(2){
+	padding-left: 15px;
+}
+/*用户管理表格*/
+#user_list table th:first-Child, #user_list table td:first-Child{
+	border-left: none;
+}
+#user_list table th:last-Child, #user_list table td:last-Child,
+#public_list table th:last-Child, #public_list table td:last-Child,
+#private_list table th:last-Child, #private_list table td:last-Child{
 	width: 20px;
 	border-left: none;
 }
@@ -253,7 +256,7 @@
 	float: right;
 	margin-top: 13px;
 	vertical-align: middle;
-	background: url(../img/delete.png) center no-repeat;
+	background: url(/img/delete.png) center no-repeat;
 	background-size: 20px;
 	cursor: pointer;
 }
@@ -261,7 +264,7 @@
 	margin-top: 0;
 }
 .main_content .content_right .content_list table td a.delete:hover{
-	background: url(../img/delete_r.png) center no-repeat;
+	background: url(/img/delete_r.png) center no-repeat;
 	background-size: 20px;
     animation: shake 0.5s;
     -o-animation: shake 0.5s;

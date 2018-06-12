@@ -237,6 +237,7 @@ public class FtpFileController {
             count = ftpFileService.selectPrivateCount(username);
             totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
         }catch (Exception e){
+            e.printStackTrace();
             model.addAttribute("response", "查询私有文件失败");
             return "message/404";
         }

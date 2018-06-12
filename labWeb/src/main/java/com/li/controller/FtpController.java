@@ -20,11 +20,6 @@ public class FtpController {
     @Autowired
     FtpFileServiceImpl ftpFileService;
 
-    @RequestMapping("/upload")
-    public String upload(Model model) {
-        return "background/upload";
-    }
-
     /**
      * 公有文件查询
      * @param page

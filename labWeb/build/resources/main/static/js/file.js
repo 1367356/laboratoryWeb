@@ -39,7 +39,7 @@ $(document).ready(function(){
 	});
 	//删除资料
 	$('.delete').click(function(){
-		if (confirm('确认删除该资料？')) {
+		if (confirm('确认删除？')) {
 			return true;
 		}
 		else {

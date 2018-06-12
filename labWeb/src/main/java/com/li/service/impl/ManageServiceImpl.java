@@ -34,9 +34,12 @@ public class ManageServiceImpl implements ManageService{
         return i;
     }
 
+    @Transactional(value="txManager1")
     @Override
-    public int delete(long htmlid) {
-        return manageMapper.delete(htmlid);
+    public int delete(long htmlid) throws Exception{
+        int i1=manageMapper.deleteNewshtmlid(htmlid);
+        int i2=manageMapper.deleteNewslistHtmlid(htmlid);
+        return i1;
     }
 
     @Override

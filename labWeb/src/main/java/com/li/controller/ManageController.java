@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
@@ -86,16 +87,21 @@ public class ManageController {
      * @return           响应体
      */
     @RequestMapping("/deleteNews")
-    public String delete(Model model, String pid,String id,int page,String htmlid) {
+    public String delete(RedirectAttributes model, String pid, String id, int page, String htmlid) {
 
         long lhtmlid = Long.parseLong(htmlid);
-        int i=manageService.delete(lhtmlid);
-        if (i != 1) {
+        int i= 0;
+        try {
+            i = manageService.delete(lhtmlid);
+        } catch (Exception e) {
+            model.addAttribute("response","删除失败");
             return "message/404";
         }
-        List<NewsList> list=manageService.queryByCategory(pid,id,page);
-        model.addAttribute("response",list);
-        return "background/backdisplay";
+        logger.debug("删除" + i);
+        model.addAttribute("pid", pid);
+        model.addAttribute("id", id);
+        model.addAttribute("page", page);
+        return "redirect:/background/querybyBackList";  //重定向
     }
 
     /**
@@ -103,7 +109,7 @@ public class ManageController {
      * @return           响应体
      */
     @RequestMapping(value = "/updateNews",method = RequestMethod.GET)
-    public String update(Model model, String htmlid) {
+    public String update(Model model, String htmlid,String pid,String id) {
 
         long lhtmlid = Long.parseLong(htmlid);
         News news = manageService.backQuery(lhtmlid);
@@ -167,26 +173,26 @@ public class ManageController {
 //        return "front/displayNews";
 //        return newsLists.toString();
     }
-
-    /**
-     * 后台查询一条新闻
-     * @return           响应体
-     */
-    @RequestMapping(value = "/backQuery",method = RequestMethod.GET)
-    public String query(Model model,String htmlid) {
-
-        long lhtmlid = Long.parseLong(htmlid);
-        logger.debug(lhtmlid);
-        News news = manageService.backQuery(lhtmlid);
-
-
-//        if (i != 1) {
-//            return "message/404";
-//        }
-
-        model.addAttribute("response",news);
-        return "front/displayNews";
-//        logger.debug(news.getContent());
-//        return news.toString();
-    }
+//
+//    /**
+//     * 后台查询一条新闻
+//     * @return           响应体
+//     */
+//    @RequestMapping(value = "/backQuery",method = RequestMethod.GET)
+//    public String query(Model model,String htmlid) {
+//
+//        long lhtmlid = Long.parseLong(htmlid);
+//        logger.debug(lhtmlid);
+//        News news = manageService.backQuery(lhtmlid);
+//
+//
+////        if (i != 1) {
+////            return "message/404";
+////        }
+//
+//        model.addAttribute("response",news);
+//        return "front/displayNews";
+////        logger.debug(news.getContent());
+////        return news.toString();
+//    }
 }

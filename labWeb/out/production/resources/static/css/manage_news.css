@@ -1,0 +1,114 @@
+.main_content{
+	background-color: #fff;
+}
+#edit,
+#add{
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 5px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #515151;
+    cursor: pointer;
+}
+.main_content .content_right .content_list li::before{
+	display: inline-block;
+	content: '';
+}
+.content_right .content_list a.delete{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	vertical-align: middle;
+	background: url(../img/delete.png) center no-repeat;
+	background-size: 20px;
+	cursor: pointer;
+}
+.main_content .content_right .content_list li span.edit{
+    display: inline-block;
+    float: none;
+    width: 18px;
+    height: 18px;
+    padding-right: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url(../img/edit.png) center no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+}
+.main_content .content_right .content_list li span.edit:hover{
+    background: url(../img/edit_r.png) center no-repeat;
+    background-size: 20px;
+}
+.content_right .content_list a.delete:hover{
+	background: url(../img/delete_r.png) center no-repeat;
+	background-size: 20px;
+    animation: shake 0.5s;
+    -o-animation: shake 0.5s;
+    -webkit-animation: shake 0.5s;
+    -moz-animation: shake 0.5s;
+}
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-o-keyframes shake {
+    /* Opera */
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-webkit-keyframes shake {
+    /* Safari 和 Chrome */
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-moz-keyframes shake {
+    /* Firefox */
+    0%, 100% {
+        -moz-transform: translateX(0);
+    }
+    10%,
+    50%,
+    90% {
+        -webkit-transform: translateX(-3px);
+    }
+    30%,
+    70% {
+        -webkit-transform: translateX(3px);
+    }
+}

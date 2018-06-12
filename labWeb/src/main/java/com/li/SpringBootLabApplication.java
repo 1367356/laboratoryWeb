@@ -21,7 +21,6 @@ public class SpringBootLabApplication {
     public static void main(String[] args){
         SpringApplication.run(SpringBootLabApplication.class, args);
     }
-
     // 创建事务管理器1
     @Bean(name = "txManager1")
     public PlatformTransactionManager txManager(DataSource dataSource) {

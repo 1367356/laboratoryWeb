@@ -10,16 +10,14 @@ import java.util.Date;
 public class InsertParameter {
     private String pid;  //pid
     private String id;   //id
-    private long htmlid;  //前台根据当前系统毫秒时间生成
-    private String date;  //数据库中使用timestamp,默认为now()  ,post.setDateCreated(new Timestamp(System.currentTimeMillis())). 数据库sql `date_created`       DATETIME     NOT NULL,
-    //        <result property="dateCreated" column="date_created"/>
+    private long htmlid;  //前台根据当前系统毫秒时间生成，后台生成
+    private String date;  //数据库中使用timestamp,默认为now()
     private String publisher;   //默认
     private String title;
     private String content;
-    private String type;   //类型
-    private String abstractText;
-    private int count;   //浏览次数
-
+    private String type;   //类型  ，团队管理，group by
+    private String abstractText;   //摘要
+    private int count;   //浏览次数，
     private String titleImage;  //标题图
 
 

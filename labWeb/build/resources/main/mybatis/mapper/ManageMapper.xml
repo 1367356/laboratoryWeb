@@ -31,6 +31,16 @@
     delete from news where htmlid=#{htmlid}
   </delete>
 
+  <!--从news删除一条新闻-->
+  <delete id="deleteNewshtmlid" parameterType="java.lang.Long">
+    delete from news where htmlid=#{htmlid}
+  </delete>
+
+  <!--从列表中删除一条新闻-->
+  <delete id="deleteNewslistHtmlid" parameterType="java.lang.Long">
+    delete from newslist where htmlid=#{htmlid}
+  </delete>
+
   <!--查找新闻列表，根据页数查询-->
   <select id="queryByCategory" resultMap="NewsListMap">
     select * from (select * from newslist where id=#{id} and pid=#{pid} order by htmlid desc)t1 limit #{page},10;

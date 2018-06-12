@@ -4,16 +4,12 @@
 		<meta charset="UTF-8"> 
 		<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
 		<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
-		<title>电子科技大学图形图像与信号应用处理研究室</title>
-		<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
+		<title>电子科技大学图形图像与信号应用处理研究室管理员系统</title>
+		<link rel="icon" href="/img/logo.ico" type="/image/x-icon"/>
 		<link rel="stylesheet" type="text/css" href="/css/login.css">
 		<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				console.log($(window).height());
-				$('body').css('height', $(window).height() + 'px');
-			});
-		</script>
+		<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/js/login.js"></script>
 	</head>
 
 	<body>
@@ -21,7 +17,7 @@
 			<div class="header_main">
 				<ul class="header_nav">
 					<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
-					<li><a href="http://k19847n443.51mypc.cn:37109/home">实验室主页</a></li>
+					<li><a href="/index">实验室主页</a></li>
 				</ul>
 			</div>
 		</header>
@@ -29,26 +25,27 @@
 		    <div class="login_img"><img src="/img/login-img.png" /></div>
 		    <div class="login_box">
 		        <div class="login_logo"><a href="#"><img src="/img/login_logo.png" /></a></div>
-				<div class="login_name"><p>用户登录</p></div>
+				<div class="login_name"><p>登录</p></div>
 				<form method="post">
 					<fieldset>
-						<div th:if="${param.error}">
-							<div class="alert alert-danger">
-								用户名或者密码不正确。
-							</div>
-						</div>
-						<div th:if="${param.logout}">
-							<div class="alert alert-info">
-								你已经登出。
-							</div>
-						</div>
 						<div class="form-group">
 							<input name="username" id="username" type="text" class="form-control" autofocus="autofocus" placeholder="用户名或Email"/>
 						</div>
 						<div class="form-group">
 							<input name="password" id="password" type="password" class="form-control" placeholder="密码"/>
 						</div>
+						<div class="form-group">
+							<input type="checkbox" name="ck_rmbUser" id="ck_rmbUser">
+							<span>记住用户名和密码</span>
+							<a href="#"><span>忘记密码？</span></a>
+						</div>
 						<input class="btn btn-success" type="submit" value="登录" />
+						<div th:if="${param.error}" class="alert alert-danger" hidden>
+							<span>用户名或者密码不正确！</span>
+						</div>
+						<div th:if="${param.logout}" class="alert alert-info" hidden>
+							<span>你已经登出！</span>
+						</div>
 					</fieldset>
 				</form>
 		    </div>

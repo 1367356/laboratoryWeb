@@ -20,7 +20,7 @@ import java.nio.file.Paths;
  * 图片上传控制器
  */
 @Controller
-@RequestMapping("main")
+@RequestMapping("image")
 public class NewsImageController {
 
     private final ResourceLoader resourceLoader;
@@ -96,28 +96,28 @@ public class NewsImageController {
         }
     }
 
-
-
     //上传的方法,成功，中英文都可以
     @RequestMapping(method = RequestMethod.POST, value = "/uploadNewsImage")
+    @ResponseBody
     public String handleFileUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes, HttpServletRequest request) {
 //        System.out.println(request.getParameter("member"));
         if (!file.isEmpty()) {
-
             try {
                 Files.copy(file.getInputStream(), Paths.get(imagesBasePath, file.getOriginalFilename()));
-                redirectAttributes.addFlashAttribute("message",
-                        "You successfully uploaded " + file.getOriginalFilename() + "!");
+                return "/image/displayImage/"+file.getOriginalFilename();
+//                redirectAttributes.addFlashAttribute("message",
+//                        "You successfully uploaded " + file.getOriginalFilename() + "!");
             } catch (IOException|RuntimeException e) {
-                redirectAttributes.addFlashAttribute("message", "Failued to upload " + file.getOriginalFilename() + " => " + e.getMessage());
+                    e.printStackTrace();
+                    return "上传图片出现异常";
             }
         } else {
             redirectAttributes.addFlashAttribute("message", "Failed to upload " + file.getOriginalFilename() + " because it was empty");
         }
 
 //        return "redirect:/redirect";
-        return "home";
+        return "上传失败";
     }
 
 }

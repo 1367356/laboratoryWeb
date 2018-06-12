@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <body>
     <header th:fragment="header">
 		<div class="h_main">
 			<ul class="header_nav">
 				<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
-				<li><a href="/admin/login">管理登陆</a></li>
+				<li><a href="/admin/login">管理登录</a></li>
 			</ul>
-			<form class="search_box" action="">
-				<input type="text" placeholder="搜索" class="search" name="word" />
-				<button class="search_button" type="submit"/></button>
-			</form>
+			<ul sec:authorize="isAnonymous()" >
+				<li><a href="">用户登录</a></li>
+			</ul>
+			<ul sec:authorize="isAuthenticated()">
+				<li><a href="">登出</a></li>
+				<li><a href="">修改密码</a> </li>
+			</ul>
 		</div>
 	</header>
 </body>

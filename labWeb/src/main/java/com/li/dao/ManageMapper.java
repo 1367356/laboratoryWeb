@@ -29,4 +29,7 @@ public interface ManageMapper {
 
     int selectCount(@Param("pid") String pid, @Param("id") String id);
 
+    int deleteNewshtmlid(long htmlid);
+
+    int deleteNewslistHtmlid(long htmlid);
 }

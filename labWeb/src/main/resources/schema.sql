@@ -17,6 +17,19 @@ CREATE TABLE `NEWSLIST`(
   PRIMARY KEY (`htmlid`)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
+-- 创建科研团队表
+DROP TABLE IF EXISTS `researchTeam`;
+CREATE TABLE `researchTeam`(
+  `htmlid`              BIGINT       NOT NULL,
+  `pid`                 VARCHAR(5) NOT NULL,
+  `id`               VARCHAR(5) NOT NULL,
+  `title`            VARCHAR(255) DEFAULT NULL,
+  `date_created`       date     NOT NULL,
+  `titleImage`       VARCHAR(50) DEFAULT NULL,
+  `type`             VARCHAR(50) DEFAULT NULL,
+  PRIMARY KEY (`htmlid`)
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
 -- 创建新闻表
 DROP TABLE IF EXISTS `NEWS`;
 CREATE TABLE `NEWS` (

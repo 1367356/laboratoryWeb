@@ -18,68 +18,12 @@
 
 <body>
 	<!-- <header th:replace="fragments/header :: header"></header> -->
-	<header>
-		<div class="h_main">
-			<ul class="header_nav">
-				<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
-				<li><a href="">管理登陆</a></li>
-			</ul>
-			<form class="search_box" action="">
-				<input type="text" placeholder="搜索" class="search" name="word" />
-				<button class="search_button" type="submit"/></button>
-			</form>
-		</div>
-	</header>
+	<header th:replace="manage_fragments/header :: header"></header>
 	<section class="main">
 		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<!-- <nav th:replace="fragments/nav :: nav"></nav> -->
-		<nav>
-		<ul>
-			<li class="nav_item"><a href="/main/querybycategory?id=1&pid=1&page=1">实验室简介</a></li><!--
-			--><li class="nav_item">
-				<a href="/main/querybycategory?id=1&pid=2&page=1">新闻公告</a>
-				<ul class="child_nav">
-					<li class="child_item"><a href="/main/querybycategory?id=1&pid=2&page=1">通知公告</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=2&pid=2&page=1">教学简报</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=3&pid=2&page=1">科研快讯</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=4&pid=2&page=1">桃李春风</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=5&pid=2&page=1">学子风采</a></li>
-				</ul>
-			</li><!--
-			--><li class="nav_item">
-				<a href="/main/querybycategory?id=1&pid=3&page=1">科学研究</a>
-				<ul class="child_nav">
-					<li class="child_item"><a href="/main/querybycategory?id=1&pid=3&page=1">研究领域</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=2&pid=3&page=1">科研项目</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=3&pid=3&page=1">学术论文</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=4&pid=3&page=1">获奖</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=5&pid=3&page=1">专利</a></li>
-				</ul>
-			</li><!--
-			--><li class="nav_item">
-				<a href="/main/querybycategory?id=1&pid=4&page=1">科研团队</a>
-				<ul class="child_nav">
-					<li class="child_item"><a href="/main/querybycategory?id=1&pid=4&page=1">团队教师</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=2&pid=4&page=1">博士后</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=3&pid=4&page=1">在读博士</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=4&pid=4&page=1">在读硕士</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=5&pid=4&page=1">光电菁英</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=6&pid=4&page=1">毕业学生</a></li>
-				</ul>
-			</li><!--
-			--><li class="nav_item">
-				<a href="/main/querybycategory?id=1&pid=5&page=1">人才培养</a>
-				<ul class="child_nav">
-					<li class="child_item"><a href="/main/querybycategory?id=1&pid=5&page=1">本科教学</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=2&pid=5&page=1">菁英计划</a></li>
-					<li class="child_item"><a href="/main/querybycategory?id=3&pid=5&page=1">研究生</a></li>
-				</ul>
-			</li><!--
-			--><li class="nav_item"><a href="/main/querybycategory?id=1&pid=6&page=1">合作交流</a></li><!--
-			--><li class="nav_item"><a href="/main/querybycategory?id=1&pid=7&page=1">资料下载</a></li><!--
-			--><li class="nav_item"><a href="/main/querybycategory?id=1&pid=8&page=1">留言板</a></li>
-		</ul>
-	</nav>
+		<nav th:replace="manage_fragments/nav :: nav"></nav>
+
 		
 
 		<!--下载列表-->
@@ -151,14 +95,7 @@
 	</section>
 	<div id="bg"></div>
 	<!-- <footer th:replace="fragments/footer :: footer"></footer> -->
-	 <footer>
-		<div class="foot_content">
-			<div class="lab_name">图形图像与信号处理应用研究室</div>
-			<div class="lab_phone">联系电话：×××-××××××××</div>
-			<div class="lab_address">地址：电子科技大学沙河校区逸夫楼</div>
-			<p class="studio">技术支持：智行工作室</p>
-		</div>
-	</footer>
+	<footer th:replace="fragments/footer :: footer"></footer>
 	<script type="text/javascript" src="/js/file.js"></script>
 </body>
 </html>

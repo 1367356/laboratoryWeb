@@ -5,7 +5,7 @@ import com.li.pojo.User;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args){
@@ -35,5 +35,32 @@ public class Test {
         SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
     //格式化当前日期
         String date = SimpleDateFormat.format(current_date.getTime());
+    }
+
+    void test3() {
+
+        Map map = new HashMap<String,List>();
+        List list2016 = new ArrayList<>();
+        map.put("2016",list2016); //2016届学生列表
+        List list2017 = new ArrayList<>();
+        map.put("2017",list2017);
+
+    }
+    void test4() {
+
+        List<List> listClass = new ArrayList();
+        List list2016 = new ArrayList<>();  //2016届学生列表
+        List list2017 = new ArrayList<>();
+        listClass.add(list2016);
+        listClass.add(list2017);
+
+        List typeList = new ArrayList();
+        typeList.add("2016");
+        typeList.add("2017");
+
+        List list = new ArrayList();
+        list.add(typeList);
+        list.add(listClass);
+
     }
 }

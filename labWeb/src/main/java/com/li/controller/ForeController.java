@@ -11,8 +11,10 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -36,19 +38,40 @@ public class ForeController {
      * @return
      */
     @RequestMapping("home")
-    public String home(Model model) {
+    public String home(RedirectAttributes model) {
+
+        model.addAttribute("id", "1");
+        model.addAttribute("pid","2");
+
+        return "redirect:/hometest";
+    }
+    /**
+     * 测试各个html文件用。
+     * @param model
+     * @return
+     */
+    @RequestMapping("hometest")
+    public String hometest(Model model,  String id, String pid) {
+
+        logger.debug(id);
+        model.addAttribute("id", id);
+        model.addAttribute("pid",pid);
         return "home";
     }
+
+
+
 
     @RequestMapping("/querybycategory")
     public String query(Model model, String pid, String id, String page) {
         logger.debug(page);
         List<NewsList> newsLists = null;
+        int ipage = Integer.parseInt(page);
         if (pid == null || id == null || page == null) {
             return "message/404";
         }
+
         try {
-            int ipage = Integer.parseInt(page);
             newsLists = manageService.queryByCategory(pid, id, ipage);
             if (pid.equals("1") && id.equals("1")) {
                 long htmlid = newsLists.get(0).getHtmlid();

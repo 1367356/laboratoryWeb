@@ -36,10 +36,12 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         logger.debug("getPassword"+user.getPassword());
         user.setPassword(bCryptPasswordEncoder.encode(userDto.getPassword()));  //保存时应该将密码编码
-
         user.setUserName(userDto.getUserName());
-//        user.setRoles("USER,ADMIN");
-        user.setRoles(userDto.getRoles());  //设置用户权限
+        if (userDto.getRoles() == null) {
+            user.setRoles("USER");
+        }else {
+            user.setRoles(userDto.getRoles());  //设置用户权限
+        }
         int affectedRow = userMapper.save(user);
         String registrationResult = affectedRow == 1 ? "success" : "failure";
 //        attributes.put("userRegistrationResult", registrationResult);

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.dao.ResearchTeamMapper" >
+
+  <resultMap id="ResearchTeamMap" type="com.li.pojo.ResearchTeam">
+    <result property="htmlid" column="htmlid"/>
+    <result property="id" column="id"/>
+    <result property="pid" column="pid"/>
+    <result property="title" column="title"/>
+    <result property="date" column="date_created"/>
+    <result property="titleImage" column="titleImage"/>
+  </resultMap>
+
+
+  <sql id="newsColumn" >
+    htmlid,count,publisher,title,type,abstractText,content,date_created
+  </sql>
+
+  <insert id="insertNews" parameterType="com.li.pojo.InsertParameter">
+    insert into news(pid,id,htmlid,count,publisher,title,type,abstractText,content,date_created) values
+    (#{newsParameter.pid},#{newsParameter.id},#{newsParameter.htmlid},#{newsParameter.count},#{newsParameter.publisher},#{newsParameter.title},
+    #{newsParameter.type},#{newsParameter.abstractText},#{newsParameter.content},#{newsParameter.date})
+  </insert>
+
+  <!--插入-->
+  <insert id="insertResearchTeam" parameterType="com.li.pojo.InsertParameter">
+    insert into researchTeam values(#{newsListParameter.htmlid},#{newsListParameter.pid},#{newsListParameter.id},#{newsListParameter.title},#{newsListParameter.date},#{newsListParameter.titleImage},#{newsListParameter.type})
+  </insert>
+
+  <!--从news删除一条新闻-->
+  <delete id="deleteNewshtmlid" parameterType="java.lang.Long">
+    delete from news where htmlid=#{htmlid}
+  </delete>
+
+  <!--从列表中删除一条新闻-->
+  <delete id="deleteResearchTeamHtmlid" parameterType="java.lang.Long">
+    delete from researchTeam where htmlid=#{htmlid}
+  </delete>
+
+
+  <!--查找新闻列表，根据页数查询-->
+  <select id="query" parameterType="string" resultType="string">
+    select distinct type from researchTeam;
+  </select>
+
+  <!--查找新闻列表，根据页数查询-->
+  <select id="queryGroup" resultMap="ResearchTeamMap">
+      select * from researchTeam where type=#{next};
+  </select>
+    <!--<select id="queryByCategory" resultMap="NewsListMap">-->
+
+  <!--修改数据-->
+  <update id="update">
+    update news set
+    htmlid=#{teamParameter.htmlid},
+    count=#{teamParameter.count},
+    publisher=#{teamParameter.publisher},
+    title=#{teamParameter.title},
+    TYPE#{teamParameter.TYPE},
+    abstract=#{teamParameter.abstractText},
+    content#{teamParameter.content},
+    date_created=#{teamParameter.date}
+    where htmlid=#{teamParameter.htmlid}
+  </update>
+
+
+</mapper>
