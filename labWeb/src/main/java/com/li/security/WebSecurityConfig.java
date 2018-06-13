@@ -54,10 +54,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         		.antMatchers("/user/registration").permitAll()
         		.antMatchers("/avatar/**").permitAll() // temp
         		.antMatchers("/visitor/**").permitAll() // temp
-//        		.antMatchers("/admin/**").hasAnyRole("SUPER","USER")
-//        		.antMatchers("/admin/**").
-//        		.antMatchers("/admin/**").hasAnyRole(s)
-//            .anyRequest().authenticated() // every request requires the user to be authenticated
             .anyRequest().permitAll() // every request requires the user to be authenticated
             		.and()
             .formLogin()
@@ -68,6 +64,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	            .invalidateHttpSession(true)
 	            .clearAuthentication(true)
 	            .logoutSuccessUrl("/?logout")           //登出
-				.permitAll();
+				.permitAll()
+				.and()
+				.rememberMe()
+				.tokenValiditySeconds(1209600);
     }
 }

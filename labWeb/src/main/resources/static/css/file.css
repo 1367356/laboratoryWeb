@@ -66,30 +66,32 @@
 	padding-right: 5px;
 	border-left: 1px solid #E4E4E4;
 }
+/*table第一列去左边框*/
+.main_content .content_right .content_list table th:first-Child,
+.main_content .content_right .content_list table td:first-Child{
+	border-left: none;
+}
+/*删除按钮*/
+.main_content .content_right .content_list table th:last-Child,
+.main_content .content_right .content_list table td:last-Child{
+	width: 20px;
+	border-left: none;
+}
 .main_content .content_right .content_list table td a{
 	font-size: 15px;
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
 }
-#public_list table td:first-Child, #private_list table td:first-Child{
-	text-align: left;
-	border-left: none;
+/*公有文件管理表格*/
+#public_list_front table th:last-Child, #public_list_front table td:last-Child{
+	width: 0;
 }
-#public_list table th:nth-last-Child(2), #private_list table th:nth-last-Child(2),
-#public_list table td:nth-last-Child(2), #private_list table td:nth-last-Child(2){
-	padding-left: 15px;
+#public_list_front table td:first-Child, #private_list table td:first-Child,
+#public_list_back table td:first-Child{
+	text-align: left;
 }
 /*用户管理表格*/
-#user_list table th:first-Child, #user_list table td:first-Child{
-	border-left: none;
-}
-#user_list table th:last-Child, #user_list table td:last-Child,
-#public_list table th:last-Child, #public_list table td:last-Child,
-#private_list table th:last-Child, #private_list table td:last-Child{
-	width: 20px;
-	border-left: none;
-}
 #user_list table td:nth-last-Child(2){
 	text-align: left;
 }
@@ -229,6 +231,13 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+#user form .file_style input[type="radio"]{
+	width: 50px;
+	margin-top: 13px;
+	margin-right: -5px;
+	cursor: pointer;
+	transform: scale(1.35,1.35);
+}
 #re_pwd{
 	height: 370px;
 }
@@ -254,7 +263,7 @@
 	width: 18px;
 	height: 18px;
 	float: right;
-	margin-top: 13px;
+	margin-top: 3px;
 	vertical-align: middle;
 	background: url(/img/delete.png) center no-repeat;
 	background-size: 20px;

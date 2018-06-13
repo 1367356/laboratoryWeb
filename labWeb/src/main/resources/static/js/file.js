@@ -15,11 +15,6 @@ $(document).ready(function(){
 		$('#bg').css('display','block');
 		$('#bg').css('height',document.body.clientHeight+'px');
 	});
-	$('input[name="revise"]').click(function(){
-		$('#re_pwd').show();
-		$('#bg').css('display','block');
-		$('#bg').css('height',document.body.clientHeight+'px');
-	});
 	//关闭文件上传div并清空其内容
 	$('.upload_head>img').click(function(){
 		$('.show_upload').hide();
@@ -60,7 +55,7 @@ $(document).ready(function(){
 		$("#user .file_style input").each(function(){ 
 			content.push($(this).val());
 		});
-		for (var i = 0; i < content.length; i++) {
+		for (var i = 0; i < content.length-1; i++) {
 			if (content[i].length == 0) {
 				switch (i) {
 					case 0: //添加-用户名
@@ -72,25 +67,27 @@ $(document).ready(function(){
 					case 2: //添加-再次输入密码
 						$("#user .pwd_2+span").show();
 						break;
-					case 3: //添加-角色
-						$("input[name=role]+span").show();
-						break;
 					default: //添加-描述
 						break;
 				}
 				$("#user .tips_1").show();
 			}
 		}
+		//角色不能为空
+		var roles=$('input:radio[name="role"]:checked').val();
+		if (roles == null) {
+			$("#user label+span").show();
+			$("#user .tips_1").show();
+		}
 		if ($("#user .tips_1").is(":visible")) {
 			return false;
-		}
-		else {
+		}else {
 			//判断两次密码是否一致
 			var pwd = [];
 			$("#user input[type=password]").each(function(){
 				pwd.push($(this).val());
 			});
-			if (pwd[1]==pwd[2]) {
+			if (pwd[0]==pwd[1]) {
 				return true;
 			}
 			else {
@@ -101,54 +98,11 @@ $(document).ready(function(){
 			}
 		}
 	});
-    //表单验证--修改密码
-	$("#re_pwd input[type=submit]").click(function(){
-		//内容不能为空
-		var content = [];
-		$("#re_pwd .file_style input").each(function(){
-			content.push($(this).val());
-		});
-		for (var i = 0; i < content.length; i++) {
-			if (content[i].length == 0) {
-				switch (i) {
-					case 0: //修改-旧密码
-						$("#re_pwd input[name=old_pwd]+span").show();
-						break;
-					case 1: //修改-新密码
-						$("#re_pwd .pwd_1+span").show();
-						break;
-					default: //修改-再次输入密码
-						$("#re_pwd .pwd_2+span").show();
-						break;
-				}
-				$("#re_pwd .tips_1").show();
-			}
-		}
-		if ($("#re_pwd .tips_1").is(":visible")) {
-			return false;
-		}
-		else {
-			//判断两次密码是否一致
-			var pwd = [];
-			$("#re_pwd input[type=password]").each(function(){ 
-				pwd.push($(this).val());
-			});
-			if (pwd[1]==pwd[2]) {
-				return true;
-			}
-			else {
-				$("#re_pwd .tips_2").show();
-				$("#re_pwd .pwd_1+span").show();
-				$("#re_pwd .pwd_2+span").show();
-				return false;
-			}
-		}
-	});
-	
 	//输入框获得焦点，隐藏错误提示
 	$(".show_upload form .file_style input").focus(function(){
 		$(".tips_1").hide();
 		$(".tips_2").hide();
 		$(".show_upload form input+span").hide();
+		$(".show_upload form label+span").hide();
 	});
 });

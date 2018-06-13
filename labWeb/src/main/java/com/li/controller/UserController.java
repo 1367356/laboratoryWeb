@@ -117,7 +117,6 @@ public class UserController {
         //数据库修改密码
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
-
         try {
             int i=userService.modifyPassword(username,newPassword);
         } catch (Exception e) {

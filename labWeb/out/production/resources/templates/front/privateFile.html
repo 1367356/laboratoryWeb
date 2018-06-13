@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head th:include="fragments/head :: head">
+<!-- <html lang="en"> -->
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>电子科技大学图形图像与信号应用处理研究室</title>
+	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/file.css">
+	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="/js/file.js"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="/css/index.css">
-<link rel="stylesheet" type="text/css" href="/css/base.css">
-<link rel="stylesheet" type="text/css" href="/css/file.css">
-<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
-<script type="text/javascript" src="/js/file.js"></script>
 <body>
 	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
-		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
+		<div class="logo"><img src="/img/webLogo.png"></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
-		<!--新闻列表-->
+		<!--下载列表-->
 		<section class="main_content">
+
 			<div class="content_nav">
 				<div class="nav_head">资料下载</div>
+				<div class="nav_splitLine"></div>
 				<ul class="nav_ul">
 					<li class="nav_li"><a href="/ftp/public/queryFile?page=1">公有资料</a></li>
 					<li class="nav_li active"><a href="#">私有资料</a></li>
 				</ul>
 			</div>
-
 			<div class="content_right">
-				<div class="content_head">
+				<div class="content_head" id="private_head">
 					<span>私有资料</span>
 					<input type="button" name="upload" value="上传" class="pri_load">
 				</div>
@@ -38,22 +45,29 @@
 						<tr th:each='list : ${response}'>
 							<td colspan="3"><a th:href="@{${list.downloadLink}}" download="vsftpd"><span th:text='${list.filename}'></span></a></td>
 							<td th:text='${list.uploadUser}'></td>
-							<td th:text='${list.date}'><a th:href="@{/FtpFileController/deletePrivateFile(id=${list.id})}" class="delete"></a></td>
-							<td></td>
+							<td th:text='${list.date}'></td>
+							<td><a th:href="@{/FtpFileController/deletePrivateFile(id=${list.id})}" class="delete"></a></td>
 						</tr>
+						<!-- <tr>
+							<td colspan="3"><a href=""><span >【GISPA论坛】第094期</span></a></td>
+							<td>assd</td>
+							<td>2018-05-21</td>
+							<td><a href="http://baidu.com" class="delete"></a></td>
+						</tr> -->
 					</table>
 				</div>
 
 				<div class="content_button">
-					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}-1)}">上一页</a></span>
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{main/querybycategory(id=${id},pid=${pid},page=${page-1})}">上一页</a></span>
 					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
-					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}+1)}">下一页</a></span>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{main/querybycategory(id=${id},pid=${pid},page=${page+1})}">下一页</a></span>
 					<!-- <input type="button" class="next_page" value="下一页"> -->
 					<input type="text" class="page_num">
 					<input type="button" class="jump_page" value="跳转">
 				</div>
 			</div>
 		</section>
+
 		<div class="show_upload" id="private">
 			<div class="upload_head">私有资料上传
 				<img src="/img/close.png">
@@ -67,6 +81,7 @@
 					<input type="submit" name="confirm" value="确定">
 			</form>
 		</div>
+		
 	</section>
 	<div id="bg"></div>
 	<footer th:replace="fragments/footer :: footer"></footer>

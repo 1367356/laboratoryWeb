@@ -21,8 +21,8 @@ spring:
       enabled: true
   http:
     multipart:
-      max-file-size: 100Mb           #上传文件的大小限制
-      maxRequestSize: 1000Mb
+      max-file-size: 1Mb           #上传文件的大小限制
+      maxRequestSize: 10Mb
 
 # 解决ftp外网无法连接
 ftp:

@@ -1,43 +1,37 @@
 <!DOCTYPE html>
+<!-- <html lang="en"> -->
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<!-- <head th:include="fragments/news_head :: news_head">
-</head> -->
 <head>
 	<meta charset="UTF-8">
 	<title>电子科技大学图形图像与信号应用处理研究室</title>
 	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
 	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
-	<link rel="icon" href="/img/logo.ico" type="/image/x-icon"/>
-	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/css/file.css">
 	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
-	<script type="text/javascript" src="/js/index.js"></script>
+	<script type="text/javascript" src="/js/file.js"></script>
 </head>
 <body>
-	<!-- <header th:replace="fragments/header :: header"></header> -->
-	<header th:replace="manage_fragments/header :: header"></header>
+	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
 		<div class="logo"><img src="/img/webLogo.png"></div>
-		<!-- <nav th:replace="fragments/nav :: nav"></nav> -->
-		<nav th:replace="manage_fragments/nav :: nav"></nav>
+		<nav th:replace="fragments/nav :: nav"></nav>
 		<!--下载列表-->
 		<section class="main_content">
+
 			<div class="content_nav">
 				<div class="nav_head">资料下载</div>
 				<div class="nav_splitLine"></div>
 				<ul class="nav_ul">
 					<li class="nav_li"><a href="/ftp/public/queryBackgroundPublicFile?page=1">公有资料</a></li>
-					<!--<li class="nav_li"><a href="/FtpFileController/private/queryFile?page=1">私有资料</a></li>-->
 					<li class="nav_li active"><a href="#">用户管理</a></li>
 				</ul>
 			</div>
 
 			<div class="content_right">
-			<!-- 用户管理 -->
 				<div class="content_head" id="user_head">
 					<span>用户管理</span>
-					<input type="button" name="revise" value="修改密码">
 					<input type="button" name="upload" value="添加" class="add_user">
 				</div>
 				<div class="content_list" id="user_list">
@@ -60,7 +54,6 @@
 							<td colspan="3"><span>【GISPA论坛】第094期【GISPA论坛】第094期【GISPA论坛】第094期</span></td>
 							<td><a href="http://baidu.com" class="delete"></a></td>
 						</tr> -->
-						
 					</table>
 				</div>
 
@@ -97,7 +90,8 @@
 					</span>
 					<span class="file_style">
 						<span class="left_btn">角色：</span>
-						<input type="text" name="role">
+						<input type="radio" name="role" value="USER"><label>用户</label>
+						<input type="radio" name="role" value="USER,ADMIN"><label>管理员</label>
 						<span class="not_null">*</span>
 					</span>
 					<span class="file_style">
@@ -109,35 +103,8 @@
 					<span class="tips_2">两次密码不一致，请重新输入！</span>
 			</form>
 		</div>
-		<div class="show_upload" id="re_pwd">
-			<div class="upload_head">修改密码
-				<img src="/img/close.png">
-			</div>
-			<form action="/user/modifyPassword" method="post" enctype="multipart/form-data">
-				<span class="file_style">
-					<span class="left_btn">旧密码：</span>
-					<input type="password" name="old_pwd">
-					<span class="not_null">*</span>
-				</span>
-				<span class="file_style">
-					<span class="left_btn">新密码：</span>
-					<input type="password" name="new_pwd" class="pwd_1">
-					<span class="not_null">*</span>
-				</span>
-				<span class="file_style">
-					<span class="left_btn">再次输入密码：</span>
-					<input type="password" class="pwd_2">
-					<span class="not_null">*</span>
-				</span>
-				<input type="submit" name="confirm" value="确定">
-				<span class="tips_1">该内容不能为空, 请重新输入！</span>
-				<span class="tips_2">两次密码不一致，请重新输入！</span>
-			</form>
-		</div>
 	</section>
 	<div id="bg"></div>
-	<!-- <footer th:replace="fragments/footer :: footer"></footer> -->
 	<footer th:replace="fragments/footer :: footer"></footer>
-	<script type="text/javascript" src="/js/file.js"></script>
 </body>
 </html>

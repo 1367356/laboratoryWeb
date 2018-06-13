@@ -14,10 +14,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-@Controller
+@ControllerAdvice
 @RequestMapping("FtpFileController")
 public class FtpFileController {
 
@@ -116,7 +115,7 @@ public class FtpFileController {
      * @throws IOException 遗传
      */
     @RequestMapping("/public/uploadFile")
-    public String uploadPublicFile(Model model,@RequestParam("file") MultipartFile file, FtpFile uploadParameter) throws IOException {
+    public String uploadPublicFile(Model model,@RequestParam("file") MultipartFile file, FtpFile uploadParameter)  {
         if (uploadParameter.getDescription() == null) {
             uploadParameter.setDescription(file.getOriginalFilename());
         }
@@ -155,7 +154,12 @@ public class FtpFileController {
         String userName = auth.getName();
         uploadParameter.setUploadUser(userName);  //上传人
 
-        InputStream in = file.getInputStream();
+        InputStream in = null;
+        try {
+            in = file.getInputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         boolean isSucesse= FtpUtil.uploadFile(host,port,username,password,basePath,publicFilePath,id,in);
 
         if (isSucesse) {
