@@ -4,6 +4,7 @@ package com.li.controller;
 import com.li.pojo.FtpFile;
 import com.li.service.impl.FtpFileServiceImpl;
 import com.li.utils.FtpUtil;
+import org.apache.commons.net.ftp.FTPConnectionClosedException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -82,7 +83,7 @@ public class FtpFileController {
 //        ftp://192.168.100.91/public/vsftpd.conf
         uploadParameter.setId(id);  //设置上传文件名
 
-        uploadParameter.setDownloadLink("ftp://uftp:1367356@"+host+":"+port+privateFilePath+"/"+id);
+        uploadParameter.setDownloadLink("ftp://"+username+":"+password+"@"+host+":"+port+privateFilePath+"/"+id);
 //        uploadParameter.setId("ftp://"+host+":"+port+privateFilePath+"/"+id);  //设置上传文件名?
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String userName = auth.getName();
@@ -147,7 +148,7 @@ public class FtpFileController {
         String id=System.currentTimeMillis()+suffix;
         uploadParameter.setId(id);  //设置上传id
 
-        uploadParameter.setDownloadLink("ftp://uftp:1367356@"+host+":"+port+publicFilePath+"/"+id);
+        uploadParameter.setDownloadLink("ftp://"+username+":"+password+"@"+host+":"+port+publicFilePath+"/"+id);
 
         //通过Spring Security 获取登录用户名
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -249,6 +250,17 @@ public class FtpFileController {
         model.addAttribute("totalpage",totalpage);
         model.addAttribute("page", page);
         return "front/privateFile";
+    }
+
+
+    @ControllerAdvice
+    class HandlerException{
+        @RequestMapping
+        @ExceptionHandler(Exception.class)
+        public String defultExcepitonHandler(Exception e) {
+            //        return "{\"error\":\"error\"}";
+            return "error";
+        }
     }
 
 

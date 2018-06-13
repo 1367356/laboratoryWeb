@@ -43,7 +43,8 @@ public class ForeController {
         model.addAttribute("id", "1");
         model.addAttribute("pid","2");
 
-        return "redirect:/hometest";
+        return "home";
+//        return "redirect:/hometest";
     }
     /**
      * 测试各个html文件用。

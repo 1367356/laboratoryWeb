@@ -2,32 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9ce91-f763-4a54-a122-139bdaab490a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ExceptionController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/error.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/error.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/close.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/security/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/security/WebSecurityConfig.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/application.yml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/base.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_base.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/map.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/publicFile.html" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/userManage.html" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/privateFile.html" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/publicFile.html" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/base.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/file.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/file.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_base.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/header.html" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/map.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html" />
     </list>
     <ignored path="$PROJECT_DIR$/labWeb/.gradle/" />
     <ignored path="$PROJECT_DIR$/labWeb/build/" />
@@ -80,21 +68,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="FtpFileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
+      <file leaf-file-name="userManage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="270">
+              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userManage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="41" column="74" lean-forward="true" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="200.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/message/200.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FtpUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2090">
+              <caret line="89" column="31" lean-forward="false" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FtpFileController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -103,48 +141,8 @@
       <file leaf-file-name="privateFile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="publicFile.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/css/file.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage_intro.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_intro.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="277">
+              <caret line="60" column="107" lean-forward="false" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -153,8 +151,8 @@
       <file leaf-file-name="privateFile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1028">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -163,18 +161,8 @@
       <file leaf-file-name="publicFile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="58" />
+            <state relative-caret-position="216">
+              <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -621,7 +609,6 @@
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_intro.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/head.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/header.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/nav.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java" />
@@ -633,11 +620,9 @@
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ResearchTeamService.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ResearchTeamServiceImpl.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ResearchTeamMapper.xml" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ResearchTeamMapper.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/background.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" />
@@ -649,12 +634,15 @@
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/security/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/error.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/message/404.html" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ExceptionController.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" />
-        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
       </list>
     </option>
   </component>
@@ -740,6 +728,15 @@
               <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="li" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -749,15 +746,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -775,24 +763,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="background" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laboratoryWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labWeb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -822,11 +792,11 @@
       <recent name="com.li.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\static\img" />
       <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\static\js" />
       <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\static\css" />
       <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\templates\front" />
       <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\templates\background" />
-      <recent name="D:\software\github\github下载\laboratoryWeb\labWeb\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1049,6 +1019,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.49315068" order="2" side_tool="false" content_ui="tabs" />
@@ -1057,7 +1028,7 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38729018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09592326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1090,13 +1061,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-64">
@@ -1123,13 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="4" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1197,14 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4131">
           <caret line="175" column="2" lean-forward="false" selection-start-line="175" selection-start-column="2" selection-end-line="175" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,22 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -1366,14 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/message/200.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="86" lean-forward="false" selection-start-line="1" selection-start-column="77" selection-end-line="1" selection-end-column="86" />
           <folding />
         </state>
       </provider>
@@ -1393,22 +1318,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,34 +1353,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html">
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/team_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1028">
+        <state relative-caret-position="-1157">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+        <state relative-caret-position="271">
+          <caret line="60" column="97" lean-forward="false" selection-start-line="60" selection-start-column="82" selection-end-line="60" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="60" column="107" lean-forward="false" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="89" column="31" lean-forward="false" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="41" column="74" lean-forward="true" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/resources/templates/message/200.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
           <folding />
         </state>
       </provider>
