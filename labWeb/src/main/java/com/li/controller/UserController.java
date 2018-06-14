@@ -71,6 +71,7 @@ public class UserController {
 //        String result = this.userService.registerUserAccount(user);
 //        model.addAllAttributes("response",result);
 //        model.addAttribute("response", result);
+        model.addAttribute("response","删除用户成功");
         return "admin/user-registration-result";
     }
 
@@ -86,6 +87,7 @@ public class UserController {
         int pageSize=10;
         RowBounds rowBounds = new RowBounds(page, pageSize);
         List<User> users = userService.selectUserList(rowBounds);
+        logger.debug(users.toString());
         model.addAttribute("response", users);
         return "background/userManage";
     }

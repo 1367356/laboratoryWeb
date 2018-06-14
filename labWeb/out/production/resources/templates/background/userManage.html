@@ -45,7 +45,7 @@
 						<tr th:each='list : ${response}'>
 							<td th:text='${list.userName}'></td>
 							<td th:text='${list.roles}'></td>
-							<td colspan="3"><span th:text='${list.description}'></span></td>
+							<td colspan="3"><span th:text='${list.userName}'></span></td>
 							<td><a th:href="@{/user/deleteUser(uid=${list.id})}" class="delete"></a></td>
 						</tr>
 						<!-- <tr>

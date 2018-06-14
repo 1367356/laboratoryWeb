@@ -42,12 +42,35 @@ $(document).ready(function(){
 		}
 	});
 	//显示选择的文件名
-     $("input[type=file]").on("change", function(){
-         var index = $(this).val().lastIndexOf("\\");
-         var sFileName = $(this).val().substr((index+1));
-         $(".right_text").html(sFileName);
-     });
-
+    $("input[type=file]").on("change", function(){
+        var index = $(this).val().lastIndexOf("\\");
+        var sFileName = $(this).val().substr((index+1));
+        
+  		//限制上传文件大小
+    	if ((($("input[type=file]")[0].files[0].size).toFixed(2))>(100*1024*1024)){
+    		alert("文件太大，请上传小于100M的文件");
+    		return false;
+    	}else {
+    		$(".right_text").html(sFileName);
+    	}
+    });
+    //上传文件不能为空
+    $("#private input[type=submit]").click(function(){
+    	if ($(".right_text").text() == 0) {
+    		alert("文件不能为空，请选择文件！");
+    		return false;
+    	}else {
+    		return true;
+    	}
+    });
+    $("#public input[type=submit]").click(function(){
+    	if ($(".right_text").text() == 0) {
+    		alert("文件不能为空，请选择文件！");
+    		return false;
+    	}else {
+    		return true;
+    	}
+    });
     //表单验证--添加用户
 	$("#user input[type=submit]").click(function(){
 		//内容不能为空

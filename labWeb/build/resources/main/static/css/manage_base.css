@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+﻿html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
  padding: 0;
  margin: 0;
  font-size: 100%;
@@ -41,34 +41,6 @@ header .h_main ul.header_nav li{
 header .h_main ul.header_nav a{
 	color: #fff;
 	font-size: 14px;
-}
-header .h_main form.search_box{
-	position: absolute;
-	right: 0;
-	display: inline-block;
-	width: 320px;
-}
-header .h_main form.search_box input.search{
-	display: inline-block;
-	border-radius: 6px;
-	height: 25px;
-	border: 2px solid #fff;
-	padding: 0 10px;
-	padding-right: 30px;
-	width: 276px;
-}
-header .h_main form.search_box button.search_button{
-	position: absolute;
-	display: inline-block;
-	right: 5px;
-	top: 10px;
-	padding: 0;
-	border: 0;
-	cursor: pointer;
-	width: 25px;
-	height: 25px;
-	background: url(../img/search_icon.png) no-repeat #fff;
-	background-size: 100% auto;
 }
 
 /*------main------*/
