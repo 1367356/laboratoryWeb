@@ -34,9 +34,7 @@ public class LoginController {
         List<NewsList> newsLists=null;
         try {
             newsLists = manageService.queryByCategory("2", "1", 1);
-
         } catch (Exception e) {
-
             return "message/403";
         }
         logger.debug(newsLists.get(0).getHtmlid());

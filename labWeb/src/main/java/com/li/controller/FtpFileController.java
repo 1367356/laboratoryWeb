@@ -253,16 +253,6 @@ public class FtpFileController {
     }
 
 
-    @ControllerAdvice
-    class HandlerException{
-        @RequestMapping
-        @ExceptionHandler(Exception.class)
-        public String defultExcepitonHandler(Exception e) {
-            //        return "{\"error\":\"error\"}";
-            return "error";
-        }
-    }
-
 
 
     /**

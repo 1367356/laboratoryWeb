@@ -64,9 +64,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	            .invalidateHttpSession(true)
 	            .clearAuthentication(true)
 	            .logoutSuccessUrl("/?logout")           //登出
-				.permitAll()
-				.and()
-				.rememberMe()
-				.tokenValiditySeconds(1209600);
+				.permitAll();
     }
 }
