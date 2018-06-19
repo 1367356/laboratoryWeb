@@ -18,7 +18,11 @@
 
     <select id="selectUserList" parameterType="string" resultMap="userMap">
         <!--SELECT <include refid="baseColumns"></include> FROM user limit 20*#{page} 20-->
-        SELECT <include refid="baseColumns"></include> FROM user
+        SELECT <include refid="baseColumns"></include> FROM user ORDER BY uid DESC
+    </select>
+    <select id="selectCount" resultType="java.lang.Integer">
+        <!--SELECT <include refid="baseColumns"></include> FROM user limit 20*#{page} 20-->
+        SELECT count(*) FROM user
     </select>
 
     <insert id="save" parameterType="com.li.pojo.User">

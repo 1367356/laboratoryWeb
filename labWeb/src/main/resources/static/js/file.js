@@ -15,12 +15,17 @@ $(document).ready(function(){
 		$('#bg').css('display','block');
 		$('#bg').css('height',document.body.clientHeight+'px');
 	});
-	//关闭文件上传div并清空其内容
+	//关闭文件上传div,刷新页面
 	$('.upload_head>img').click(function(){
-		$('.show_upload').hide();
-		$('#bg').css('display','none');
-		$(".right_text").html('');
-		$(".show_upload .file_style input").val("");
+		window.location.reload();
+		// $('.show_upload').hide();
+		// $('#bg').css('display','none');
+		// $(".right_text").html('');
+		// $(".show_upload .file_style input").val("");
+		// $(".tips_1").hide();
+		// $(".tips_2").hide();
+		// $(".show_upload form input+span").hide();
+		// $(".show_upload form label+span").hide();
 	});
 	//显示表格省略内容
 	$('td').on('mouseenter',function(){
@@ -32,15 +37,31 @@ $(document).ready(function(){
 	$('td').on('mouseleave',function(){
 		layer.close(tips);
 	});
-	//删除资料
-	$('.delete').click(function(){
-		if (confirm('确认删除？')) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	});
+
+	//删除用户/资料
+    	$(".delete").click(function(){
+    		if ($(this).parent().siblings('.uname').length > 0) {
+    			var uname = $(this).parent().siblings('.uname').text();
+    			if (uname == 'admin') {
+    				alert('禁止删除该用户');
+    				return false;
+    			} else {
+    				if (confirm('确认删除？')) {
+    						return true;
+    				}
+    				else {
+    					return false;
+    				}
+    			}
+    		} else {
+    			if (confirm('确认删除？')) {
+    				return true;
+    			}
+    			else {
+    				return false;
+    			}
+    		}
+    	});
 	//显示选择的文件名
     $("input[type=file]").on("change", function(){
         var index = $(this).val().lastIndexOf("\\");
@@ -97,7 +118,7 @@ $(document).ready(function(){
 			}
 		}
 		//角色不能为空
-		var roles=$('input:radio[name="role"]:checked').val();
+		var roles=$('input:radio[name="roles"]:checked').val();
 		if (roles == null) {
 			$("#user label+span").show();
 			$("#user .tips_1").show();

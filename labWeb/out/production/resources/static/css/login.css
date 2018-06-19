@@ -59,10 +59,10 @@ header .header_main .header_nav a{
 	font-size: 1.2em;
 	padding: 2px 5px 4px 5px;
 }
-header .header_main .header_nav a:hover{
+/*header .header_main .header_nav a:hover{
 	border: 1px solid #fff;
 	border-radius: 3px;
-}
+}*/
 /* main */
 .main{
 	width: 1000px;

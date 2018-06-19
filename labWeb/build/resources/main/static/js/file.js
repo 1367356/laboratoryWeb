@@ -15,12 +15,17 @@ $(document).ready(function(){
 		$('#bg').css('display','block');
 		$('#bg').css('height',document.body.clientHeight+'px');
 	});
-	//关闭文件上传div并清空其内容
+	//关闭文件上传div,刷新页面
 	$('.upload_head>img').click(function(){
-		$('.show_upload').hide();
-		$('#bg').css('display','none');
-		$(".right_text").html('');
-		$(".show_upload .file_style input").val("");
+		window.location.reload();
+		// $('.show_upload').hide();
+		// $('#bg').css('display','none');
+		// $(".right_text").html('');
+		// $(".show_upload .file_style input").val("");
+		// $(".tips_1").hide();
+		// $(".tips_2").hide();
+		// $(".show_upload form input+span").hide();
+		// $(".show_upload form label+span").hide();
 	});
 	//显示表格省略内容
 	$('td').on('mouseenter',function(){
@@ -97,7 +102,7 @@ $(document).ready(function(){
 			}
 		}
 		//角色不能为空
-		var roles=$('input:radio[name="role"]:checked').val();
+		var roles=$('input:radio[name="roles"]:checked').val();
 		if (roles == null) {
 			$("#user label+span").show();
 			$("#user .tips_1").show();

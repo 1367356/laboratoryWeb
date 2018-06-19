@@ -13,10 +13,10 @@
 	<script type="text/javascript" src="/js/file.js"></script>
 </head>
 <body>
-	<header th:replace="fragments/header :: header"></header>
+	<header th:replace="manage_fragments/header :: header"></header>
 	<section class="main">
 		<div class="logo"><img src="/img/webLogo.png"></div>
-		<nav th:replace="fragments/nav :: nav"></nav>
+		<nav th:replace="manage_fragments/nav :: nav"></nav>
 		<!--下载列表-->
 		<section class="main_content">
 
@@ -58,9 +58,9 @@
 				</div>
 
 				<div class="content_button">
-					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/querybycategory(id=${id},pid=${pid},page=${page-1})}">上一页</a></span>
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/user/selectUser(page=${page-1})}">上一页</a></span>
 					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
-					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/querybycategory(id=${id},pid=${pid},page=${page+1})}">下一页</a></span>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/user/selectUser(page=${page+1})}">下一页</a></span>
 					<!-- <input type="button" class="next_page" value="下一页"> -->
 					<input type="text" class="page_num">
 					<input type="button" class="jump_page" value="跳转">
@@ -73,38 +73,38 @@
 				<img src="/img/close.png">
 			</div>
 			<form action="/user/addUser" method="post" enctype="multipart/form-data">
-					<span class="file_style">
-						<span class="left_btn">用户名：</span>
-						<input type="text" name="userName">
-						<span class="not_null">*</span>
-					</span>
-					<span class="file_style">
-						<span class="left_btn">密码：</span>
-						<input type="password" name="password" class="pwd_1">
-						<span class="not_null">*</span>
-					</span>
-					<span class="file_style">
-						<span class="left_btn">再次输入密码：</span>
-						<input type="password" class="pwd_2">
-						<span class="not_null">*</span>
-					</span>
-					<span class="file_style">
-						<span class="left_btn">角色：</span>
-						<input type="radio" name="role" value="USER"><label>用户</label>
-						<input type="radio" name="role" value="USER,ADMIN"><label>管理员</label>
-						<span class="not_null">*</span>
-					</span>
-					<span class="file_style">
-						<span class="left_btn">描述：</span>
-						<input type="text" name="description">
-					</span>
-					<input type="submit" name="confirm" value="确定">
-					<span class="tips_1">该内容不能为空, 请重新输入！</span>
-					<span class="tips_2">两次密码不一致，请重新输入！</span>
+				<span class="file_style">
+					<span class="left_btn">用户名：</span>
+					<input type="text" name="userName">
+					<span class="not_null">*</span>
+				</span>
+				<span class="file_style">
+					<span class="left_btn">密码：</span>
+					<input type="password" name="password" class="pwd_1">
+					<span class="not_null">*</span>
+				</span>
+				<span class="file_style">
+					<span class="left_btn">再次输入密码：</span>
+					<input type="password" class="pwd_2">
+					<span class="not_null">*</span>
+				</span>
+				<span class="file_style">
+					<span class="left_btn">角色：</span>
+					<input type="radio" name="roles" value="USER" checked><label>用户</label>
+					<input type="radio" name="roles" value="USER,ADMIN"><label>管理员</label>
+					<span class="not_null">*</span>
+				</span>
+				<span class="file_style">
+					<span class="left_btn">描述：</span>
+					<input type="text" name="description">
+				</span>
+				<input type="submit" name="confirm" value="确定">
+				<span class="tips_1">该内容不能为空, 请重新输入！</span>
+				<span class="tips_2">两次密码不一致，请重新输入！</span>
 			</form>
 		</div>
 	</section>
 	<div id="bg"></div>
-	<footer th:replace="fragments/footer :: footer"></footer>
+	<footer th:replace="manage_fragments/footer :: footer"></footer>
 </body>
 </html>

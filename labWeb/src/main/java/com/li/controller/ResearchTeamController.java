@@ -37,12 +37,12 @@ public class ResearchTeamController {
     ManageServiceImpl manageService;
 
     /**
-     * 添加科研团队成员
+     * 添加科研团队成员,post方式
      * @param model
      * @return
      */
     @PreAuthorize("hasAuthority('ADMIN')")
-    @RequestMapping("/insert")
+    @RequestMapping(value = "/insert",method = RequestMethod.POST)
     public String insert(Model model,InsertParameter parameter) {
 
         if (parameter.getDate() == null) {
@@ -61,7 +61,7 @@ public class ResearchTeamController {
             e.printStackTrace();
         }
         if (!insert) {
-            return "message/404";
+            return "message/manage/404";
         }
         News news = foreService.queryNews(htmlid);
         model.addAttribute("response", news);
@@ -77,7 +77,7 @@ public class ResearchTeamController {
             i = researchTeamService.delete(lhtmlid);
         } catch (Exception e) {
             model.addAttribute("response","删除失败");
-            return "message/404";
+            return "message/manage/404";
         }
         logger.debug("删除" + i);
         model.addAttribute("pid", pid);
@@ -96,7 +96,7 @@ public class ResearchTeamController {
 
 
     /**
-     * 修改一条新闻
+     * 修改
      * @return           响应体
      */
     @PreAuthorize("hasAuthority('ADMIN')")
@@ -104,7 +104,7 @@ public class ResearchTeamController {
     public String update(Model model, InsertParameter parameter) {
         int i=researchTeamService.update(parameter);
         if (i != 1) {
-            return "message/404";
+            return "message/manage/404";
         }
         model.addAttribute("response",parameter);
         return "background/backUpdate";
@@ -129,6 +129,26 @@ public class ResearchTeamController {
         }
         logger.debug(map);
         model.addAttribute("response", map);
-        return "map";
+        return "front/teams_info";
+    }
+    @RequestMapping("/backgroundquery")
+    public String backgroundquery(Model model, String pid,String id) {
+
+        // select distinct title from news;  ,选择某个字段共有几类
+        List<String> typeList = new ArrayList<>();
+        typeList=researchTeamService.query(id);
+
+        Iterator<String> iterator = typeList.iterator();
+
+        Map<String,List> map = new HashMap<>();
+
+        while (iterator.hasNext()) {
+            String next=iterator.next();
+            List<ResearchTeam> listGroup = researchTeamService.queryGroup(next,id);
+            map.put(next, listGroup);
+        }
+        logger.debug(map);
+        model.addAttribute("response", map);
+        return "background/teams_info";
     }
 }

@@ -34,13 +34,19 @@ public class UserServiceImpl implements UserService {
     public String registerUserAccount(User userDto) {
         Map<String, Object> attributes = new HashMap<>();
         User user = new User();
-        logger.debug("getPassword"+user.getPassword());
         user.setPassword(bCryptPasswordEncoder.encode(userDto.getPassword()));  //保存时应该将密码编码
         user.setUserName(userDto.getUserName());
+//        logger.debug("getPassword"+user.getPassword());
+        if(userDto.getDescription()!=null){
+            logger.debug("添加用户描述");
+            user.setDescription(userDto.getDescription());
+        }
         if (userDto.getRoles() == null) {
             user.setRoles("USER");
         }else {
+
             user.setRoles(userDto.getRoles());  //设置用户权限
+            logger.debug(user.getRoles());
         }
         int affectedRow = userMapper.save(user);
         String registrationResult = affectedRow == 1 ? "success" : "failure";
@@ -63,5 +69,10 @@ public class UserServiceImpl implements UserService {
         newPassword = bCryptPasswordEncoder.encode(newPassword);   //对密码进行编码
         return userMapper.modifyPassword(username,newPassword);
 
+    }
+
+    @Override
+    public int selectCount() {
+        return userMapper.selectCount();
     }
 }

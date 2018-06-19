@@ -193,16 +193,16 @@ public class FtpFileController {
             isSucess = FtpUtil.deleteFile(host, port, username, password,publicFilePath, id);
         } catch (Exception e) {
             model.addAttribute("response", "删除文件失败");
-            return "message/404";
+            return "message/manage/404";
         }
         if (isSucess) {
             int i=ftpFileService.deletePublicFile(id);
             //数据库删除
             model.addAttribute("response","删除文件成功");
-            return "message/200";
+            return "message/manage/200";
         }
         model.addAttribute("response", "删除文件失败");
-        return "message/404";
+        return "message/manage/404";
     }
 
     @RequestMapping("/deletePrivateFile")
@@ -251,6 +251,7 @@ public class FtpFileController {
         model.addAttribute("page", page);
         return "front/privateFile";
     }
+
 
 
 

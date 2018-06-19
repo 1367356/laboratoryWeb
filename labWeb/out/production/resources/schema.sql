@@ -42,8 +42,8 @@ CREATE TABLE `NEWS` (
   `title`               VARCHAR(255) DEFAULT NULL,
   `type`                VARCHAR(255) DEFAULT NULL,
   `abstractText`            TEXT DEFAULT NULL,
-  `content`             TEXT NOT NULL,
-  `date_created`       date     NOT NULL,
+  `content`             TEXT DEFAULT NULL,
+  `date_created`       date     DEFAULT NULL,
   UNIQUE KEY `index_id` (`htmlid`),  -- 外键需要建立索引，否则150错误。
   foreign KEY(`htmlid`) references NEWSLIST(`htmlid`)   -- 外键约束
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
@@ -74,7 +74,7 @@ CREATE TABLE `FtpPrivateFile`(
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) UNIQUE DEFAULT NULL,
+  `username` varchar(255) NOT NULL UNIQUE,
   `password` varchar(255) DEFAULT NULL,
   `description` TEXT DEFAULT NULL,
   `roles` varchar(200) DEFAULT 'USER',

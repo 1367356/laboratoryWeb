@@ -53,6 +53,9 @@ public class ManageController {
     public String insert(Model model,InsertParameter parameter) {
 
         logger.debug(parameter.getAbstractText());
+        if (parameter.getPublisher() == null) {
+            parameter.setPublisher("admin");
+        }
 
         if (parameter.getDate() == null) {
             Date current_date = new Date();
@@ -75,7 +78,7 @@ public class ManageController {
         }
 
         if (!insert) {
-            return "message/404";
+            return "message/manage/404";
         }
         News news = foreService.queryNews(htmlid);
         model.addAttribute("response", news);
@@ -95,7 +98,7 @@ public class ManageController {
             i = manageService.delete(lhtmlid);
         } catch (Exception e) {
             model.addAttribute("response","删除失败");
-            return "message/404";
+            return "message/manage/404";
         }
         logger.debug("删除" + i);
         model.addAttribute("pid", pid);
@@ -125,7 +128,7 @@ public class ManageController {
 
         int i=manageService.update(parameter);
         if (i != 1) {
-            return "message/404";
+            return "message/manage/404";
         }
         model.addAttribute("response",parameter);
         return "background/backUpdate";
@@ -144,15 +147,16 @@ public class ManageController {
     public String query(Model model,String pid,String id,String page) {
         List<NewsList> newsLists=null;
         if (pid == null || id == null || page == null) {
-            return "message/404";
+            model.addAttribute("response","查询新闻失败");
+            return "message/manage/404";
         }
         try {
             int ipage = Integer.parseInt(page);
             newsLists = manageService.queryByCategory(pid, id, ipage);
 
         } catch (Exception e) {
-
-            return "message/403";
+            model.addAttribute("response","查询新闻失败");
+            return "message/manage/403";
         }
             model.addAttribute("response",newsLists);
             int count = manageService.selectCount(pid, id);

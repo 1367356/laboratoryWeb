@@ -110,7 +110,8 @@ public class NewsImageController {
 //                        "You successfully uploaded " + file.getOriginalFilename() + "!");
             } catch (IOException|RuntimeException e) {
                     e.printStackTrace();
-                    return "上传图片出现异常";
+                    redirectAttributes.addAttribute("response","上传文件出现异常");
+                    return "message/manage/404";
             }
         } else {
             redirectAttributes.addFlashAttribute("message", "Failed to upload " + file.getOriginalFilename() + " because it was empty");

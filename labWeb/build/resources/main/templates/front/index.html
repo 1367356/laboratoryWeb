@@ -70,17 +70,17 @@
 				<div class="right_cooperation">
 					<h3><a href="/querybycategory?id=1&pid=6&page=1">合作交流</a></h3>
 					<ul class="cooperation_list">
-						<li th:each="list : ${response4}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response4}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a>
 						</li>
 					</ul>
 				</div>
 				<div class="right_links">
 					<h3>友情链接</h3>
 					<ul class="links_list">
-						<li><a href="http://blog.sciencenet.cn/u/zmpenguestc">科学网-老马迷图</a></li>
-						<li><a href="http://www.soei.uestc.edu.cn/index.php">光电信息学院</a></li>
-						<li><a href="http://yz.uestc.edu.cn/">研招网-招生信息</a></li>
-						<li><a href="http://www.nsfc.gov.cn/">国家自然科学基金委员会</a></li>
+						<li><a href="http://blog.sciencenet.cn/u/zmpenguestc" target="_blank">科学网-老马迷图</a></li>
+						<li><a href="http://www.soei.uestc.edu.cn/index.php" target="_blank">光电信息学院</a></li>
+						<li><a href="http://yz.uestc.edu.cn/" target="_blank">研招网-招生信息</a></li>
+						<li><a href="http://www.nsfc.gov.cn/" target="_blank">国家自然科学基金委员会</a></li>
 					</ul>
 				</div> 
 				<div>

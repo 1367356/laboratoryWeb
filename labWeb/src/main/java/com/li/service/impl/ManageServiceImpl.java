@@ -43,7 +43,7 @@ public class ManageServiceImpl implements ManageService{
     }
 
     @Override
-    public List<NewsList> queryByCategory(String pid, String id, int page) {
+    public List<NewsList> queryByCategory(String pid, String id, int page) throws Exception{
         logger.debug("查询列表pid:"+pid+"id:"+id+"page:"+page);
         page=(page-1)*10;
         return manageMapper.queryByCategory(pid,id,page);

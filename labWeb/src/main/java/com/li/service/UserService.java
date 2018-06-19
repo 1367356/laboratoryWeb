@@ -16,4 +16,6 @@ public interface UserService {
     List<User> selectUserList(RowBounds rowBounds);
 
     int modifyPassword(String username, String newPassword) throws Exception;
+
+    int selectCount();
 }

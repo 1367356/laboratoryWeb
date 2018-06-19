@@ -22,9 +22,8 @@
 .content_right .content_list a.delete{
 	display: inline-block;
 	width: 18px;
-	height: 18px;
+	height: 30px;
 	margin-right: 5px;
-	vertical-align: middle;
 	background: url(../img/delete.png) center no-repeat;
 	background-size: 20px;
 	cursor: pointer;
@@ -33,10 +32,9 @@
     display: inline-block;
     float: none;
     width: 18px;
-    height: 18px;
+    height: 30px;
     padding-right: 0;
-    margin-right: 10px;
-    vertical-align: middle;
+    margin-right: 5px;
     background: url(../img/edit.png) center no-repeat;
     background-size: 20px;
     cursor: pointer;

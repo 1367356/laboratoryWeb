@@ -70,7 +70,7 @@ public class FtpController {
         }catch (Exception e){
             e.printStackTrace();
             model.addAttribute("response","查询公共文件出现异常");
-            return "message/404";
+            return "message/manage/404";
         }
         model.addAttribute("totalpage", totalpage);
         model.addAttribute("page", page);

@@ -115,17 +115,20 @@ public class ForeController {
 
 
     @RequestMapping("/index")
-//    @ResponseBody
     public String index(Model model) {
-        List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
-        List<NewsList> newsLists2 = manageService.queryByCategory("1", "2", 1);
-        List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
-        List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
-        model.addAttribute("response1", newsLists1);
-        model.addAttribute("response2", newsLists2);
-        model.addAttribute("response3", newsLists3);
-        model.addAttribute("response4", newsLists4);
-
+        try {
+            List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
+            List<NewsList> newsLists2 = manageService.queryByCategory("1", "2", 1);
+            List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
+            List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
+            model.addAttribute("response1", newsLists1);
+            model.addAttribute("response2", newsLists2);
+            model.addAttribute("response3", newsLists3);
+            model.addAttribute("response4", newsLists4);
+        } catch (Exception e) {
+            model.addAttribute("response", "首页加载失败");
+            return "message/404";
+        }
         return "front/index";
     }
 }

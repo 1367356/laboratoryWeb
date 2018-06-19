@@ -20,4 +20,6 @@ public interface UserMapper {
 
 
     int modifyPassword(@Param("username") String username, @Param("password") String newPassword);
+
+    int selectCount();
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/head :: head">
+</head>
+<link rel="stylesheet" type="text/css" href="/css/changepwd.css">
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<section class="main_content">
+			<div class="change_content">
+				<h1>修改密码</h1>
+				<div><label>用户名：</label><label th:text="${response}"></label>
+					<form action="/user/modifyPassword" class="changepwd" method="post">
+					<label>输入新密码：</label><input type="password" name="newPassword">
+					<label>再次输入新密码：</label><input type="password" name="repassword">
+					<input value="确认" type="submit">
+				</form>
+			</div>
+		</section>
+	</section>
+	<footer th:replace="fragments/footer :: footer"></footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('form.changepwd').submit(function(event) {
+				var psd = $("input[name='newPassword']").val();
+				var repsd = $("input[name='repassword']").val();
+				if(psd != repsd){
+					event.preventDefault();
+					alert("两次密码输入不正确！");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

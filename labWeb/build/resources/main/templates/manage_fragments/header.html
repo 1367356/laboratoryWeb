@@ -4,8 +4,11 @@
     <header th:fragment="header">
 		<div class="h_main">
 			<ul class="header_nav">
-				<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
-				<!--<li><a href="">管理登陆</a></li>-->
+				<li><a href="http://www.uestc.edu.cn/"  target="_blank">学校主页</a></li>
+				<li><a href="/index" target="_blank">实验室主页</a></li>
+			</ul>
+			<ul class="login_nav">
+				<li><a th:href="@{/logout}">登出</a></li>
 			</ul>
 		</div>
 	</header>

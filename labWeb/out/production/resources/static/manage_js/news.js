@@ -5,6 +5,11 @@ $(document).ready(function() {
 	function fill_content_nav(){
 		var nav_div = '';
 		switch(nav_pid){
+			case 1:
+				nav_div = '<div class="nav_head">实验室简介</div><ul class="nav_ul">';
+				nav_div += '<li class="nav_li"><a href="/background/querybyBackList?id=1&pid=1&page=1">实验室简介</a></li>';
+				nav_div += '</ul>';
+				break;
 			case 2:
 				nav_div = '<div class="nav_head">新闻公告</div><ul class="nav_ul">';
 				nav_div += '<li class="nav_li"><a href="/background/querybyBackList?id=1&pid=2&page=1">通知公告</a></li>';

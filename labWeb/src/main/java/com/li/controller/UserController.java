@@ -16,6 +16,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 import java.util.Map;
@@ -32,47 +33,34 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    /**
-     * 用户注册,跳转到用户添加页面
-     * @param model
-     * @return
-     */
-    @PreAuthorize("hasAuthority('ADMIN')")
-    @RequestMapping(value = "/addUser", method = RequestMethod.GET)
-    public String showRegistrationPage(Model model) {
-        System.out.println("registrationGet");
-        model.addAttribute("userDto", new User());
-        return "admin/user-registration";  //注册页面
-    }
-
-//    @PreAuthorize("hasAuthority('SUPER')")
     @PreAuthorize("hasAuthority('ADMIN')")
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)  //提交注册
-    public String registerNewUser(@ModelAttribute("userDto")User user, Model model) {
+    public String registerNewUser(User user, RedirectAttributes model) {
+//        @ModelAttribute("userDto")
+        logger.debug(user.getRoles());
+        logger.debug(user.getDescription());
+        logger.debug(user.getPassword());
+        logger.debug(user.getUserName());
 
-        logger.debug("username"+user.getUserName());
-        logger.debug("password:"+user.getPassword());
-
-        System.out.println("registrationPost");
         String result = this.userService.registerUserAccount(user);
-//        model.addAllAttributes("response",result);
-        model.addAttribute("response", result);
-        return "admin/user-registration-result";
+        if (result.equals("success")) {
+            model.addAttribute("page", 1);
+            return "redirect:/user/selectUser";
+        }
+        model.addAttribute("response","添加用户失败");
+        return "message/manage/404";
     }
 
-
-//    @PreAuthorize("hasAuthority('SUPER')")
     @PreAuthorize("hasAuthority('ADMIN')")
     @RequestMapping(value = "/deleteUser", method = RequestMethod.GET)  //提交注册
     public String deleteUser(Model model,int uid) {
-
         int i=userService.deleteUser(uid);
-//        System.out.println("registrationPost");
-//        String result = this.userService.registerUserAccount(user);
-//        model.addAllAttributes("response",result);
-//        model.addAttribute("response", result);
-        model.addAttribute("response","删除用户成功");
-        return "admin/user-registration-result";
+        if (i == 1) {
+            model.addAttribute("response","删除用户成功");
+            return "message/manage/200";
+        }
+        model.addAttribute("response", "删除用户失败");
+        return "message/manage/404";
     }
 
     /**
@@ -87,8 +75,11 @@ public class UserController {
         int pageSize=10;
         RowBounds rowBounds = new RowBounds(page, pageSize);
         List<User> users = userService.selectUserList(rowBounds);
-        logger.debug(users.toString());
+        int count=userService.selectCount();
+        int totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
         model.addAttribute("response", users);
+        model.addAttribute("page", page);
+        model.addAttribute("totalpage", totalpage);
         return "background/userManage";
     }
 
@@ -105,7 +96,7 @@ public class UserController {
 
         model.addAttribute("response", userName);
 
-        return "front/modifyPassword";
+        return "front/changePwd";
     }
 
     /**
@@ -116,6 +107,7 @@ public class UserController {
      */
     @RequestMapping(value = "/modifyPassword", method = RequestMethod.POST)
     public String modifyPassword(Model model,String newPassword) {
+        logger.debug(newPassword);
         //数据库修改密码
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
@@ -128,25 +120,5 @@ public class UserController {
         model.addAttribute("response","修改密码成功");
         return "message/200";
     }
-
-
-    /**
-     * 修改密码
-     */
-
-
-//    @PreAuthorize("hasAuthority('SUPER')")  //需要SUPER用户才能通过该路径，第一步通过配置验证，没有用户登录，将会拦截，让用户登录，登录成功，访问该路径时进行角色验证。
-//    @RequestMapping(value = "/admin/admin", method = RequestMethod.GET)
-//    public String deletePost() {
-//        return "admin/admin";
-//    }
-
-
-
-//    //获取登录用户名
-//    public void getUser() {
-//        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-//        String username = auth.getName();
-//    }
 
 }

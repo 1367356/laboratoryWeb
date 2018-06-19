@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head th:include="fragments/head :: head">
+<head th:include="manage_fragments/head :: head">
 </head>
-<link rel="stylesheet" type="text/css" href="/css/index.css">
-<link rel="stylesheet" type="text/css" href="/css/base.css">
 <link rel="stylesheet" type="text/css" href="/css/file.css">
-<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="/js/file.js"></script>
 <body>
 	<header th:replace="manage_fragments/header :: header"></header>
@@ -68,6 +65,6 @@
 		</div>
 	</section>
 	<div id="bg"></div>
-	<footer th:replace="fragments/footer :: footer"></footer>
+	<footer th:replace="manage_fragments/footer :: footer"></footer>
 </body>
 </html>

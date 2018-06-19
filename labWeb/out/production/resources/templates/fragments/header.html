@@ -4,8 +4,8 @@
     <header th:fragment="header">
 		<div class="h_main">
 			<ul class="header_nav">
-				<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
-				<li><a href="/admin/login">管理登录</a></li>
+				<li><a href="http://www.uestc.edu.cn/" target="_blank">学校主页</a></li>
+				<li><a href="/admin/login"  target="_blank">管理登录</a></li>
 			</ul>
 			<ul class="login_nav">
 				<li sec:authorize="isAnonymous()"><a href="/user/login">登录</a></li>

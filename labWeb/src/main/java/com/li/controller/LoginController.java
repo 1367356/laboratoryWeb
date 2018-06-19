@@ -37,7 +37,7 @@ public class LoginController {
         } catch (Exception e) {
             return "message/403";
         }
-        logger.debug(newsLists.get(0).getHtmlid());
+//        logger.debug(newsLists.get(0).getHtmlid());
         model.addAttribute("response",newsLists);
         int count = manageService.selectCount("1", "1");
         int totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
@@ -63,8 +63,21 @@ public class LoginController {
      * @return
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String showAdminPage() {
-//        return "admin/user-login";
-		return "front/index";
+    public String showAdminPage(Model model) {
+        try {
+            List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
+            List<NewsList> newsLists2 = manageService.queryByCategory("2", "1", 1);
+            List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
+            List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
+            model.addAttribute("response1", newsLists1);
+            model.addAttribute("response2", newsLists2);
+            model.addAttribute("response3", newsLists3);
+            model.addAttribute("response4", newsLists4);
+        } catch (Exception e) {
+            model.addAttribute("response", "首页加载失败");
+            return "message/404";
+        }
+        return "front/index";
     }
+
 }

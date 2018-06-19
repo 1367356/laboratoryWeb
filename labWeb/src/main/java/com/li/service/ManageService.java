@@ -14,7 +14,7 @@ public interface ManageService {
 
     int delete(long htmlid) throws Exception;
 
-    List<NewsList> queryByCategory(String pid, String id, int page);
+    List<NewsList> queryByCategory(String pid, String id, int page) throws Exception;
 
     long getMaxHtmlId();
 

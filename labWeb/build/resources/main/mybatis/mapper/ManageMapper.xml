@@ -76,6 +76,4 @@
     date_created=#{newsParameter.date}
     where htmlid=#{newsParameter.htmlid}
   </update>
-
-
 </mapper>

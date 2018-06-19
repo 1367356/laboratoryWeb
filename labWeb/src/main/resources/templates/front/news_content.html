@@ -21,10 +21,10 @@
 				<div class="content_passage">
 					<span class="passage_title" th:text="${response.title}">【开题报告会】关于实验室博士学位论文公开开题的通知</span>
 					<div class="passage_info">
-						<span th:text="${response.publisher}">作者：</span>
-						<span th:text="${response.type}">来源：</span>
-						<span th:text="${response.date}">发布时间：</span>
-						<span th:text="${response.count}">点击：</span>
+						作者：<span th:text="${response.publisher}"></span>
+						来源：<span th:text="${response.type}"></span>
+						发布时间：<span th:text="${response.date}"></span>
+						点击：<span th:text="${response.count}"></span>
 					</div>
 					<div class="passage_text" th:utext="${response.content}">
 						

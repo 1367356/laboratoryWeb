@@ -6,6 +6,10 @@ import java.util.Date;
 /**
  * 新闻添加时用到的参数
  * 后台管理系统接收参数，向后台传递参数时，与字段名一一对应
+ * pid,id 不能为空，前台传入，
+ * htmlid,data后台生成
+ * publisher 前台提交，如果提交为空，将设置为admin
+ *title ,content ,type,abstract,count,title 前台提交，可以为空
  */
 public class InsertParameter {
     private String pid;  //pid

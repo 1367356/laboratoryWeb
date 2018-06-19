@@ -40,12 +40,12 @@
 
   <!--查找新闻列表，根据页数查询-->
   <select id="query" parameterType="string" resultType="string">
-    select distinct type from researchTeam;
+    select distinct type from researchTeam where id=#{id};
   </select>
 
   <!--查找新闻列表，根据页数查询-->
   <select id="queryGroup" resultMap="ResearchTeamMap">
-      select * from researchTeam where type=#{next};
+      select * from researchTeam where type=#{next} and id=#{id};
   </select>
     <!--<select id="queryByCategory" resultMap="NewsListMap">-->
 

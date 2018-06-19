@@ -22,8 +22,7 @@
 					<ul>
 						<!-- <li th:each="list : ${response}" ><a th:href="@{/main/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
 						</li> -->
-						<li th:each="list : ${response}"><span class="edit"></span><a class="delete" th:href="@{/background/deleteNews(pid=${pid},id=${id},page=${page},htmlid=${list.htmlid})}"></a><a th:text="${list.title}"></a><span  th:text="${list.date}"></span></li>
-						<!-- <li><span class="edit"></span><a class="delete" href=""></a><a href="news_content.html" target="_blank">【开题报告会】关于实验室博士学位论文公开开题的通知 </a><span>2018-05-21</span></li>
+						<li th:each="list : ${response}"><span class="edit"></span><a class="delete" th:href="@{/background/deleteNews(pid=${pid},id=${id},page=${page},htmlid=${list.htmlid})}"></a><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span  th:text="${list.date}"></span></li>			<!-- <li><span class="edit"></span><a class="delete" href=""></a><a href="news_content.html" target="_blank">【开题报告会】关于实验室博士学位论文公开开题的通知 </a><span>2018-05-21</span></li>
 						<li><span class="edit"></span><a class="delete" href=""></a><a href="">【GISPA论坛】第094期</a><span>2018-05-21</span></li>
 						<li><span class="edit"></span><a class="delete" href=""></a><a href="">【GISPA论坛】第094期</a><span>2018-05-21</span></li>
 						<li><span class="edit"></span><a class="delete" href=""></a><a href="">【GISPA论坛】第094期</a><span>2018-05-21</span></li>
@@ -36,7 +35,13 @@
 					</ul>
 				</div>
 				
-				<div class="content_button" th:replace="manage_fragments/page :: page">
+				<div class="content_button">
+					<span th:if="${page}  &gt; 1"><a class="next_page" th:href="@{/background/querybyBackList(pid=${pid},id=${id},page=${page}-1)}">上一页</a></span>
+					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/background/querybyBackList(pid=${pid},id=${id},page=${page}+1)}">下一页</a></span>
+					<!-- <input type="button" class="next_page" value="下一页"> -->
+					<input type="text" class="page_num">
+					<input type="button" class="jump_page" value="跳转">
 				</div>
 			</div>
 		</section>
