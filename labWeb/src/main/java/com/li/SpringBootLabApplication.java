@@ -26,5 +26,4 @@ public class SpringBootLabApplication {
     public PlatformTransactionManager txManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
-
 }

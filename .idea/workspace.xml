@@ -2,153 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9ce91-f763-4a54-a122-139bdaab490a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/changepwd.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/teams.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/arrow_down.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/arrow_up.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/teams.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/teams_info.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/changePwd.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/teams_info.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/message/manage/200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/message/manage/404.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/workspace-id.txt.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/workspace-id.txt.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ForeController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ForeController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpFileController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpFileController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/LoginController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ManageController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ManageController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/NewsImageController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/NewsImageController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ResearchTeamController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ResearchTeamController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/UserController.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/UserMapper.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/InsertParameter.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/InsertParameter.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/security/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/security/WebSecurityConfig.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/ManageService.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/ManageService.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/UserService.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ManageServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ManageServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.tar" afterPath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.tar" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.zip" afterPath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.zip" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar.original" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/data.sql" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/data.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ManageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/UserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/schema.sql" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/schema.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/login.css" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/login.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_base.css" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_news.css" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_news.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/file.js" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/file.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/manage_js/news.js" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/static/manage_js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/manage_info.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/manage_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/privateFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/userManage.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/news_head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/page.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/index.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/index.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/news_content.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/news_content.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/team_info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/news_head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/page.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ExceptionController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ForeController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ForeController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController$HandlerException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/LoginController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ManageController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ManageController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/NewsImageController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/NewsImageController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ResearchTeamController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ResearchTeamController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/UserMapper.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/InsertParameter.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/pojo/InsertParameter.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/security/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/security/WebSecurityConfig.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/ManageService.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/ManageService.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/UserService.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ManageServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ManageServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/data.sql" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/data.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ManageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ResearchTeamMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ResearchTeamMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/UserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/schema.sql" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/schema.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/login.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/login.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_base.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_news.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_news.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/img/edit_r.png" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/img/edit_r.png" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/file.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/file.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/manage_js/news.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/manage_js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/manage_info.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/manage_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/privateFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/userManage.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/news_head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/page.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/index.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/index.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/news_content.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/news_content.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/team_info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/news_head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/page.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/LoginController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ResearchTeamController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ResearchTeamController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/InsertParameter.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/data.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ResearchTeamMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ResearchTeamMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/UserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/login.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/login.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_base.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_news.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_news.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/edit_r.png" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/edit_r.png" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/news.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_info.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/news_head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/page.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/team_info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/header.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/news_head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/page.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java" />
     </list>
     <ignored path="$PROJECT_DIR$/labWeb/.gradle/" />
     <ignored path="$PROJECT_DIR$/labWeb/build/" />
@@ -205,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -729,7 +584,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/pojo/ResearchTeam.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ResearchTeamService.java" />
         <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ResearchTeamServiceImpl.java" />
@@ -780,6 +634,7 @@
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/teams_info.html" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
         <option value="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/teams_info.html" />
+        <option value="$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java" />
       </list>
     </option>
   </component>
@@ -1124,11 +979,19 @@
       <option name="project" value="LOCAL" />
       <updated>1528947054393</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="6月19日提交">
+      <created>1529409617692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1529409617692</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.49315068" order="2" side_tool="false" content_ui="tabs" />
@@ -1137,12 +1000,12 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23381294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23381294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3128621" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21566524" sideWeight="0.73741007" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21566524" sideWeight="0.73741007" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.49315068" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1191,7 +1054,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="6月14日11点" />
-    <option name="LAST_COMMIT_MESSAGE" value="6月14日11点" />
+    <MESSAGE value="6月19日提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="6月19日提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1583,7 +1447,7 @@
     <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/SpringBootLabApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
