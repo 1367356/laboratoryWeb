@@ -6,12 +6,12 @@ $(document).ready(function(){
 		$(this).children("img").toggle();
 	});
 	//移动图片上显示遮罩层
-	$(".container img").mouseenter(function(){
-		$(this).prev().show();
-		$(this).prev().mouseleave(function(){
-			$(this).hide();
-		});
-	});
+//	$(".container img").mouseenter(function(){
+//		$(this).prev().show();
+//		$(this).prev().mouseleave(function(){
+//			$(this).hide();
+//		});
+//	});
 	//删除团队成员
 	$(".container .img_delete").click(function(){
 		if (confirm('确认删除？')) {

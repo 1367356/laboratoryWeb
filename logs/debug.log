@@ -1,0 +1,673 @@
+2018-07-03 10:52:24.694  INFO 7664 --- [restartedMain] com.li.SpringBootLabApplication          : Starting SpringBootLabApplication on LAPTOP-HBRSJQ2D with PID 7664 (started by lenovo in D:\software\github\github下载\laboratoryWeb)
+2018-07-03 10:52:24.702 DEBUG 7664 --- [restartedMain] com.li.SpringBootLabApplication          : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-07-03 10:52:24.702  INFO 7664 --- [restartedMain] com.li.SpringBootLabApplication          : No active profile set, falling back to default profiles: default
+2018-07-03 10:52:25.308  INFO 7664 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@198455: startup date [Tue Jul 03 10:52:25 CST 2018]; root of context hierarchy
+2018-07-03 10:52:28.520  INFO 7664 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9002 (http)
+2018-07-03 10:52:28.537  INFO 7664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-03 10:52:28.539  INFO 7664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-03 10:52:28.893  INFO 7664 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-03 10:52:28.896  INFO 7664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-03 10:52:28.897  INFO 7664 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3591 ms
+2018-07-03 10:52:29.446  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-03 10:52:29.447  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-03 10:52:29.447  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-03 10:52:29.448  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-03 10:52:29.450  INFO 7664 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-03 10:52:29.451  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-03 10:52:29.452  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-03 10:52:29.454  INFO 7664 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-07-03 10:52:31.124  INFO 7664 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-03 10:52:31.402  INFO 7664 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql]
+2018-07-03 10:52:31.406  INFO 7664 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql] in 4 ms.
+2018-07-03 10:52:31.413  INFO 7664 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql]
+2018-07-03 10:52:31.415  INFO 7664 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql] in 1 ms.
+2018-07-03 10:52:32.595  INFO 7664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74637ac9, org.springframework.security.web.context.SecurityContextPersistenceFilter@535f0481, org.springframework.security.web.header.HeaderWriterFilter@3b8df62, org.springframework.security.web.authentication.logout.LogoutFilter@3d3f935, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e742c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff44543, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54adbc71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f5a8899, org.springframework.security.web.session.SessionManagementFilter@6958c741, org.springframework.security.web.access.ExceptionTranslationFilter@46007c3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14377257]
+2018-07-03 10:52:33.074  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@198455: startup date [Tue Jul 03 10:52:25 CST 2018]; root of context hierarchy
+2018-07-03 10:52:33.180  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.li.controller.ForeController.index(org.springframework.ui.Model)
+2018-07-03 10:52:33.182  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/querybycategory]}" onto public java.lang.String com.li.controller.ForeController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.182  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto public java.lang.String com.li.controller.ForeController.home(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 10:52:33.182  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hometest]}" onto public java.lang.String com.li.controller.ForeController.hometest(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.182  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryNews]}" onto public java.lang.String com.li.controller.ForeController.queryNews(org.springframework.ui.Model,long)
+2018-07-03 10:52:33.184  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryBackgroundPublicFile]}" onto public java.lang.String com.li.controller.FtpController.queryBackgroundPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 10:52:33.184  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryFile]}" onto public java.lang.String com.li.controller.FtpController.queryPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 10:52:33.187  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePrivateFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePrivateFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 10:52:33.187  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPrivateFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile) throws java.io.IOException
+2018-07-03 10:52:33.187  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/public/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPublicFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile)
+2018-07-03 10:52:33.188  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePublicFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePublicFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 10:52:33.189  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/queryFile]}" onto public java.lang.String com.li.controller.FtpFileController.queryPrivateFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 10:52:33.190  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.login(org.springframework.ui.Model)
+2018-07-03 10:52:33.190  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.showAdminPage(org.springframework.ui.Model)
+2018-07-03 10:52:33.190  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.displayLoginPage(org.springframework.ui.Model)
+2018-07-03 10:52:33.196  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.197  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 10:52:33.197  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/deleteNews]}" onto public java.lang.String com.li.controller.ManageController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,int,java.lang.String)
+2018-07-03 10:52:33.198  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 10:52:33.198  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.198  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/querybyBackList]}" onto public java.lang.String com.li.controller.ManageController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.200  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/displayImage/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.li.controller.NewsImageController.getFile(java.lang.String)
+2018-07-03 10:52:33.201  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.uploadImage1(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 10:52:33.201  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uploadNewsImage],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.handleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest)
+2018-07-03 10:52:33.205  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 10:52:33.205  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[GET]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.206  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/delete]}" onto public java.lang.String com.li.controller.ResearchTeamController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.206  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 10:52:33.207  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/query]}" onto public java.lang.String com.li.controller.ResearchTeamController.query(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.207  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/backgroundquery]}" onto public java.lang.String com.li.controller.ResearchTeamController.backgroundquery(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 10:52:33.209  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/selectUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.selectUserList(org.springframework.ui.Model,int)
+2018-07-03 10:52:33.209  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model,java.lang.String)
+2018-07-03 10:52:33.209  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model)
+2018-07-03 10:52:33.210  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.deleteUser(org.springframework.ui.Model,int)
+2018-07-03 10:52:33.210  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.registerNewUser(com.li.pojo.User,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 10:52:33.212  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-03 10:52:33.213  INFO 7664 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 10:52:33.303  INFO 7664 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 10:52:33.306  INFO 7664 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 10:52:33.404  INFO 7664 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 10:52:34.539  INFO 7664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-03 10:52:34.645  INFO 7664 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-03 10:52:34.649  INFO 7664 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-07-03 10:52:34.649  INFO 7664 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-03 10:52:34.657  INFO 7664 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-07-03 10:52:34.658  INFO 7664 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-07-03 10:52:34.787  INFO 7664 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9002 (http)
+2018-07-03 10:52:34.797  INFO 7664 --- [restartedMain] com.li.SpringBootLabApplication          : Started SpringBootLabApplication in 11.243 seconds (JVM running for 12.175)
+2018-07-03 10:52:40.297  INFO 7664 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-03 10:52:40.298  INFO 7664 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-03 10:52:40.333  INFO 7664 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-07-03 10:52:40.432 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 10:52:40.469 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 3(String), 2(String), 0(Integer)
+2018-07-03 10:52:40.487 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 10:52:40.489 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 10:52:40.490 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 10:52:40.500 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 10:52:40.501 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 10:52:40.503 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 2(String), 2(String), 0(Integer)
+2018-07-03 10:52:40.505 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 10:52:40.506 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 10:52:40.506 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 6(String), 0(Integer)
+2018-07-03 10:52:40.509 DEBUG 7664 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 3
+2018-07-03 11:23:20.068  INFO 5792 --- [restartedMain] com.li.SpringBootLabApplication          : Starting SpringBootLabApplication on LAPTOP-HBRSJQ2D with PID 5792 (started by lenovo in D:\software\github\github下载\laboratoryWeb)
+2018-07-03 11:23:20.069 DEBUG 5792 --- [restartedMain] com.li.SpringBootLabApplication          : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-07-03 11:23:20.070  INFO 5792 --- [restartedMain] com.li.SpringBootLabApplication          : No active profile set, falling back to default profiles: default
+2018-07-03 11:23:20.464  INFO 5792 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56e89236: startup date [Tue Jul 03 11:23:20 CST 2018]; root of context hierarchy
+2018-07-03 11:23:23.597  INFO 5792 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9002 (http)
+2018-07-03 11:23:23.617  INFO 5792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-03 11:23:23.619  INFO 5792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-03 11:23:23.981  INFO 5792 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-03 11:23:23.986  INFO 5792 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-03 11:23:23.986  INFO 5792 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3526 ms
+2018-07-03 11:23:24.447  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-03 11:23:24.448  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-03 11:23:24.448  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-03 11:23:24.448  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-03 11:23:24.450  INFO 5792 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-03 11:23:24.453  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-03 11:23:24.455  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-03 11:23:24.458  INFO 5792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-07-03 11:23:25.941  INFO 5792 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-03 11:23:26.212  INFO 5792 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql]
+2018-07-03 11:23:26.217  INFO 5792 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql] in 5 ms.
+2018-07-03 11:23:26.224  INFO 5792 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql]
+2018-07-03 11:23:26.225  INFO 5792 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql] in 0 ms.
+2018-07-03 11:23:27.361  INFO 5792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59735df5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d991ab4, org.springframework.security.web.header.HeaderWriterFilter@1cd19979, org.springframework.security.web.authentication.logout.LogoutFilter@7f8d4886, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54af09e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65e33342, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d25026b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ff1c0f3, org.springframework.security.web.session.SessionManagementFilter@6f38544e, org.springframework.security.web.access.ExceptionTranslationFilter@25074721, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7411e2fd]
+2018-07-03 11:23:27.844  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56e89236: startup date [Tue Jul 03 11:23:20 CST 2018]; root of context hierarchy
+2018-07-03 11:23:27.947  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.li.controller.ForeController.index(org.springframework.ui.Model)
+2018-07-03 11:23:27.948  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/querybycategory]}" onto public java.lang.String com.li.controller.ForeController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.949  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto public java.lang.String com.li.controller.ForeController.home(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 11:23:27.949  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hometest]}" onto public java.lang.String com.li.controller.ForeController.hometest(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.950  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryNews]}" onto public java.lang.String com.li.controller.ForeController.queryNews(org.springframework.ui.Model,long)
+2018-07-03 11:23:27.951  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryBackgroundPublicFile]}" onto public java.lang.String com.li.controller.FtpController.queryBackgroundPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:23:27.952  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryFile]}" onto public java.lang.String com.li.controller.FtpController.queryPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:23:27.954  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePrivateFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePrivateFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 11:23:27.955  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPrivateFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile) throws java.io.IOException
+2018-07-03 11:23:27.957  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/public/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPublicFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile)
+2018-07-03 11:23:27.957  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/queryFile]}" onto public java.lang.String com.li.controller.FtpFileController.queryPrivateFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:23:27.958  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePublicFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePublicFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 11:23:27.959  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.showAdminPage(org.springframework.ui.Model)
+2018-07-03 11:23:27.960  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.displayLoginPage(org.springframework.ui.Model)
+2018-07-03 11:23:27.960  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.login(org.springframework.ui.Model)
+2018-07-03 11:23:27.964  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.964  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:23:27.965  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/deleteNews]}" onto public java.lang.String com.li.controller.ManageController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,int,java.lang.String)
+2018-07-03 11:23:27.965  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:23:27.965  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.966  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/querybyBackList]}" onto public java.lang.String com.li.controller.ManageController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.967  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/displayImage/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.li.controller.NewsImageController.getFile(java.lang.String)
+2018-07-03 11:23:27.967  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uploadNewsImage],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.handleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest)
+2018-07-03 11:23:27.967  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.uploadImage1(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 11:23:27.970  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:23:27.971  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[GET]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.971  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/delete]}" onto public java.lang.String com.li.controller.ResearchTeamController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.972  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:23:27.973  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/query]}" onto public java.lang.String com.li.controller.ResearchTeamController.query(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.973  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/backgroundquery]}" onto public java.lang.String com.li.controller.ResearchTeamController.backgroundquery(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:23:27.974  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/selectUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.selectUserList(org.springframework.ui.Model,int)
+2018-07-03 11:23:27.975  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.registerNewUser(com.li.pojo.User,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 11:23:27.975  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.deleteUser(org.springframework.ui.Model,int)
+2018-07-03 11:23:27.976  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:23:27.976  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model)
+2018-07-03 11:23:27.978  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-03 11:23:27.978  INFO 5792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 11:23:28.032  INFO 5792 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 11:23:28.032  INFO 5792 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 11:23:28.108  INFO 5792 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 11:23:29.150  INFO 5792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-03 11:23:29.216  INFO 5792 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-03 11:23:29.218  INFO 5792 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-07-03 11:23:29.218  INFO 5792 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-03 11:23:29.224  INFO 5792 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-07-03 11:23:29.225  INFO 5792 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-07-03 11:23:29.305  INFO 5792 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9002 (http)
+2018-07-03 11:23:29.312  INFO 5792 --- [restartedMain] com.li.SpringBootLabApplication          : Started SpringBootLabApplication in 10.293 seconds (JVM running for 11.326)
+2018-07-03 11:23:43.666  INFO 5792 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-03 11:23:43.667  INFO 5792 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-03 11:23:43.698  INFO 5792 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-07-03 11:23:43.792 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:23:43.825 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 3(String), 2(String), 0(Integer)
+2018-07-03 11:23:43.844 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 11:23:43.846 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:23:43.847 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:23:43.856 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:23:43.857 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:23:43.857 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 2(String), 2(String), 0(Integer)
+2018-07-03 11:23:43.859 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 11:23:43.860 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:23:43.860 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 6(String), 0(Integer)
+2018-07-03 11:23:43.863 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 3
+2018-07-03 11:26:10.114 DEBUG 5792 --- [http-nio-9002-exec-2] com.li.dao.UserMapper.findByUserName     : ==>  Preparing: select * from user where username=? 
+2018-07-03 11:26:10.115 DEBUG 5792 --- [http-nio-9002-exec-2] com.li.dao.UserMapper.findByUserName     : ==> Parameters: admin(String)
+2018-07-03 11:26:10.122 DEBUG 5792 --- [http-nio-9002-exec-2] com.li.dao.UserMapper.findByUserName     : <==      Total: 1
+2018-07-03 11:26:10.228 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:26:10.229 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:26:10.237 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:26:10.238 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.selectCount      : ==>  Preparing: select count(*) from newslist where pid=? and id=? 
+2018-07-03 11:26:10.238 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.selectCount      : ==> Parameters: 1(String), 1(String)
+2018-07-03 11:26:10.241 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.selectCount      : <==      Total: 1
+2018-07-03 11:26:20.626 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.insertNewsList   : ==>  Preparing: insert into newslist values(?,?,?,?,?,?,?) 
+2018-07-03 11:26:20.633 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.insertNewsList   : ==> Parameters: 1530588380616(Long), 2(String), 1(String), dfd(String), 2018-07-03(String), null, 本站原创(String)
+2018-07-03 11:26:20.634 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.insertNewsList   : <==    Updates: 1
+2018-07-03 11:26:20.635 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.insertNews       : ==>  Preparing: insert into news(pid,id,htmlid,count,publisher,title,type,abstractText,content,date_created) values (?,?,?,?,?,?, ?,?,?,?) 
+2018-07-03 11:26:20.636 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.insertNews       : ==> Parameters: 2(String), 1(String), 1530588380616(Long), 0(Integer), 本站编辑(String), dfd(String), 本站原创(String), dsfd(String), <p style="text-align:justify"><span style="font-size:14px">1.配置根Logger</span></p>
+
+<p style="text-align:justify"><span style="font-size:14px">Logger 负责处理日志记录的大部分操作。其语法为：</span></p>
+
+<p><span style="font-size:14px">log4j.rootLogger = [ level ] , appenderName, appenderName, &hellip;</span></p>
+
+<p style="text-align:justify"><span style="font-size:14px">其中，level 是日志记录的优先级，分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL或者自定义的级别。Log4j建议只使用四个级别，优先级从高到低分别是ERROR、WARN、INFO、DEBUG。通过在这里定义的级别，您可以控制到应用程序中相应级别的日志信息的开关。比如在这里定义了INFO级别，只有等于及高于这个级别的才进行处理，则应用程序中所有DEBUG级别的日志信息将不被打印出来。ALL:打印所有的日志，OFF：关闭所有的日志输出。 appenderName就是指定日志信息输出到哪个地方。可同时指定多个输出目的地。</span></p>
+
+<p style="text-align:justify"><span style="font-size:14px">2.配置日志信息输出目的地 Appender<br />
+Appender 负责控制日志记录操作的输出。其语法为：</span></p>
+
+<div style="box-sizing: border-box; outline: 0px; padding: 0px; margin: 0px; word-break: break-all; font-family: -apple-system, &quot;SF UI Text&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif, SimHei, SimSun; font-size: 14px;">log4j.appender.appenderName = fully.qualified.name.of.appender.class</div>
+
+<div style="box-sizing: border-box; outline: 0px; padding: 0px; margin: 0px; word-break: break-all; font-family: -apple-system, &quot;SF UI Text&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif, SimHei, SimSun; font-size: 14px;">log4j.appender.appenderName.option1 = value1</div>
+
+<div style="box-sizing: border-box; outline: 0px; padding: 0px; margin: 0px; word-break: break-all; font-family: -apple-system, &quot;SF UI Text&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif, SimHei, SimSun; font-size: 14px;">&hellip;</div>
+
+<div style="box-sizing: border-box; outline: 0px; padding: 0px; margin: 0px; word-break: break-all; font-family: -apple-system, &quot;SF UI Text&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif, SimHei, SimSun; font-size: 14px;">log4j.appender.appenderName.optionN = valueN</div>
+
+<p><span style="font-family:-apple-system,sf ui text,arial,pingfang sc,hiragino sans gb,microsoft yahei,wenquanyi micro hei,sans-serif,simhei,simsun; font-size:14px">这里的appenderName为在第一步里定义的，可任意起名。其中，Log4j提供的appender有以下几种：<br />
+org.apache.log4j.ConsoleAppender（控制台），<br />
+org.apache.log4j.FileAppender（文件），<br />
+org.apache.log4j.DailyRollingFileAppender（每天产生一个日志文件），<br />
+org.apache.log4j.RollingFileAppender（文件大小到达指定尺寸的时候产生一个新的文件），可通过log4j.appender.R.MaxFileSize=100KB设置文件大小，还可通过log4j.appender.R.MaxBackupIndex=1设置为保存一个备份文件。<br />
+org.apache.log4j.WriterAppender（将日志信息以流格式发送到任意指定的地方）<br />
+例如：log4j.appender.stdout=org.apache.log4j.ConsoleAppender<br />
+定义一个名为stdout的输出目的地，ConsoleAppender为控制台。</span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-size:14px">3.配置日志信息的格式（布局）Layout</span></p>
+(String), 2018-07-03(String)
+2018-07-03 11:26:20.642 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.insertNews       : <==    Updates: 1
+2018-07-03 11:26:20.648 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.queryNews          : ==>  Preparing: select pid,id,htmlid, count,publisher,type,title,abstractText,content,date_created from news where htmlid=?; 
+2018-07-03 11:26:20.650 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.queryNews          : ==> Parameters: 1530588380616(Long)
+2018-07-03 11:26:20.651 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.queryNews          : <==      Total: 1
+2018-07-03 11:26:31.396 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:26:31.398 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:26:31.402 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:26:31.403 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.selectCount      : ==>  Preparing: select count(*) from newslist where pid=? and id=? 
+2018-07-03 11:26:31.404 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.selectCount      : ==> Parameters: 2(String), 1(String)
+2018-07-03 11:26:31.405 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.selectCount      : <==      Total: 1
+2018-07-03 11:26:33.764 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.queryNews          : ==>  Preparing: select pid,id,htmlid, count,publisher,type,title,abstractText,content,date_created from news where htmlid=?; 
+2018-07-03 11:26:33.765 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.queryNews          : ==> Parameters: 1530588380616(Long)
+2018-07-03 11:26:33.769 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.queryNews          : <==      Total: 1
+2018-07-03 11:26:33.770 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.updateCount        : ==>  Preparing: update news set count=? where htmlid=? 
+2018-07-03 11:26:33.771 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.updateCount        : ==> Parameters: 1(Integer), 1530588380616(Long)
+2018-07-03 11:26:33.785 DEBUG 5792 --- [http-nio-9002-exec-10] com.li.dao.ForeMapper.updateCount        : <==    Updates: 1
+2018-07-03 11:28:22.882 DEBUG 5792 --- [http-nio-9002-exec-9] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:28:22.883 DEBUG 5792 --- [http-nio-9002-exec-9] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:28:22.885 DEBUG 5792 --- [http-nio-9002-exec-9] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:28:22.888 DEBUG 5792 --- [http-nio-9002-exec-9] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:28:22.891 DEBUG 5792 --- [http-nio-9002-exec-9] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:28:22.899 DEBUG 5792 --- [http-nio-9002-exec-9] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:28:41.226 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:28:41.227 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:28:41.232 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:28:41.232 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.selectCount      : ==>  Preparing: select count(*) from newslist where pid=? and id=? 
+2018-07-03 11:28:41.233 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.selectCount      : ==> Parameters: 1(String), 1(String)
+2018-07-03 11:28:41.234 DEBUG 5792 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.selectCount      : <==      Total: 1
+2018-07-03 11:28:46.312 DEBUG 5792 --- [http-nio-9002-exec-3] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:28:46.312 DEBUG 5792 --- [http-nio-9002-exec-3] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:28:46.315 DEBUG 5792 --- [http-nio-9002-exec-3] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:28:46.317 DEBUG 5792 --- [http-nio-9002-exec-3] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:28:46.318 DEBUG 5792 --- [http-nio-9002-exec-3] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:28:46.321 DEBUG 5792 --- [http-nio-9002-exec-3] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:34:04.685  INFO 14456 --- [restartedMain] com.li.SpringBootLabApplication          : Starting SpringBootLabApplication on LAPTOP-HBRSJQ2D with PID 14456 (started by lenovo in D:\software\github\github下载\laboratoryWeb)
+2018-07-03 11:34:04.688 DEBUG 14456 --- [restartedMain] com.li.SpringBootLabApplication          : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-07-03 11:34:04.689  INFO 14456 --- [restartedMain] com.li.SpringBootLabApplication          : No active profile set, falling back to default profiles: default
+2018-07-03 11:34:05.263  INFO 14456 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ff68796: startup date [Tue Jul 03 11:34:05 CST 2018]; root of context hierarchy
+2018-07-03 11:34:09.449  INFO 14456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9002 (http)
+2018-07-03 11:34:09.475  INFO 14456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-03 11:34:09.477  INFO 14456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-03 11:34:09.929  INFO 14456 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-03 11:34:09.935  INFO 14456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-03 11:34:09.935  INFO 14456 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4676 ms
+2018-07-03 11:34:10.599  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-03 11:34:10.600  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-03 11:34:10.601  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-03 11:34:10.603  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-03 11:34:10.605  INFO 14456 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-03 11:34:10.607  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-03 11:34:10.608  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-03 11:34:10.610  INFO 14456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-07-03 11:34:13.003  INFO 14456 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-03 11:34:13.397  INFO 14456 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql]
+2018-07-03 11:34:13.402  INFO 14456 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql] in 4 ms.
+2018-07-03 11:34:13.410  INFO 14456 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql]
+2018-07-03 11:34:13.411  INFO 14456 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql] in 1 ms.
+2018-07-03 11:34:15.458  INFO 14456 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76c0fb09, org.springframework.security.web.context.SecurityContextPersistenceFilter@26b5382d, org.springframework.security.web.header.HeaderWriterFilter@745334b0, org.springframework.security.web.authentication.logout.LogoutFilter@6218753f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63cc24d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@232e4987, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e82c241, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1631eb2b, org.springframework.security.web.session.SessionManagementFilter@f94ff5f, org.springframework.security.web.access.ExceptionTranslationFilter@3a44ab3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d132c65]
+2018-07-03 11:34:16.251  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ff68796: startup date [Tue Jul 03 11:34:05 CST 2018]; root of context hierarchy
+2018-07-03 11:34:16.395  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.li.controller.ForeController.index(org.springframework.ui.Model)
+2018-07-03 11:34:16.398  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/querybycategory]}" onto public java.lang.String com.li.controller.ForeController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.398  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto public java.lang.String com.li.controller.ForeController.home(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 11:34:16.399  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hometest]}" onto public java.lang.String com.li.controller.ForeController.hometest(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.399  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryNews]}" onto public java.lang.String com.li.controller.ForeController.queryNews(org.springframework.ui.Model,long)
+2018-07-03 11:34:16.400  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryFile]}" onto public java.lang.String com.li.controller.FtpController.queryPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:34:16.401  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryBackgroundPublicFile]}" onto public java.lang.String com.li.controller.FtpController.queryBackgroundPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:34:16.404  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePublicFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePublicFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 11:34:16.405  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/queryFile]}" onto public java.lang.String com.li.controller.FtpFileController.queryPrivateFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:34:16.405  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/public/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPublicFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile)
+2018-07-03 11:34:16.405  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePrivateFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePrivateFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 11:34:16.406  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPrivateFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile) throws java.io.IOException
+2018-07-03 11:34:16.407  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.displayLoginPage(org.springframework.ui.Model)
+2018-07-03 11:34:16.407  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.login(org.springframework.ui.Model)
+2018-07-03 11:34:16.407  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.showAdminPage(org.springframework.ui.Model)
+2018-07-03 11:34:16.416  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.417  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:34:16.417  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/deleteNews]}" onto public java.lang.String com.li.controller.ManageController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,int,java.lang.String)
+2018-07-03 11:34:16.418  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:34:16.418  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.418  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/querybyBackList]}" onto public java.lang.String com.li.controller.ManageController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.419  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/displayImage/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.li.controller.NewsImageController.getFile(java.lang.String)
+2018-07-03 11:34:16.419  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uploadNewsImage],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.handleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest)
+2018-07-03 11:34:16.419  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.uploadImage1(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 11:34:16.422  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:34:16.423  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[GET]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.423  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/delete]}" onto public java.lang.String com.li.controller.ResearchTeamController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.424  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 11:34:16.424  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/query]}" onto public java.lang.String com.li.controller.ResearchTeamController.query(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.424  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/backgroundquery]}" onto public java.lang.String com.li.controller.ResearchTeamController.backgroundquery(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 11:34:16.428  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/selectUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.selectUserList(org.springframework.ui.Model,int)
+2018-07-03 11:34:16.429  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model,java.lang.String)
+2018-07-03 11:34:16.429  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model)
+2018-07-03 11:34:16.429  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.registerNewUser(com.li.pojo.User,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 11:34:16.430  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.deleteUser(org.springframework.ui.Model,int)
+2018-07-03 11:34:16.432  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-03 11:34:16.432  INFO 14456 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 11:34:16.546  INFO 14456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 11:34:16.547  INFO 14456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 11:34:16.655  INFO 14456 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 11:34:18.161  INFO 14456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-03 11:34:18.280  INFO 14456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-03 11:34:18.283  INFO 14456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-07-03 11:34:18.284  INFO 14456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-03 11:34:18.290  INFO 14456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-07-03 11:34:18.293  INFO 14456 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-07-03 11:34:18.457  INFO 14456 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9002 (http)
+2018-07-03 11:34:18.470  INFO 14456 --- [restartedMain] com.li.SpringBootLabApplication          : Started SpringBootLabApplication in 15.037 seconds (JVM running for 16.305)
+2018-07-03 11:34:19.820  INFO 14456 --- [http-nio-9002-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-03 11:34:19.820  INFO 14456 --- [http-nio-9002-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-03 11:34:19.868  INFO 14456 --- [http-nio-9002-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2018-07-03 11:34:20.068 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:34:20.144 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:34:20.176 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:34:20.190 DEBUG 14456 --- [http-nio-9002-exec-10] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:34:20.208 DEBUG 14456 --- [http-nio-9002-exec-10] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:34:20.236 DEBUG 14456 --- [http-nio-9002-exec-10] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:35:35.000 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:35:35.001 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:35:35.003 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:35:35.004 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:35:35.005 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:35:35.008 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:35:39.735 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:35:39.739 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 3(String), 2(String), 0(Integer)
+2018-07-03 11:35:39.740 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 11:35:39.741 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:35:39.742 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:35:39.748 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:35:39.749 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:35:39.749 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 2(String), 2(String), 0(Integer)
+2018-07-03 11:35:39.751 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 11:35:39.752 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:35:39.753 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 6(String), 0(Integer)
+2018-07-03 11:35:39.756 DEBUG 14456 --- [http-nio-9002-exec-9] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 3
+2018-07-03 11:35:49.639 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.UserMapper.findByUserName     : ==>  Preparing: select * from user where username=? 
+2018-07-03 11:35:49.640 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.UserMapper.findByUserName     : ==> Parameters: admin(String)
+2018-07-03 11:35:49.648 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.UserMapper.findByUserName     : <==      Total: 1
+2018-07-03 11:35:49.757 DEBUG 14456 --- [http-nio-9002-exec-4] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:35:49.759 DEBUG 14456 --- [http-nio-9002-exec-4] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:35:49.771 DEBUG 14456 --- [http-nio-9002-exec-4] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:35:49.772 DEBUG 14456 --- [http-nio-9002-exec-4] com.li.dao.ManageMapper.selectCount      : ==>  Preparing: select count(*) from newslist where pid=? and id=? 
+2018-07-03 11:35:49.774 DEBUG 14456 --- [http-nio-9002-exec-4] com.li.dao.ManageMapper.selectCount      : ==> Parameters: 1(String), 1(String)
+2018-07-03 11:35:49.775 DEBUG 14456 --- [http-nio-9002-exec-4] com.li.dao.ManageMapper.selectCount      : <==      Total: 1
+2018-07-03 11:35:52.315 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:35:52.316 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:35:52.320 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:35:52.322 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:35:52.324 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:35:52.333 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:35:56.593 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.queryNews          : ==>  Preparing: select pid,id,htmlid, count,publisher,type,title,abstractText,content,date_created from news where htmlid=?; 
+2018-07-03 11:35:56.595 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.queryNews          : ==> Parameters: 1529754720640(Long)
+2018-07-03 11:35:56.597 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.queryNews          : <==      Total: 1
+2018-07-03 11:35:56.633 ERROR 14456 --- [http-nio-9002-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9002-exec-3] Exception processing template "background/new_modify": Exception evaluating SpringEL expression: "response.titleImage" (background/new_modify)
+2018-07-03 11:35:56.644 ERROR 14456 --- [http-nio-9002-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "response.titleImage" (background/new_modify)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'titleImage' cannot be found on object of type 'com.li.pojo.News' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:226) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:46) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:379) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:88) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:140) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.processor.attr.AbstractStandardAttributeModifierAttrProcessor.getModifiedAttributeValues(AbstractStandardAttributeModifierAttrProcessor.java:109) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttributeModifierAttrProcessor.processAttribute(AbstractAttributeModifierAttrProcessor.java:62) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:972) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Document.process(Document.java:93) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.6.jar:1.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-07-03 11:36:00.388 DEBUG 14456 --- [http-nio-9002-exec-5] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:36:00.390 DEBUG 14456 --- [http-nio-9002-exec-5] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:36:00.392 DEBUG 14456 --- [http-nio-9002-exec-5] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:36:00.394 DEBUG 14456 --- [http-nio-9002-exec-5] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:36:00.396 DEBUG 14456 --- [http-nio-9002-exec-5] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:36:00.401 DEBUG 14456 --- [http-nio-9002-exec-5] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:36:00.831 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:36:00.832 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:36:00.842 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:36:00.844 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.selectCount      : ==>  Preparing: select count(*) from newslist where pid=? and id=? 
+2018-07-03 11:36:00.845 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.selectCount      : ==> Parameters: 1(String), 1(String)
+2018-07-03 11:36:00.846 DEBUG 14456 --- [http-nio-9002-exec-10] com.li.dao.ManageMapper.selectCount      : <==      Total: 1
+2018-07-03 11:36:02.499 DEBUG 14456 --- [http-nio-9002-exec-8] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:36:02.500 DEBUG 14456 --- [http-nio-9002-exec-8] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:36:02.501 DEBUG 14456 --- [http-nio-9002-exec-8] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:36:02.503 DEBUG 14456 --- [http-nio-9002-exec-8] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:36:02.504 DEBUG 14456 --- [http-nio-9002-exec-8] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:36:02.507 DEBUG 14456 --- [http-nio-9002-exec-8] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 7
+2018-07-03 11:36:07.794 DEBUG 14456 --- [http-nio-9002-exec-6] c.l.d.R.deleteNewshtmlid                 : ==>  Preparing: delete from news where htmlid=? 
+2018-07-03 11:36:07.795 DEBUG 14456 --- [http-nio-9002-exec-6] c.l.d.R.deleteNewshtmlid                 : ==> Parameters: 1530153601709(Long)
+2018-07-03 11:36:07.803 DEBUG 14456 --- [http-nio-9002-exec-6] c.l.d.R.deleteNewshtmlid                 : <==    Updates: 1
+2018-07-03 11:36:07.804 DEBUG 14456 --- [http-nio-9002-exec-6] c.l.d.R.deleteResearchTeamHtmlid         : ==>  Preparing: delete from researchTeam where htmlid=? 
+2018-07-03 11:36:07.804 DEBUG 14456 --- [http-nio-9002-exec-6] c.l.d.R.deleteResearchTeamHtmlid         : ==> Parameters: 1530153601709(Long)
+2018-07-03 11:36:07.805 DEBUG 14456 --- [http-nio-9002-exec-6] c.l.d.R.deleteResearchTeamHtmlid         : <==    Updates: 1
+2018-07-03 11:36:07.835 DEBUG 14456 --- [http-nio-9002-exec-5] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:36:07.835 DEBUG 14456 --- [http-nio-9002-exec-5] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:36:07.837 DEBUG 14456 --- [http-nio-9002-exec-5] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:36:07.838 DEBUG 14456 --- [http-nio-9002-exec-5] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:36:07.838 DEBUG 14456 --- [http-nio-9002-exec-5] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:36:07.841 DEBUG 14456 --- [http-nio-9002-exec-5] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 6
+2018-07-03 11:36:15.444 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.queryNews          : ==>  Preparing: select pid,id,htmlid, count,publisher,type,title,abstractText,content,date_created from news where htmlid=?; 
+2018-07-03 11:36:15.445 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.queryNews          : ==> Parameters: 1529754720640(Long)
+2018-07-03 11:36:15.446 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.queryNews          : <==      Total: 1
+2018-07-03 11:36:15.447 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.updateCount        : ==>  Preparing: update news set count=? where htmlid=? 
+2018-07-03 11:36:15.448 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.updateCount        : ==> Parameters: 8(Integer), 1529754720640(Long)
+2018-07-03 11:36:15.463 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ForeMapper.updateCount        : <==    Updates: 1
+2018-07-03 11:36:24.374 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 11:36:24.375 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 11:36:24.379 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 11:36:24.380 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ManageMapper.selectCount      : ==>  Preparing: select count(*) from newslist where pid=? and id=? 
+2018-07-03 11:36:24.380 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ManageMapper.selectCount      : ==> Parameters: 1(String), 1(String)
+2018-07-03 11:36:24.382 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ManageMapper.selectCount      : <==      Total: 1
+2018-07-03 11:36:26.337 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:36:26.337 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:36:26.340 DEBUG 14456 --- [http-nio-9002-exec-6] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:36:26.341 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:36:26.342 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:36:26.345 DEBUG 14456 --- [http-nio-9002-exec-6] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 6
+2018-07-03 11:36:32.940 DEBUG 14456 --- [http-nio-9002-exec-5] c.l.d.R.deleteNewshtmlid                 : ==>  Preparing: delete from news where htmlid=? 
+2018-07-03 11:36:32.940 DEBUG 14456 --- [http-nio-9002-exec-5] c.l.d.R.deleteNewshtmlid                 : ==> Parameters: 1530585009799(Long)
+2018-07-03 11:36:32.941 DEBUG 14456 --- [http-nio-9002-exec-5] c.l.d.R.deleteNewshtmlid                 : <==    Updates: 1
+2018-07-03 11:36:32.941 DEBUG 14456 --- [http-nio-9002-exec-5] c.l.d.R.deleteResearchTeamHtmlid         : ==>  Preparing: delete from researchTeam where htmlid=? 
+2018-07-03 11:36:32.941 DEBUG 14456 --- [http-nio-9002-exec-5] c.l.d.R.deleteResearchTeamHtmlid         : ==> Parameters: 1530585009799(Long)
+2018-07-03 11:36:32.942 DEBUG 14456 --- [http-nio-9002-exec-5] c.l.d.R.deleteResearchTeamHtmlid         : <==    Updates: 1
+2018-07-03 11:36:32.962 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ResearchTeamMapper.query      : ==>  Preparing: select distinct type from researchTeam where id=?; 
+2018-07-03 11:36:32.963 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ResearchTeamMapper.query      : ==> Parameters: 1(String)
+2018-07-03 11:36:32.964 DEBUG 14456 --- [http-nio-9002-exec-3] com.li.dao.ResearchTeamMapper.query      : <==      Total: 1
+2018-07-03 11:36:32.966 DEBUG 14456 --- [http-nio-9002-exec-3] c.li.dao.ResearchTeamMapper.queryGroup   : ==>  Preparing: select * from researchTeam where type=? and id=?; 
+2018-07-03 11:36:32.966 DEBUG 14456 --- [http-nio-9002-exec-3] c.li.dao.ResearchTeamMapper.queryGroup   : ==> Parameters: 教授(String), 1(String)
+2018-07-03 11:36:32.968 DEBUG 14456 --- [http-nio-9002-exec-3] c.li.dao.ResearchTeamMapper.queryGroup   : <==      Total: 5
+2018-07-03 14:52:25.058  INFO 15368 --- [restartedMain] com.li.SpringBootLabApplication          : Starting SpringBootLabApplication on LAPTOP-HBRSJQ2D with PID 15368 (started by lenovo in D:\software\github\github下载\laboratoryWeb)
+2018-07-03 14:52:25.060 DEBUG 15368 --- [restartedMain] com.li.SpringBootLabApplication          : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-07-03 14:52:25.062  INFO 15368 --- [restartedMain] com.li.SpringBootLabApplication          : No active profile set, falling back to default profiles: default
+2018-07-03 14:52:25.618  INFO 15368 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57f250f0: startup date [Tue Jul 03 14:52:25 CST 2018]; root of context hierarchy
+2018-07-03 14:52:28.624  INFO 15368 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9002 (http)
+2018-07-03 14:52:28.640  INFO 15368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-03 14:52:28.642  INFO 15368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-03 14:52:28.946  INFO 15368 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-03 14:52:28.951  INFO 15368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-03 14:52:28.951  INFO 15368 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3336 ms
+2018-07-03 14:52:29.390  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-03 14:52:29.390  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-03 14:52:29.391  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-03 14:52:29.391  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-03 14:52:29.392  INFO 15368 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-03 14:52:29.393  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-03 14:52:29.394  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-03 14:52:29.396  INFO 15368 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-07-03 14:52:30.956  INFO 15368 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-03 14:52:31.232  INFO 15368 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql]
+2018-07-03 14:52:31.236  INFO 15368 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/schema.sql] in 3 ms.
+2018-07-03 14:52:31.242  INFO 15368 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql]
+2018-07-03 14:52:31.244  INFO 15368 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/D:/software/github/github%e4%b8%8b%e8%bd%bd/laboratoryWeb/labWeb/out/production/resources/data.sql] in 1 ms.
+2018-07-03 14:52:32.385  INFO 15368 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f746923, org.springframework.security.web.context.SecurityContextPersistenceFilter@4090900, org.springframework.security.web.header.HeaderWriterFilter@1a7843eb, org.springframework.security.web.authentication.logout.LogoutFilter@138a6b17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1340eef1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1159a1cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50790ba1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8b83d29, org.springframework.security.web.session.SessionManagementFilter@36379990, org.springframework.security.web.access.ExceptionTranslationFilter@48eac10d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@393221c4]
+2018-07-03 14:52:32.811  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57f250f0: startup date [Tue Jul 03 14:52:25 CST 2018]; root of context hierarchy
+2018-07-03 14:52:32.912  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.li.controller.ForeController.index(org.springframework.ui.Model)
+2018-07-03 14:52:32.913  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/querybycategory]}" onto public java.lang.String com.li.controller.ForeController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.913  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto public java.lang.String com.li.controller.ForeController.home(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 14:52:32.914  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryNews]}" onto public java.lang.String com.li.controller.ForeController.queryNews(org.springframework.ui.Model,long)
+2018-07-03 14:52:32.914  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hometest]}" onto public java.lang.String com.li.controller.ForeController.hometest(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.915  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryBackgroundPublicFile]}" onto public java.lang.String com.li.controller.FtpController.queryBackgroundPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 14:52:32.916  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftp/public/queryFile]}" onto public java.lang.String com.li.controller.FtpController.queryPublicFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 14:52:32.919  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPrivateFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile) throws java.io.IOException
+2018-07-03 14:52:32.920  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePrivateFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePrivateFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 14:52:32.920  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/private/queryFile]}" onto public java.lang.String com.li.controller.FtpFileController.queryPrivateFile(org.springframework.ui.Model,java.lang.String)
+2018-07-03 14:52:32.921  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/public/uploadFile]}" onto public java.lang.String com.li.controller.FtpFileController.uploadPublicFile(org.springframework.ui.Model,org.springframework.web.multipart.MultipartFile,com.li.pojo.FtpFile)
+2018-07-03 14:52:32.921  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/FtpFileController/deletePublicFile]}" onto public java.lang.String com.li.controller.FtpFileController.deletePublicFile(org.springframework.ui.Model,java.lang.String) throws java.io.IOException
+2018-07-03 14:52:32.922  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.showAdminPage(org.springframework.ui.Model)
+2018-07-03 14:52:32.922  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.login(org.springframework.ui.Model)
+2018-07-03 14:52:32.923  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.li.controller.LoginController.displayLoginPage(org.springframework.ui.Model)
+2018-07-03 14:52:32.927  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.928  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/updateNews],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 14:52:32.928  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/deleteNews]}" onto public java.lang.String com.li.controller.ManageController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,int,java.lang.String)
+2018-07-03 14:52:32.929  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 14:52:32.929  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/insert],methods=[GET]}" onto public java.lang.String com.li.controller.ManageController.insert(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.929  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/background/querybyBackList]}" onto public java.lang.String com.li.controller.ManageController.query(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.931  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/displayImage/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.li.controller.NewsImageController.getFile(java.lang.String)
+2018-07-03 14:52:32.931  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.uploadImage1(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 14:52:32.932  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uploadNewsImage],methods=[POST]}" onto public java.lang.String com.li.controller.NewsImageController.handleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest)
+2018-07-03 14:52:32.935  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 14:52:32.936  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/update],methods=[GET]}" onto public java.lang.String com.li.controller.ResearchTeamController.update(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.936  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/delete]}" onto public java.lang.String com.li.controller.ResearchTeamController.delete(org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.937  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/insert],methods=[POST]}" onto public java.lang.String com.li.controller.ResearchTeamController.insert(org.springframework.ui.Model,com.li.pojo.InsertParameter)
+2018-07-03 14:52:32.937  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/query]}" onto public java.lang.String com.li.controller.ResearchTeamController.query(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.937  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchTeam/backgroundquery]}" onto public java.lang.String com.li.controller.ResearchTeamController.backgroundquery(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-07-03 14:52:32.939  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model)
+2018-07-03 14:52:32.939  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/modifyPassword],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.modifyPassword(org.springframework.ui.Model,java.lang.String)
+2018-07-03 14:52:32.940  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.String com.li.controller.UserController.registerNewUser(com.li.pojo.User,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-07-03 14:52:32.940  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.deleteUser(org.springframework.ui.Model,int)
+2018-07-03 14:52:32.940  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/selectUser],methods=[GET]}" onto public java.lang.String com.li.controller.UserController.selectUserList(org.springframework.ui.Model,int)
+2018-07-03 14:52:32.942  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-03 14:52:32.943  INFO 15368 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-03 14:52:33.005  INFO 15368 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 14:52:33.006  INFO 15368 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 14:52:33.089  INFO 15368 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-03 14:52:34.087  INFO 15368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-03 14:52:34.160  INFO 15368 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-03 14:52:34.163  INFO 15368 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-07-03 14:52:34.163  INFO 15368 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-03 14:52:34.168  INFO 15368 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-07-03 14:52:34.169  INFO 15368 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-07-03 14:52:34.255  INFO 15368 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9002 (http)
+2018-07-03 14:52:34.262  INFO 15368 --- [restartedMain] com.li.SpringBootLabApplication          : Started SpringBootLabApplication in 10.356 seconds (JVM running for 11.337)
+2018-07-03 14:52:42.273  INFO 15368 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-03 14:52:42.274  INFO 15368 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-03 14:52:42.318  INFO 15368 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-07-03 14:52:42.453 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:42.490 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 3(String), 2(String), 0(Integer)
+2018-07-03 14:52:42.519 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 14:52:42.522 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:42.524 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 14:52:42.534 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 14:52:42.536 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:42.536 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 2(String), 2(String), 0(Integer)
+2018-07-03 14:52:42.538 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 14:52:42.539 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:42.540 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 6(String), 0(Integer)
+2018-07-03 14:52:42.544 DEBUG 15368 --- [http-nio-9002-exec-1] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 3
+2018-07-03 14:52:43.103 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:43.103 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 3(String), 2(String), 0(Integer)
+2018-07-03 14:52:43.105 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 14:52:43.107 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:43.107 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 2(String), 0(Integer)
+2018-07-03 14:52:43.115 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 10
+2018-07-03 14:52:43.117 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:43.117 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 2(String), 2(String), 0(Integer)
+2018-07-03 14:52:43.118 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 0
+2018-07-03 14:52:43.120 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==>  Preparing: select * from (select * from newslist where id=? and pid=? order by htmlid desc)t1 limit ?,10; 
+2018-07-03 14:52:43.121 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : ==> Parameters: 1(String), 6(String), 0(Integer)
+2018-07-03 14:52:43.123 DEBUG 15368 --- [http-nio-9002-exec-2] com.li.dao.ManageMapper.queryByCategory  : <==      Total: 3

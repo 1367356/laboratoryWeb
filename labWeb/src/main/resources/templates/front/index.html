@@ -5,12 +5,14 @@
 	<title>电子科技大学图形图像与信号应用处理研究室</title>
 	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
 	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="/css/flexslider.css" />
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
 </head>
-
 
 <body>
 	<header th:replace="fragments/header :: header"></header>
@@ -18,22 +20,22 @@
 		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
 		<section class="slideshow">
-			<ul>
-				<span class="arrow_left"></span>
-				<li><img src="/img/show_10.jpg" alt=""></li>
-				<li><img src="/img/show_20.jpg" alt=""></li>
-				<li><img src="/img/show_30.jpg" alt=""></li>
-				<li><img src="/img/show_40.jpg" alt=""></li>
-				<li><img src="/img/show_50.jpg" alt=""></li>
-				<span class="arrow_right"></span>
-			</ul>
+			<div id="slider" class="flexslider" style="width:950px;margin:0 auto;">
+				<ul class="slides">
+					<li class="images"><img src="/img/show_10.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_20.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_30.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_40.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_50.jpg" alt=""></li>
+				</ul>
+			</div>
 		</section>
 		<section class="main_content">
 			<div class="left_content">
 				<div class="for_one">
 					<h3>团队负责人</h3>
 					<section class="master_content">
-						<a href=""><img src="/img/pengzhenming.jpg">
+						<a th:href="@{/queryNews(htmlid=${htmlid})}"><img src="/img/pengzhenming.jpg">
 						<span>彭真明教授</span></a>
 						<!-- <span><strong>邮箱：</strong>zmpeng@uestc.edu.cn</span> -->
 						<span><strong>个人简介：</strong>彭真明(1966-)，博士，教授，博士生导师，湖南保靖人。</span>
@@ -90,6 +92,32 @@
 		</section>
 	</section>
 	<footer th:replace="fragments/footer :: footer"></footer>
-	<script type="text/javascript" src="/js/index.js"></script>
+	<script type="text/javascript">
+		(function() {
+			$('#slider').flexslider({
+			    animation: "solid", //动画效果
+			    animationLoop: true, //是否循环播放
+			    controlNav: true,
+			    directionNav: true,
+			    startAt: 0, // Integer: 开始播放的 slide，从 0 开始计数
+			    slideshow: true, // Boolean: 是否自动播放
+			    slideshowSpeed: 3000, // Integer: ms 滚动间隔时间
+			    animationSpeed: 600, // Integer: ms 动画滚动速度
+			    direction: "horizontal", // String: 滚动方向 ["horizontal"|"vertical"]
+			    prevText:' <img src="img/left1.png">',           // String: 上一个按钮文字（），
+			    nextText: '<img src="img/right1.png">',           // String: 下一个按钮文字
+			    before: function (slider) {
+		            slider.pause();
+		            slider.play();
+		        }
+			});
+			$('a').on('mouseenter',function(){
+				if (this.offsetWidth < this.scrollWidth) {
+					var text = $(this).text();
+					$(this).attr('title',text);
+				}
+			});
+		})();
+	</script>
 </body>
 </html>

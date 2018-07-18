@@ -15,4 +15,6 @@ public interface ResearchTeamService {
     List<ResearchTeam> queryGroup(String next,String id);
 
     int update(InsertParameter parameter);
+
+    String queryByHtmlid(String htmlid);
 }

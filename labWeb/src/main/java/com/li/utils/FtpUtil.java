@@ -193,7 +193,6 @@ public class FtpUtil {
 					result = true;
 				}
 			}
-
 			ftp.logout();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -206,25 +205,5 @@ public class FtpUtil {
 			}
 		}
 		return result;
-	}
-
-
-
-
-
-	public static void main(String[] args) {
-		try {  
-	        FileInputStream in=new FileInputStream(new File("D:\\InstallConfig.ini"));
-	        boolean flag = uploadFile("192.168.100.91", 21, "liyafei", "1367356", "/home/liyafei/myfile","/file/test1", "InstallConfig.ini", in);
-	        System.out.println(flag);  
-	    } catch (FileNotFoundException e) {  
-	        e.printStackTrace();  
-	    }  
-	}
-
-	@Test
-	public void testDownloadFile() {
-		downloadFile("192.168.100.91", 21, "liyafei", "1367356",
-				"/home/liyafei/myfile/file", "data.txt", "d:\\");
 	}
 }

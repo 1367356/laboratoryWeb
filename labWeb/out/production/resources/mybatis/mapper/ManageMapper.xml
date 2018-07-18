@@ -66,14 +66,20 @@
   <!--修改数据-->
   <update id="update">
     update news set
-    htmlid=#{newsParameter.htmlid},
-    count=#{newsParameter.count},
     publisher=#{newsParameter.publisher},
     title=#{newsParameter.title},
-    TYPE#{newsParameter.TYPE},
-    abstract=#{newsParameter.abstractText},
-    content#{newsParameter.content},
-    date_created=#{newsParameter.date}
+    type=#{newsParameter.type},
+    abstractText=#{newsParameter.abstractText},
+    content=#{newsParameter.content}
     where htmlid=#{newsParameter.htmlid}
   </update>
+
+  <!--修改数据-->
+  <update id="updateNewsList">
+    update newslist set
+    type=#{parameter.type},
+    title=#{parameter.title}
+    where htmlid=#{parameter.htmlid}
+  </update>
+
 </mapper>

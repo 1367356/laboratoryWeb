@@ -83,4 +83,9 @@ public class ManageServiceImpl implements ManageService{
     public int selectCount(String pid, String id) {
         return manageMapper.selectCount(pid,id);
     }
+
+    @Override
+    public int updateNewsList(InsertParameter parameter) {
+        return manageMapper.updateNewsList(parameter);
+    }
 }

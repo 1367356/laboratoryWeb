@@ -1,6 +1,8 @@
 package com.li.controller;
 
 import com.li.pojo.NewsList;
+import com.li.pojo.ResearchTeam;
+import com.li.service.ResearchTeamService;
 import com.li.service.impl.ForeServiceImpl;
 import com.li.service.impl.ManageServiceImpl;
 import org.apache.logging.log4j.LogManager;
@@ -23,6 +25,8 @@ public class LoginController {
     ManageServiceImpl manageService;
     @Autowired
     ForeServiceImpl foreService;
+    @Autowired
+    ResearchTeamService researchTeamService;
 
 
     /**
@@ -39,8 +43,9 @@ public class LoginController {
         }
 //        logger.debug(newsLists.get(0).getHtmlid());
         model.addAttribute("response",newsLists);
-        int count = manageService.selectCount("1", "1");
+        int count = manageService.selectCount("2", "1");
         int totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;
+        logger.debug("totalpage"+totalpage);
         model.addAttribute("totalpage", totalpage);
         model.addAttribute("page", 1);
         model.addAttribute("pid", 2);
@@ -64,16 +69,38 @@ public class LoginController {
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showAdminPage(Model model) {
+
+        List<ResearchTeam> listGroup = researchTeamService.queryGroup("团队负责人","1");
+        if (listGroup.size()!=0) {
+            ResearchTeam researchTeam = listGroup.get(0);
+            long htmlid = researchTeam.getHtmlid();
+            model.addAttribute("htmlid", htmlid);
+        }
+
         try {
-            List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
+            List<NewsList> newsLists1 = manageService.queryByCategory("3", "2", 1);
             List<NewsList> newsLists2 = manageService.queryByCategory("2", "1", 1);
             List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
             List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
+
+            if (newsLists1.size() > 8) {
+                newsLists1 = newsLists1.subList(1, 8);
+            }
+            if (newsLists2.size() > 8) {
+                newsLists2 = newsLists2.subList(0, 8);
+            }
+            if (newsLists3.size() > 8) {
+                newsLists3 = newsLists3.subList(0, 8);
+            }
+            if (newsLists4.size() > 8) {
+                newsLists4 = newsLists4.subList(0, 8);
+            }
             model.addAttribute("response1", newsLists1);
             model.addAttribute("response2", newsLists2);
             model.addAttribute("response3", newsLists3);
             model.addAttribute("response4", newsLists4);
         } catch (Exception e) {
+            e.printStackTrace();
             model.addAttribute("response", "首页加载失败");
             return "message/404";
         }

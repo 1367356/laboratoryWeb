@@ -2,8 +2,10 @@ package com.li.controller;
 
 import com.li.pojo.News;
 import com.li.pojo.NewsList;
+import com.li.pojo.ResearchTeam;
 import com.li.service.ForeService;
 import com.li.service.ManageService;
+import com.li.service.ResearchTeamService;
 import com.li.service.impl.ForeServiceImpl;
 import com.li.service.impl.ManageServiceImpl;
 import org.apache.logging.log4j.LogManager;
@@ -32,36 +34,8 @@ public class ForeController {
     @Autowired
     ForeServiceImpl foreService;
 
-    /**
-     * 测试各个html文件用。
-     * @param model
-     * @return
-     */
-    @RequestMapping("home")
-    public String home(RedirectAttributes model) {
-
-        model.addAttribute("id", "1");
-        model.addAttribute("pid","2");
-
-        return "home";
-//        return "redirect:/hometest";
-    }
-    /**
-     * 测试各个html文件用。
-     * @param model
-     * @return
-     */
-    @RequestMapping("hometest")
-    public String hometest(Model model,  String id, String pid) {
-
-        logger.debug(id);
-        model.addAttribute("id", id);
-        model.addAttribute("pid",pid);
-        return "home";
-    }
-
-
-
+    @Autowired
+    ResearchTeamService researchTeamService;
 
     @RequestMapping("/querybycategory")
     public String query(Model model, String pid, String id, String page) {
@@ -82,6 +56,7 @@ public class ForeController {
                 return "front/intro";
             }
         } catch (Exception e) {
+            model.addAttribute("response", "实验室简介为空");
             return "message/403";
         }
         int count = manageService.selectCount(pid, id);
@@ -116,11 +91,33 @@ public class ForeController {
 
     @RequestMapping("/index")
     public String index(Model model) {
+        List<ResearchTeam> listGroup = researchTeamService.queryGroup("团队负责人","1");
+        if (listGroup.size()!=0) {
+            ResearchTeam researchTeam = listGroup.get(0);
+            long htmlid = researchTeam.getHtmlid();
+            model.addAttribute("htmlid", htmlid);
+        }
+
+
         try {
-            List<NewsList> newsLists1 = manageService.queryByCategory("2", "3", 1);
-            List<NewsList> newsLists2 = manageService.queryByCategory("1", "2", 1);
+            List<NewsList> newsLists1 = manageService.queryByCategory("3", "2", 1);
+            List<NewsList> newsLists2 = manageService.queryByCategory("2", "1", 1);
             List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
             List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
+
+            if (newsLists1.size() > 8) {
+                newsLists1 = newsLists1.subList(1, 8);
+            }
+            if (newsLists2.size() > 8) {
+                newsLists2 = newsLists2.subList(0, 8);
+            }
+            if (newsLists3.size() > 8) {
+                newsLists3 = newsLists3.subList(0, 8);
+            }
+            if (newsLists4.size() > 8) {
+                newsLists4 = newsLists4.subList(0, 8);
+            }
+
             model.addAttribute("response1", newsLists1);
             model.addAttribute("response2", newsLists2);
             model.addAttribute("response3", newsLists3);

@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	console.log($(window).height());
-	$('body').css('height', $(window).height() + 'px');
-
 	if ($.cookie("rmbUser") == true) {
 		$("#ck_rmbUser").attr("checked",true);
 		$("#username").val($.cookie("username"));

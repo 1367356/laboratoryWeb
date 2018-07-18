@@ -1,0 +1,105 @@
+.main_content{
+	background-color: #fff;
+}
+.content_right .edit_content{
+	margin: 20px 0;
+}
+.content_right .edit_form{
+	position: relative;
+}
+.edit_content .ed_bl{
+	height: 30px;
+	margin-bottom: 15px;
+}
+.edit_content .for_type select{
+	min-width: 65%;
+	height: 30px;
+	line-height: 30px;
+	border-color: #DCDEE0;
+	padding: 0px 10px; 
+	font-size: 14px;
+}
+.edit_content .ed_bl label{
+	display: inline-block;
+	width: 10%;
+	line-height: 30px;
+	color: #555;
+}
+.edit_content input[type=text]{
+	border: 1px solid #DCDEE0; 
+	box-sizing: border-box;
+	vertical-align: middle; 
+	border-radius: 3px; 
+	height: 30px; 
+	outline: none;
+	padding: 0px 10px; 
+	font-size: 14px; 
+	color: #888;
+	width: 65%;
+	-webkit-appearance: none; 
+}
+input[type=submit]{ 
+	display: inline-block;
+	font-size:16px; 
+	line-height: 30px; 
+	margin-top: 20px;
+	text-align: center;
+	cursor: pointer; 
+	color: #ffffff; 
+	background-color: #086aa3; 
+	border-radius: 5px; 
+	border: none;
+	width:10%; 
+}
+#imageEditor{
+	position: absolute;
+	top: -10px;
+	right: 10px;
+}
+#imageEditor .image_div {
+	width: 120px;
+	height: 160px;
+	border: solid 1px #555;
+	padding: 1px;
+	margin: 10px 0;
+	position: relative;
+}
+#replaceImg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	line-height: 30px;
+	cursor: pointer;
+}
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.edit_content .ed_bl{
+		width: 80%;
+		margin: 10px;
+		font-size: 14px;
+	}
+	.edit_content .ed_bl label{
+		width: 20%;
+	}
+	.edit_content input[type=text]{
+		width: 50%;
+	}
+	#imageEditor .image_div {
+		width: 100px;
+		height: 140px;
+	}
+	.edit_content textarea {
+		width: 80%;
+		margin: 10px 0 0 10px;
+		border: 0.1px solid gray;
+	}
+	input[type=submit]{ 
+		width:13%; 
+	}
+}

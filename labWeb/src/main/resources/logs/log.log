@@ -1,0 +1,45 @@
+09:09:59.426 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:3id:2page:1
+09:09:59.435 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:09:59.439 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:2page:1
+09:09:59.442 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:6id:1page:1
+09:10:00.111 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:3id:2page:1
+09:10:00.115 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:10:00.120 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:2page:1
+09:10:00.123 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:6id:1page:1
+09:10:12.279 DEBUG com.li.security.MyUserDetailsService 28 loadUserByUsername - admin密码$2a$10$gHonI5g6zgRb0IUHOCP5Xe8hzAl2ptHBdd2Qnc4k8fL4AOTWrQINS
+09:10:12.281 DEBUG com.li.security.MyUserDetailsService 36 loadUserByUsername - ADMIN
+09:10:12.281 DEBUG com.li.security.MyUserDetailsService 36 loadUserByUsername - USER
+09:10:12.385 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:10:12.393 DEBUG com.li.controller.LoginController 48 login - totalpage1
+09:10:15.716 DEBUG com.li.service.impl.ResearchTeamServiceImpl 45 query - [教授, 团队负责人]
+09:10:15.724 DEBUG com.li.controller.ResearchTeamController 168 backgroundquery - {教授=[NewsList{htmlid=1531871622417, pid='4', id='1', title='dfdgf', date='2018-07-18', titleImage='', type='教授'}, NewsList{htmlid=1531874479639, pid='4', id='1', title='dsfdgf', date='2018-07-18', titleImage='/displayImage/1531874479636.png', type='教授'}, NewsList{htmlid=1531875938975, pid='4', id='1', title='dsfdgfg', date='2018-07-18', titleImage='', type='教授'}], 团队负责人=[NewsList{htmlid=1531872950584, pid='4', id='1', title='sdfdsgg', date='2018-07-18', titleImage='', type='团队负责人'}]}
+09:10:22.092 DEBUG com.li.service.impl.ForeServiceImpl 19 queryNews - 1531876222074
+09:10:25.191 DEBUG com.li.controller.ForeController 42 query - 1
+09:10:25.193 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:3id:1page:1
+09:10:25.198 DEBUG com.li.controller.ForeController 63 query - pid=3id=1的总数count:0
+09:10:25.199 DEBUG com.li.controller.ForeController 74 query - 返回到news_info
+09:10:26.345 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:10:26.351 DEBUG com.li.controller.LoginController 48 login - totalpage1
+09:10:27.373 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:3id:1page:1
+09:10:27.379 DEBUG com.li.controller.ManageController 232 query - pid=3id=1的总数count:0
+09:10:27.380 DEBUG com.li.controller.ManageController 238 query - querybyBackList
+09:10:36.379 DEBUG com.li.controller.ManageController 98 insert - dsfsf
+09:10:36.386 DEBUG com.li.service.impl.ForeServiceImpl 19 queryNews - 1531876236381
+09:10:39.279 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:10:39.285 DEBUG com.li.controller.LoginController 48 login - totalpage1
+09:10:40.437 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:10:40.443 DEBUG com.li.controller.ManageController 232 query - pid=2id=1的总数count:4
+09:10:40.444 DEBUG com.li.controller.ManageController 238 query - querybyBackList
+09:10:56.098 DEBUG com.li.controller.ManageController 98 insert - 
+09:10:56.106 DEBUG com.li.service.impl.ForeServiceImpl 19 queryNews - 1531876256099
+09:11:07.927 DEBUG com.li.controller.ForeController 42 query - 1
+09:11:07.928 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:11:07.933 DEBUG com.li.controller.ForeController 63 query - pid=2id=1的总数count:5
+09:11:07.934 DEBUG com.li.controller.ForeController 74 query - 返回到news_info
+09:11:09.449 DEBUG com.li.service.impl.ForeServiceImpl 19 queryNews - 1531876256099
+09:11:14.728 DEBUG com.li.service.impl.ForeServiceImpl 19 queryNews - 1531875925419
+09:11:17.623 DEBUG com.li.service.impl.ForeServiceImpl 19 queryNews - 1531875906177
+09:11:31.972 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:3id:2page:1
+09:11:31.975 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:1page:1
+09:11:31.979 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:2id:2page:1
+09:11:31.981 DEBUG com.li.service.impl.ManageServiceImpl 47 queryByCategory - 查询列表pid:6id:1page:1

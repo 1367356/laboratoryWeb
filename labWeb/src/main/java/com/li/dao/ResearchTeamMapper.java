@@ -22,4 +22,6 @@ public interface ResearchTeamMapper {
     List<ResearchTeam> queryGroup(@Param("next") String next, @Param("id") String id);
 
     int update(@Param("teamParameter") InsertParameter teamParameter);
+
+    String queryByHtmlid(String htmlid);
 }

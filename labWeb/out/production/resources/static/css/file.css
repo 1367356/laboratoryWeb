@@ -1,23 +1,5 @@
 .main .main_content{
-	height: 800px;
 	background-color: #fff;
-}
-/*------导航------base.css*/
-
-/*------表格主体------*/
-.main_content .content_right {
-	float: left;
-	width: 72%;
-}
-.main_content .content_right .content_head{
-	height: 30px;
-	font-size: 20px;
-	line-height: 20px;
-	color: #09588a;
-	border-bottom: 1px solid #e5e5e5;
-	padding-left: 20px;
-	padding-top: 35px;
-	margin-bottom: 14px;
 }
 .main_content .content_right .content_head input[name='upload'],
 .main_content .content_right .content_head input[name='revise']{
@@ -38,7 +20,6 @@
 	width: 100%;
 	table-layout: fixed;
 	display: table;
-	margin-bottom: 100px;
 }
 .main_content .content_right .content_list table th{
 	font-size: 17px;
@@ -338,4 +319,131 @@
     70% {
         -webkit-transform: translateX(3px);
     }
+}
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.main_content .content_right .content_list table{
+		width: 98%;
+		margin: 10px auto 100px;
+	}
+	.main_content .content_right .content_list table th{
+		font-size: 13px;
+		height: 35px;
+	}
+	.main_content .content_right .content_list table th:first-child {
+		width: 56%;
+	}
+	.main_content .content_right .content_list table tr{
+		height: 35px;
+		line-height: 35px;
+		font-size: 12px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.main_content .content_right .content_list table td a{
+		font-size: 12px;
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	/*userManager--table*/
+	.main_content .content_right #user_list table th:first-child {
+		width: 20%;
+	}
+	/*删除按钮*/
+	.main_content .content_right .content_list table th:last-Child,
+	.main_content .content_right .content_list table td:last-Child{
+		width: 13px;
+		border-left: none;
+	}
+	.main_content .content_right .content_list table td a.delete{
+		width: 13px;
+		height: 13px;
+		margin-top: -1px;
+		background-size: 13px;
+		margin-right: -4px;
+	}
+	#user_list table td a.delete{
+		margin-top: 0;
+	}
+	.main_content .content_right .content_list table td a.delete:hover{
+		background-size: 13px;
+	}
+	/*上传*/
+	.show_upload {
+		width: 280px; 
+		height: 200px;
+		margin: 0 auto; 
+		top: 40%; 
+		left: 12%; 
+	}
+	.show_upload .upload_head{
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+	.show_upload .upload_head img{
+		width: 25px;
+		top: 7px;
+	}
+	.show_upload form input[name='file']{
+		left: 23px;
+		top: 75px;
+		width: 230px;
+		height: 35px;
+		font-size: 14px;
+		opacity: 0;
+	}
+	.show_upload form .file_style{
+		width: 230px;
+		height: 35px;
+		margin: 30px auto;
+	}
+	.show_upload form .file_style .left_btn{
+		width: 65px;
+		font-size: 14px;
+		line-height: 35px;
+	}
+	.show_upload form .file_style .right_text{
+		width: 160px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+	}
+	.show_upload form input[name='confirm']{
+		width: 80px;
+		height: 35px;
+		font-size: 14px;
+	}
+	.show_upload form .tips_1,.show_upload form .tips_2{
+		left: 30px;
+	}
+	/*基于上传修改 添加用户,修改密码*/
+	#user{
+		width: 250px;
+		height: 350px;
+		display: block;
+	}
+	#user .file_style,#re_pwd .file_style{
+		height: 35px;
+		margin: 10px auto;
+		font-size: 12px;
+	}
+	#user .file_style .left_btn,#re_pwd .file_style .left_btn{
+		width: 100px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+	#user form .file_style input,#re_pwd form .file_style input{
+		width: 120px;
+		height: 30px
+		line-height: 30px;
+		font-size: 12px;
+	}
+	#user form .file_style input[type="radio"]{
+		width: 40px;
+		margin-top: 8px;
+		margin-right: -10px;
+		transform: scale(1,1);
+	}
+
 }

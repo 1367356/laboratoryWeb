@@ -30,8 +30,9 @@ ftp:
   port: 21
   username: ftp
   password: 1367356
-  basePath: /www/wwwroot/ftp           #ftp基础路径
-  imagesBasePath: /home/liyafei/myfile/file/image  #新闻图片路径
+  basePath: /srv/ftp           #ftp基础路径
+#  imagesBasePath: /srv/ftp/image/  #新闻图片路径
+  imagesBasePath: d://upload-dir/  #新闻图片路径
 #  imagesPath: /imagePath         #图片上传路径
 #  displayImage: /home/ftp/imagePath   #图片加载路径   = basePath+imageUpload
 ftpFile:
@@ -42,3 +43,9 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml   #Mapper所在的配置文件路径，进行扫描
   config-location: classpath:mybatis/mybatis-config.xml  # mybaits-config文件
 #  type-aliases-package: com.liyafei.dao.pojo  # pojo所在的包，与表一一对应
+
+#logging:
+#    level:
+#        com.li: DEBUG
+#    file: ./logs/debug.log
+#    root: INFO

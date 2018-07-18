@@ -1,0 +1,12 @@
+[15:32:31:648] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:2id:3page:1
+[15:32:31:748] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:2id:1page:1
+[15:32:31:757] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:2id:2page:1
+[15:32:31:760] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:6id:1page:1
+[15:32:32:231] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:2id:3page:1
+[15:32:32:236] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:2id:1page:1
+[15:32:32:262] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:2id:2page:1
+[15:32:32:265] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:6id:1page:1
+[15:32:34:386] [DEBUG] - com.li.controller.ForeController.query(ForeController.java:68) - 1
+[15:32:34:387] [DEBUG] - com.li.service.impl.ManageServiceImpl.queryByCategory(ManageServiceImpl.java:47) - 查询列表pid:3id:1page:1
+[15:32:34:395] [DEBUG] - com.li.controller.ForeController.query(ForeController.java:88) - pid=3id=1的总数count:1
+[15:32:34:395] [DEBUG] - com.li.controller.ForeController.query(ForeController.java:99) - 返回到news_info

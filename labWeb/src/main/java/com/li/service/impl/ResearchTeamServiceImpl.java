@@ -56,4 +56,9 @@ public class ResearchTeamServiceImpl implements ResearchTeamService{
         return researchTeamMapper.update(parameter);
     }
 
+    @Override
+    public String queryByHtmlid(String htmlid) {
+        return researchTeamMapper.queryByHtmlid(htmlid);
+    }
+
 }

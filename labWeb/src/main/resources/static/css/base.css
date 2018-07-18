@@ -14,10 +14,11 @@ q:before, q:after { content:''; }
 a{text-decoration: none;outline: none;}
 li{list-style: none;}
 button,input{outline: none;}
+.main_content img { max-width:700px;height:auto;}
 /*-----reset-----*/
 body{
-	min-width:1150px;
-	background:url(../img/uestc_back.png) 0 -60px no-repeat #f3f3f3;
+	width:100%;
+	background:url(/img/uestc_back.png) 0 -60px no-repeat #f3f3f3;
 }
 /*-----header-----*/
 header{
@@ -71,13 +72,14 @@ section.main{
 	margin-top: 10px;
 	width: 100%;
 	vertical-align: middle;
+	background-color:#fff;
 }
 .main nav li.nav_item{
 	display: inline-block;
 	box-sizing: border-box;
 	font-size: 14px;
 	line-height: 45px;
-	width: 12.5%;
+	width: 11.11%;
 	text-align: center;
 	border-right: 1px solid #f3f3f3;
 	background-color: #fff;
@@ -123,12 +125,14 @@ section.main{
 	/*background-color: #fff;*/
 	margin: 10px 0;
 	overflow: hidden;
+	position: relative;
 }
 /*------footer------*/
 footer{
 	width: 100%;
-	height: 200px;
-	background-color: rgb(18, 46, 103);
+	height: 180px;
+	/*background-color: rgb(18, 46, 103);*/
+	background-color: #384153;
 	overflow: hidden;
 	display: flex;
   	justify-content: center;
@@ -137,7 +141,7 @@ footer{
 footer .foot_content{
 	width: 980px;
 	margin: 0 auto;
-	color: #c0d9d9;
+	color: #919191;
 	position: relative;
 }
 footer .foot_content div{
@@ -146,8 +150,19 @@ footer .foot_content div{
 footer .foot_content .lab_name{
 	font-size: 30px;
 }
+footer .foot_content .lab_name img {
+	width: 500px;
+	margin-left: -15px;
+}
 footer .foot_content .lab_phone{
-	
+	background: url('/img/email.png') left no-repeat;
+	background-size: 20px;
+	padding-left: 30px;
+}
+footer .foot_content .lab_address{
+	background: url('/img/addr.png') left no-repeat;
+	background-size: 20px;
+	padding-left: 30px;
 }
 footer .foot_content .studio{
 	position: absolute;
@@ -213,7 +228,7 @@ footer .foot_content .studio{
 }
 .main_content .content_right .content_list{
 	box-sizing: border-box;
-	margin-bottom: 35px;
+	margin-bottom: 70px;
 }
 .main_content .content_right .content_list li{
 	height: 30px;
@@ -222,13 +237,15 @@ footer .foot_content .studio{
 	padding: 12px 0 12px 25px;
 	border-bottom: 1px solid #e5e5e5;
 }
-.main_content .content_right .content_list li::before{
+.main_content .content_right .content_list li a::before{
 	display: inline-block;
 	color: #546bc7;
 	content: '●';
 	transform: scale(.5);
 }
 .main_content .content_right .content_list li a{
+	display: inline-block;
+	width: 80%;
 	color: #000;
 	text-decoration: none;
 	overflow: hidden;
@@ -246,7 +263,9 @@ footer .foot_content .studio{
 	/*margin-top: 40px;
 	margin-right: 35px;*/
 	margin-bottom: 20px;
-	float: right;
+	position: absolute;
+	right: 60px;
+	bottom: 0;
 }
 .main_content .content_right .content_button a,
 .main_content .content_right .content_button label,
@@ -260,7 +279,7 @@ footer .foot_content .studio{
 	color: #515151;
 	margin-left: 20px;
 }
-.main_content .content_right .content_button.page_num{
+.main_content .content_right .content_button input.page_num{
 	width: 50px;
 }
 .main_content .content_right::after{
@@ -278,14 +297,162 @@ footer .foot_content .studio{
 .main_content .content_right .content_passage .passage_info{
 	width: 100%;
 	text-align: center;
+	color: #2a2a2a;
+	font-size: 15px;
 }
 .main_content .content_right .content_passage .passage_info span{
 	color: #6b6b6b;
-	font-size: 15px;
-	margin-left: 40px;
+	margin-right: 20px;
+}
+.main_content .content_right .content_passage .passage_abs{
+    padding: 15px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .main_content .content_right .content_passage .passage_text{
 	width: 100%;
-	margin:40px;
+	margin:40px 0;
 	min-height: 400px;
+}
+
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	body{
+    	min-width: 320px;
+    	background: #f3f3f3;
+    }
+	/*-----header-----*/
+	header{
+		height: 35px;
+		line-height: 35px;
+	}
+	header .h_main{
+		width: 94%;
+		margin: 0 auto;
+	}
+	header .h_main ul{
+		float: left;
+	}
+	header .h_main ul.header_nav li{
+		margin-right: 5px;
+	}
+	header .h_main ul.header_nav a,
+	header .h_main ul.login_nav a{
+		font-size: 12px;
+	}
+	header .h_main ul.login_nav{
+		float: right;
+	}
+	header .h_main ul.login_nav a.logout{
+		border-right: 1px solid #fff;
+		padding-right: 5px;
+		margin-right: 5px;
+	}
+	/*------main------*/
+	section.main{
+		width: 100%;
+		margin: 0;
+	}
+	/*logo*/
+	.main .logo img{
+		width: 100%;
+		display: block;
+	}
+	/*导航栏*/
+	.main nav{
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 2%;
+	}
+	.main nav li.nav_item{
+		display: inline-block;
+		width: 21%;
+		line-height: 35px;
+		font-size: 12px;
+		margin: 3% 0 0 3.5%;
+	}
+	.main nav li.nav_item:nth-child(4n+2) {
+		margin-left: 3%;
+	}
+	/*main_content*/
+	.main .main_content {
+	    margin-bottom: 0;
+	}
+	/*------footer------*/
+	footer{
+    	width: 100%;
+    	height: 180px;
+    }
+    footer .foot_content{
+    	width: 90%;
+    	margin: -20px auto 0;
+    	font-size: 14px;
+    }
+    footer .foot_content .lab_name {
+    	font-size: 20px;
+    }
+    footer .foot_content .lab_name img{
+    	width: 100%;
+    	padding-left: 6.5px;
+    }
+    footer .foot_content .lab_phone{
+    	background-size: 14px;
+    	padding-left: 30px;
+    	margin-top: -10px;
+    }
+    footer .foot_content .lab_address{
+    	background-size: 14px;
+    	padding-left: 30px;
+    	margin-top: -5px;
+    	margin-bottom: 30px;
+    }
+    footer .foot_content .studio{
+    	left: 0;
+    }
+	/*------main_content的公共部分------*/
+	/*左边导航栏*/
+	.main_content .content_nav{
+		display: none;
+	}
+	/*右边list*/
+	.main_content .content_right {
+		width: 100%;
+	}
+	.main_content .content_right .content_head{
+		font-size: 16px;
+		line-height: 16px;
+		padding-top: 20px;
+	}
+	.main_content .content_right .content_list li{
+		height: 20px;
+		line-height: 20px;
+		font-size: 14px;
+		padding: 12px 0 12px 25px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.main_content .content_right .content_list li a {
+		display: inline-block;
+		width: 72%;
+	}
+	.main_content .content_right .content_list li span {
+		font-size: 12px;
+	}
+	/*底部分页*/
+	.main_content .content_right .content_button {
+	    right: 2%;
+	}
+	.main_content .content_right .content_button a,
+	.main_content .content_right .content_button label,
+	.main_content .content_right .content_button input{
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+	.main_content .content_right .content_button .page_num,
+	.main_content .content_right .content_button .jump_page{
+    	display: none;
+    }
 }

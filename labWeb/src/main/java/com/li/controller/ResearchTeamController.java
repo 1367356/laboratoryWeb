@@ -7,9 +7,11 @@ import com.li.service.ResearchTeamService;
 import com.li.service.impl.ForeServiceImpl;
 import com.li.service.impl.ManageServiceImpl;
 import com.li.service.impl.ResearchTeamServiceImpl;
+import com.li.utils.ImageUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -36,6 +38,9 @@ public class ResearchTeamController {
     @Autowired
     ManageServiceImpl manageService;
 
+    @Value("${ftp.imagesBasePath}")     //基础路径
+    private String imagesBasePath;  //图片路径
+
     /**
      * 添加科研团队成员,post方式
      * @param model
@@ -44,6 +49,11 @@ public class ResearchTeamController {
     @PreAuthorize("hasAuthority('ADMIN')")
     @RequestMapping(value = "/insert",method = RequestMethod.POST)
     public String insert(Model model,InsertParameter parameter) {
+
+        if (parameter.getTitleImage() != null) {// 上传图片
+            String imagepath = ImageUtil.GenerateImage(parameter.getTitleImage(), imagesBasePath);
+            parameter.setTitleImage(imagepath);
+        }
 
         if (parameter.getDate() == null) {
             Date current_date = new Date();
@@ -82,12 +92,18 @@ public class ResearchTeamController {
         logger.debug("删除" + i);
         model.addAttribute("pid", pid);
         model.addAttribute("id", id);
-        return "redirect:/researchTeam/query";  //重定向
+        return "redirect:/researchTeam/backgroundquery";  //重定向
     }
     @RequestMapping(value = "/update",method= RequestMethod.GET)
     public String update(Model model,String htmlid,String pid,String id) {
         long lhtmlid = Long.parseLong(htmlid);
         News news = manageService.backQuery(lhtmlid);
+
+        String titleImage=researchTeamService.queryByHtmlid(htmlid);
+
+        logger.debug("titleImage"+titleImage);
+
+        model.addAttribute("titleImage", titleImage);
         model.addAttribute("response",news);
         model.addAttribute("pid", pid);
         model.addAttribute("id", id);
@@ -129,12 +145,14 @@ public class ResearchTeamController {
         }
         logger.debug(map);
         model.addAttribute("response", map);
+        model.addAttribute("pid", pid);
+        model.addAttribute("id", id);
         return "front/teams_info";
     }
+
     @RequestMapping("/backgroundquery")
     public String backgroundquery(Model model, String pid,String id) {
 
-        // select distinct title from news;  ,选择某个字段共有几类
         List<String> typeList = new ArrayList<>();
         typeList=researchTeamService.query(id);
 
@@ -149,6 +167,8 @@ public class ResearchTeamController {
         }
         logger.debug(map);
         model.addAttribute("response", map);
+        model.addAttribute("pid", pid);
+        model.addAttribute("id", id);
         return "background/teams_info";
     }
 }

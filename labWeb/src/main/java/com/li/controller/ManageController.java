@@ -4,12 +4,16 @@ import com.li.pojo.*;
 import com.li.service.ManageService;
 import com.li.service.impl.ForeServiceImpl;
 import com.li.service.impl.ManageServiceImpl;
+import com.li.service.impl.ResearchTeamServiceImpl;
+import com.li.utils.ImageUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -35,13 +39,22 @@ public class ManageController {
     @Autowired
     ForeServiceImpl foreService;
 
+    @Autowired
+    ResearchTeamServiceImpl researchTeamService;
+
+    @Value("${ftp.imagesBasePath}")     //基础路径
+    private String imagesBasePath;  //图片路径
+
     /**
      * 向数据库添加一条新闻
      */
 //    @PreAuthorize("hasAuthority('SUPER')")  //需要管理员权限，才能执行该路径
     @RequestMapping(value = "/insert",method = RequestMethod.GET)
-    public String insert(Model model) {
-        return "background/addNews";
+    public String insert(Model model,String pid,String id) {
+
+        model.addAttribute("pid", pid);
+        model.addAttribute("id",id);
+        return "background/new_edit";
     }
 
     /**
@@ -51,6 +64,36 @@ public class ManageController {
      */
     @RequestMapping(value = "/insert",method = RequestMethod.POST)
     public String insert(Model model,InsertParameter parameter) {
+
+        if (parameter.getTitleImage() != null && parameter.getTitleImage().length()!=0) {// 上传图片
+            logger.debug("TitleImage"+parameter.getTitleImage());
+            String imagepath = ImageUtil.GenerateImage(parameter.getTitleImage(), imagesBasePath);
+            parameter.setTitleImage(imagepath);
+        }
+
+        if (parameter.getPid().equals("4")) {
+            if (parameter.getDate() == null) {
+                Date current_date = new Date();
+                SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String date = SimpleDateFormat.format(current_date.getTime());
+                parameter.setDate(date);
+            }
+            long htmlid = System.currentTimeMillis();
+            parameter.setHtmlid(htmlid);
+
+            boolean insert = false;
+            try {
+                insert = researchTeamService.insert(parameter);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (!insert) {
+                return "message/manage/404";
+            }
+            News news = foreService.queryNews(htmlid);
+            model.addAttribute("response", news);
+            return "front/news_content";
+        }
 
         logger.debug(parameter.getAbstractText());
         if (parameter.getPublisher() == null) {
@@ -63,8 +106,6 @@ public class ManageController {
             SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             //格式化当前日期
             String date = SimpleDateFormat.format(current_date.getTime());
-
-    //        Timestamp date = new Timestamp(System.currentTimeMillis());
             parameter.setDate(date);
         }
         long htmlid = System.currentTimeMillis();
@@ -115,23 +156,51 @@ public class ManageController {
     public String update(Model model, String htmlid,String pid,String id) {
 
         long lhtmlid = Long.parseLong(htmlid);
-        News news = manageService.backQuery(lhtmlid);
+        News news = foreService.queryNews(lhtmlid);
+
+        String titleImage=researchTeamService.queryByHtmlid(htmlid);
+        logger.debug("titleImage"+titleImage);
+
+        model.addAttribute("titleImage", titleImage);
         model.addAttribute("response",news);
-        return "background/updateNews";
+        model.addAttribute("pid", pid);
+        model.addAttribute("id", id);
+        return "background/new_modify";
     }
     /**
      * 修改一条新闻
-     * @return           响应体
+     * @return
      */
     @RequestMapping(value = "/updateNews",method = RequestMethod.POST)
     public String update(Model model, InsertParameter parameter) {
 
-        int i=manageService.update(parameter);
+        if (parameter.getTitleImage() != null && !parameter.getTitleImage().startsWith("/displayImage")) {// 上传图片
+            String imagepath = ImageUtil.GenerateImage(parameter.getTitleImage(), imagesBasePath);
+            logger.debug("imagepath"+imagepath);
+            parameter.setTitleImage(imagepath);
+        }
+
+        if(parameter.getPid().equals("4")){
+            int i=researchTeamService.update(parameter);  //更新团队列表
+            if (i != 1) {
+                model.addAttribute("response","更新团队成员失败");
+                return "message/manage/404";
+            }
+        }else {
+            int i=manageService.updateNewsList(parameter);  //更新新闻列表
+            if (i != 1) {
+                model.addAttribute("response","更新团队成员失败");
+                return "message/manage/404";
+            }
+        }
+        int i=manageService.update(parameter);  //更新news
         if (i != 1) {
             return "message/manage/404";
         }
         model.addAttribute("response",parameter);
-        return "background/backUpdate";
+        model.addAttribute("pid", parameter.getPid());
+        model.addAttribute("id", parameter.getId());
+        return "front/news_content";
     }
 
 
@@ -169,34 +238,5 @@ public class ManageController {
             logger.debug("querybyBackList");
 
             return "background/manage_info";
-
-//        NewsList newsList = newsLists.get(0);
-//        long htmlid = newsList.getHtmlid();
-//        News news = foreService.queryNews(htmlid);
-//        model.addAttribute("response", news);
-//        return "front/displayNews";
-//        return newsLists.toString();
     }
-//
-//    /**
-//     * 后台查询一条新闻
-//     * @return           响应体
-//     */
-//    @RequestMapping(value = "/backQuery",method = RequestMethod.GET)
-//    public String query(Model model,String htmlid) {
-//
-//        long lhtmlid = Long.parseLong(htmlid);
-//        logger.debug(lhtmlid);
-//        News news = manageService.backQuery(lhtmlid);
-//
-//
-////        if (i != 1) {
-////            return "message/404";
-////        }
-//
-//        model.addAttribute("response",news);
-//        return "front/displayNews";
-////        logger.debug(news.getContent());
-////        return news.toString();
-//    }
 }

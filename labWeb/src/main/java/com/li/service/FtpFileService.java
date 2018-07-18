@@ -6,7 +6,6 @@ import java.util.List;
 
 public interface FtpFileService {
     int uploadFileParam(FtpFile uploadParameter);
-
     List<FtpFile> queryPublicFile(int page) throws Exception;
     List<FtpFile> queryPrivateFile(int page,String username) throws Exception;
 

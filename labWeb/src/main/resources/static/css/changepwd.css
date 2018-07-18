@@ -4,7 +4,7 @@
 .main_content .change_content{
 	width: 400px;
 	margin: 0 auto;
-	margin-top: 8%;
+	margin-top: 5%;
 }
 .main_content .change_content h1{
 	height: 30px;
@@ -45,4 +45,23 @@ input[type=submit], input[type=button] {
 	border-radius: 5px; 
 	border: none;
 	width:30%; 
+}
+
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.main_content .change_content{
+		width: 90%;
+		margin: 5% auto 0;
+	}
+	.main_content .change_content h1{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.main_content .change_content label{
+		font-size: 14px; 
+	}
+	input[type=text], input[type=password] { 
+		height: 30px;
+		font-size: 14px; 
+	}
 }

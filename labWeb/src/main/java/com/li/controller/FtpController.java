@@ -28,7 +28,7 @@ public class FtpController {
     @RequestMapping("/public/queryFile")
     public String queryPublicFile(Model model,String page) {
         List<FtpFile> files=null;
-
+        logger.debug(page);
         int count=0;
         int totalpage=0;
 

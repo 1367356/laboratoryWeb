@@ -1,5 +1,4 @@
-@charset "utf-8";
-tml, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
  padding: 0;
  margin: 0;
  font-size: 100%;
@@ -15,60 +14,38 @@ q:before, q:after { content:''; }
 a{text-decoration: none;outline: none;}
 li{list-style: none;}
 button,input{outline: none;}
-/* CSS Document */
-* { 
-	font: 13px/1.5 '微软雅黑'; 
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	-box-sizing: border-box; 
-	padding:0; 
-	margin:0; 
-	list-style:none; 
-	box-sizing: border-box; 
-}
-body { 
-	min-width: 1150px;
-	height:100%;
-	margin: 0 auto;
-	background-image: url(../img/uestc_back.png); 
-	background-size: cover; 
-}
-a { 
-	color:#27A9E3; 
-	text-decoration:none; 
-	cursor:pointer; 
+/*-----reset-----*/
+body {
+	width:100%;
+    background:url(/img/uestc_back.png) 0 -60px no-repeat #f3f3f3;
 }
 /* header */
 header{
 	width: 100%;
 	height: 45px;
-	background-color: rgba(18, 46, 103,.7);
+	background-color: rgba(18, 46, 103);
 }
 header .header_main{
-	width: 1000px;
+	width: 980px;
 	margin: 0 auto;
 	position: relative;
 }
 header .header_main .header_nav li{
 	display: inline-block;
 	line-height: 45px;
-	margin-left: 40px;
+	margin-right: 20px;
 }
 header .header_main .header_nav a{
 	color: #fff;
-	font-size: 1.2em;
-	padding: 2px 5px 4px 5px;
+    font-size: 15px;
 }
-/*header .header_main .header_nav a:hover{
-	border: 1px solid #fff;
-	border-radius: 3px;
-}*/
 /* main */
 .main{
-	width: 1000px;
-	height: 720px;
+	width: 980px;
+	height: 550px;
+	box-sizing:border-box;
 	margin: 0 auto;
-	padding: 10% 0;
+	padding: 5% 0;
 }
 	/* left */
 .main .login_img {
@@ -111,8 +88,7 @@ header .header_main .header_nav a{
 	vertical-align: middle;
 } 
 .main .login_box .login_name{
-	width:100%; 
-	float:left; 
+	width:100%;
 	text-align:center; 
 	margin-top:60px;
 }
@@ -125,15 +101,19 @@ header .header_main .header_nav a{
 }
 .main .login_box form {
 	display: block;
+	width:100%;
+	box-sizing:border-box;
 	margin: 0 auto;
+	position: relative;
 }
 .main .login_box form fieldset {
 	border: none;
-	margin: 5px 10px;
+	margin: 25px 10px;
 }
 .main .login_box form fieldset .form-group input { 
 	border: 1px solid #DCDEE0; 
-	vertical-align: middle; 
+	vertical-align: middle;
+	box-sizing:border-box;
 	border-radius: 3px; 
 	height: 50px; 
 	padding: 0px 16px; 
@@ -171,8 +151,7 @@ header .header_main .header_nav a{
 	display: inline-block; 
 	vertical-align: middle; 
 	padding: 12px 24px; 
-	margin: 0px; 
-	margin-top: -10px;
+	margin: 0px;
 	font-size:16px; 
 	line-height: 24px; 
 	text-align: center; 
@@ -191,28 +170,29 @@ header .header_main .header_nav a{
 	color: #ffffff; 
 	background-color: rgba(18, 46, 103,.5); 
 }
-.main .login_box form fieldset .alert span{
+.main .login_box form .alert{
 	color: red;
 	display: block;
+	position: absolute;
+	top: -30px;
+	left: 10px;
 	text-align: center;
-	margin-top: 15px;
-	font-size: 15px;
 }
 /* footer */
 footer{
 	width: 100%;
-	height: 200px;
-	clear: both;
+	height: 180px;
+	/*background-color: rgb(18, 46, 103);*/
+	background-color: #384153;
 	overflow: hidden;
 	display: flex;
   	justify-content: center;
   	flex-direction: column;
-	background-color: rgba(18, 46, 103,.7);
 }
 footer .foot_content{
 	width: 980px;
 	margin: 0 auto;
-	color: #c0d9d9;
+	color: #919191;
 	position: relative;
 }
 footer .foot_content div{
@@ -221,11 +201,102 @@ footer .foot_content div{
 footer .foot_content .lab_name{
 	font-size: 30px;
 }
+footer .foot_content .lab_name img {
+	width: 500px;
+	margin-left: -15px;
+}
 footer .foot_content .lab_phone{
-	
+	background: url('/img/email.png') left no-repeat;
+	background-size: 20px;
+	padding-left: 30px;
+}
+footer .foot_content .lab_address{
+	background: url('/img/addr.png') left no-repeat;
+	background-size: 20px;
+	padding-left: 30px;
 }
 footer .foot_content .studio{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-} 
+}
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	body {min-width: 320px;}
+	/* header */
+	header{
+		width: 100%;
+		height: 35px;
+	}
+	header .header_main{
+		width: 90%;
+		margin: 0 auto;
+	}
+	header .header_main .header_nav li{
+		display: inline-block;
+		line-height: 35px;
+		margin-left: 0;
+	}
+	header .header_main .header_nav a{
+		font-size: 1em;
+	}
+	/* main */
+	.main{
+		width: 100%;
+		height: 550px;
+	}
+		/* left */
+	.main .login_img {
+		display: none;
+	}
+		/* right */
+	.main .login_box{
+		width: 94%;
+		margin: 50px 3% 0 0;
+	}
+	.main .login_box .login_logo{ 
+		display: none;
+	}
+	.main .login_box .login_name{
+		margin-top: 10px;
+	}
+	.main .login_box form fieldset .form-group input { 
+		height: 40px; 
+		margin-bottom: 20px;
+		line-height:40px;
+	}
+	.main .login_box form fieldset input[type=submit] { 
+		margin-top: 10px;
+	}
+	/*------footer------*/
+	footer{
+		width: 100%;
+		height: 180px;
+	}
+	footer .foot_content{
+		width: 90%;
+		margin: -20px auto 0;
+		font-size: 14px;
+	}
+	footer .foot_content .lab_name {
+		font-size: 20px;
+	}
+	footer .foot_content .lab_name img{
+		width: 100%;
+		padding-left: 6.5px;
+	}
+	footer .foot_content .lab_phone{
+		background-size: 14px;
+		padding-left: 30px;
+		margin-top: -10px;
+	}
+	footer .foot_content .lab_address{
+		background-size: 14px;
+		padding-left: 30px;
+		margin-top: -5px;
+		margin-bottom: 30px;
+	}
+	footer .foot_content .studio{
+		left: 0;
+	}
+}

@@ -1,7 +1,13 @@
 package test;
 
+import com.li.dao.UserMapper;
 import com.li.pojo.News;
 import com.li.pojo.User;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.defaults.DefaultSqlSession;
+import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
@@ -62,5 +68,13 @@ public class Test {
         list.add(typeList);
         list.add(listClass);
 
+    }
+
+    public void test5() {
+        SqlSession sqlSession=null;
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);  //创建UserMapper的代理对象
+        //创建过程中判断UserMapper是不是一个类，如果不是，需要用MapperMethod.excute(SqlSession sqlsession,Object[] obj) 去创建动态代理对象。
+        //创建过程中将sqlSession的方法加入到了invoke中。
+        //那么调用代理对象mapper方法的时候，就调用sqlSession中的方法，也就是sql语句。
     }
 }

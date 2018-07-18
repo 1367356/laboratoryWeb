@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>电子科技大学图形图像与信号应用处理研究室</title>
+	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/manage_base.css">
+	<script type="text/javascript" src="/manage_js/jquery-3.0.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/new_edit.css">
+	<link href="/dist/summernote.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="/css/cropper.min.css">
+	<link rel="stylesheet" href="/css/ImgCropping.css">
+</head>
+<body>
+	<header th:replace="manage_fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><img src="/img/webLogo.png"></div>
+		<nav th:replace="manage_fragments/nav :: nav"></nav>
+		<!--新闻列表-->
+		<section class="main_content">
+			<div class="content_nav">
+				<span id="nav_pid" hidden th:text="${pid}">2</span>
+				<span id="nav_id" hidden th:text="${id}">1</span>
+			</div>
+
+			<div class="content_right">
+				<div class="content_head"><span class="head_title">通知公告</span></div>
+				<div class="edit_content">
+					<form class="edit_form" action="/background/updateNews" method="post">
+						<input name='pid' type="text" th:value="${pid}" hidden>
+						<input name='id' type="text" th:value="${id}" hidden>
+						<input type="text" name="htmlid" th:value="${response.htmlid}" hidden>
+						<input type="text" name="edit_content" th:value="${response.content}" hidden>
+						<div class="ed_bl"><label th:if="${pid != '4'}">标题:</label><label th:if="${pid == '4'}">姓名:</label><input name="title" type="text" th:value="${response.title}" required></div>
+						<div class="ed_bl"><label>作者:</label><input name="publisher" type="text" th:value="${response.publisher}" onblur="if(this.value==''){this.value='本站编辑'}"></div>
+						<div class="ed_bl for_type"><label>来源:</label><input name="type" type="text" th:value="${response.type}" onblur="if(this.value==''){this.value='本站原创'}"></div>
+						<div class="ed_bl" th:if="${pid != '4'}"><label>摘要:</label><input name="abstractText" type="text" th:value="${response.abstractText}"></div>
+						<div th:if="${pid == '4'}" style="margin-bottom:60px;"></div>
+						<textarea rows="10" cols="30" class="ckeditor" name="content" id="editor1" ></textarea>
+						<input value="提交" type="submit">
+
+						<div id = "imageEditor" th:if="${pid == '4'}">
+							<div class="image_div">
+							    <img id="titleImage" th:attr="src=${titleImage}" width="100%">
+							    <input type="text" name="titleImage" id="for_titleImg" th:value='${titleImage}' hidden>
+
+							    <span id="replaceImg">更换照片</span>
+							</div>
+							<!--图片裁剪框 start-->
+							<div style="display: none" class="tailoring-container">
+								<div class="black-cloth"></div>
+								<div class="tailoring-content">
+									<div class="tailoring-content-one">
+										<label title="上传图片" for="chooseImg" class="l-btn choose-btn">
+											<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg" class="hidden" onchange="selectImg(this)">
+											选择图片
+										</label>
+										<div class="close-tailoring">×</div>
+									</div>
+									<div class="tailoring-content-two">
+										<div class="tailoring-box-parcel">
+											<img id="tailoringImg">
+										</div>
+										<div class="preview-box-parcel">
+											<p>图片预览：</p>
+											<div class="square previewImg"></div>
+										</div>
+									</div>
+									<div class="tailoring-content-three">
+										<button class="l-btn cropper-reset-btn" type="button">复位</button>
+										<button class="l-btn cropper-rotate-btn" type="button">旋转</button>
+										<button class="l-btn cropper-scaleX-btn" type="button">换向</button>
+										<button class="l-btn sureCut" id="sureCut" type="button">确定</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		
+	</section>
+	<footer th:replace="manage_fragments/footer :: footer"></footer>
+	<script type="text/javascript" src="/manage_js/new_modify.js"></script>
+	<script type="text/javascript" src="/manage_js/news.js"></script>
+	<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="/ckeditor/config.js"></script>
+	<script src="/dist/summernote.js"></script>
+	<script src="/dist/lang/summernote-zh-CN.js"></script>
+	<script src="/manage_js/cropper.min.js"></script>
+	<script src = "/manage_js/editor.js"></script>
+	<script type="text/javascript">
+		function selectImg(file) {
+			if (!file.files || !file.files[0]){
+				return;
+			}
+			var reader = new FileReader();
+			reader.onload = function (evt) {
+				var replaceSrc = evt.target.result;
+				//更换cropper的图片
+				$('#tailoringImg').cropper('replace', replaceSrc,false);//默认false，适应高度，不失真
+			}
+			reader.readAsDataURL(file.files[0]);
+		}
+	</script>
+</body>
+</html>

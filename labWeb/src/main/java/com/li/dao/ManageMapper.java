@@ -32,4 +32,6 @@ public interface ManageMapper {
     int deleteNewshtmlid(long htmlid);
 
     int deleteNewslistHtmlid(long htmlid);
+
+    int updateNewsList(@Param("parameter")InsertParameter parameter);
 }

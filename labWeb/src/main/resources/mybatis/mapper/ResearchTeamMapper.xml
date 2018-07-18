@@ -43,23 +43,22 @@
     select distinct type from researchTeam where id=#{id};
   </select>
 
-  <!--查找新闻列表，根据页数查询-->
+  <!--查找团队列表-->
   <select id="queryGroup" resultMap="ResearchTeamMap">
       select * from researchTeam where type=#{next} and id=#{id};
+  </select>
+  <!--查找htmlid查询头像链接-->
+  <select id="queryByHtmlid" resultType="java.lang.String">
+      select titleImage from researchTeam where htmlid=#{htmlid};
   </select>
     <!--<select id="queryByCategory" resultMap="NewsListMap">-->
 
   <!--修改数据-->
   <update id="update">
-    update news set
-    htmlid=#{teamParameter.htmlid},
-    count=#{teamParameter.count},
-    publisher=#{teamParameter.publisher},
+    update researchTeam set
+    type=#{teamParameter.type},
     title=#{teamParameter.title},
-    TYPE#{teamParameter.TYPE},
-    abstract=#{teamParameter.abstractText},
-    content#{teamParameter.content},
-    date_created=#{teamParameter.date}
+    titleImage=#{teamParameter.titleImage}
     where htmlid=#{teamParameter.htmlid}
   </update>
 

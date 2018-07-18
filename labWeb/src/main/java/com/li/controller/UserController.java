@@ -16,6 +16,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
@@ -36,31 +38,28 @@ public class UserController {
     @PreAuthorize("hasAuthority('ADMIN')")
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)  //提交注册
     public String registerNewUser(User user, RedirectAttributes model) {
-//        @ModelAttribute("userDto")
-        logger.debug(user.getRoles());
-        logger.debug(user.getDescription());
-        logger.debug(user.getPassword());
-        logger.debug(user.getUserName());
-
         String result = this.userService.registerUserAccount(user);
         if (result.equals("success")) {
             model.addAttribute("page", 1);
-            return "redirect:/user/selectUser";
+//            return "redirect:/user/selectUser";
+           return "redirect:/user/selectUser";
         }
         model.addAttribute("response","添加用户失败");
-        return "message/manage/404";
+        return "redirect:/backgrouond/error404";
     }
 
     @PreAuthorize("hasAuthority('ADMIN')")
     @RequestMapping(value = "/deleteUser", method = RequestMethod.GET)  //提交注册
-    public String deleteUser(Model model,int uid) {
+    public String deleteUser(RedirectAttributes model,int uid,String page) {
         int i=userService.deleteUser(uid);
         if (i == 1) {
-            model.addAttribute("response","删除用户成功");
-            return "message/manage/200";
+            model.addAttribute("page",page);
+//            return "message/manage/200";
+            return "redirect:/user/selectUser";
         }
         model.addAttribute("response", "删除用户失败");
-        return "message/manage/404";
+//        return "message/manage/404";
+        return "redirect:/backgrouond/error404";
     }
 
     /**
@@ -73,7 +72,7 @@ public class UserController {
     @RequestMapping(value = "/selectUser", method = RequestMethod.GET)  //提交注册
     public String selectUserList(Model model,int page) {
         int pageSize=10;
-        RowBounds rowBounds = new RowBounds(page, pageSize);
+        RowBounds rowBounds = new RowBounds(page-1, pageSize);
         List<User> users = userService.selectUserList(rowBounds);
         int count=userService.selectCount();
         int totalpage = count % 10 == 0 ? count / 10 : count / 10 + 1;

@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:include="fragments/head :: head">
+<head>
+	<meta charset="UTF-8">
+	<title>电子科技大学图形图像与信号应用处理研究室</title>
+	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/changepwd.css">
 </head>
-<link rel="stylesheet" type="text/css" href="/css/changepwd.css">
 <body>
 	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
@@ -11,7 +19,7 @@
 		<section class="main_content">
 			<div class="change_content">
 				<h1>修改密码</h1>
-				<div><label>用户名：</label><label th:text="${response}"></label>
+				<div><label style="display:inline-block; margin-bottom:20px;">用户名：</label><label th:text="${response}"></label>
 					<form action="/user/modifyPassword" class="changepwd" method="post">
 					<label>输入新密码：</label><input type="password" name="newPassword">
 					<label>再次输入新密码：</label><input type="password" name="repassword">

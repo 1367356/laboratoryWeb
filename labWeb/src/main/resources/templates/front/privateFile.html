@@ -7,6 +7,8 @@
 	<title>电子科技大学图形图像与信号应用处理研究室</title>
 	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
 	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/css/file.css">
@@ -16,7 +18,8 @@
 <body>
 	<header th:replace="fragments/header :: header"></header>
 	<section class="main">
-		<div class="logo"><img src="/img/webLogo.png"></div>
+		<!--<div class="logo"><img src="/img/webLogo.png"></div>-->
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
 		<!--下载列表-->
 		<section class="main_content">
@@ -26,7 +29,7 @@
 				<div class="nav_splitLine"></div>
 				<ul class="nav_ul">
 					<li class="nav_li"><a href="/ftp/public/queryFile?page=1">公有资料</a></li>
-					<li class="nav_li active"><a href="#">私有资料</a></li>
+					<li class="nav_li active"><a href="/FtpFileController/private/queryFile?page=1">私有资料</a></li>
 				</ul>
 			</div>
 			<div class="content_right">
@@ -43,25 +46,18 @@
 							<th></th>
 						</tr>
 						<tr th:each='list : ${response}'>
-							<td colspan="3"><a th:href="@{${list.downloadLink}}" download="vsftpd"><span th:text='${list.filename}'></span></a></td>
+							<td colspan="3"><a class="dload" th:attr="data-id=${list.id}"><span th:text='${list.filename}'></span></a></td>
 							<td th:text='${list.uploadUser}'></td>
 							<td th:text='${list.date}'></td>
-							<td><a th:href="@{/FtpFileController/deletePrivateFile(id=${list.id})}" class="delete"></a></td>
+							<td><a th:href="@{/FtpFileController/deletePrivateFile(id=${list.id},page=${page})}" class="delete"></a></td>
 						</tr>
-						<!-- <tr>
-							<td colspan="3"><a href=""><span >【GISPA论坛】第094期</span></a></td>
-							<td>assd</td>
-							<td>2018-05-21</td>
-							<td><a href="http://baidu.com" class="delete"></a></td>
-						</tr> -->
 					</table>
 				</div>
 
-				<div class="content_button">
-					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/querybycategory(id=${id},pid=${pid},page=${page-1})}">上一页</a></span>
-					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}"></span>页</label>
-					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/querybycategory(id=${id},pid=${pid},page=${page+1})}">下一页</a></span>
-					<!-- <input type="button" class="next_page" value="下一页"> -->
+				<div class="content_button" th:if="${totalpage} &gt; 1">
+					<span th:if="${page} &gt; 1"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}-1)}">上一页</a></span>
+					<label>当前第<span th:text="${page}"></span>页 共<span th:text="${totalpage}" class="totalpage"></span>页</label>
+					<span th:if="${totalpage} &gt; ${page}"><a class="next_page" th:href="@{/FtpFileController/private/queryFile(page=${page}+1)}">下一页</a></span>
 					<input type="text" class="page_num">
 					<input type="button" class="jump_page" value="跳转">
 				</div>
@@ -85,5 +81,37 @@
 	</section>
 	<div id="bg"></div>
 	<footer th:replace="fragments/footer :: footer"></footer>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('a.dload').click(function(event){
+			event.preventDefault();
+			downloadTemplate('/downloadFileController/downloadPrivateFileByOutputStream', 'filename', $(this).attr('data-id'));
+		});
+		function downloadTemplate(action, type, value){
+        	var form = document.createElement('form');
+        	document.body.appendChild(form);
+        	form.style.display = "none";
+        	form.action = action;
+        	form.id = 'download';
+        	form.method = 'post';
+
+        	var newElement = document.createElement("input");
+        	newElement.setAttribute("type","hidden");
+        	newElement.name = type;
+        	newElement.value = value;
+        	form.appendChild(newElement);
+        	form.submit();
+    	}
+    	$('.jump_page').click(function(event) {
+			var page = parseInt($('input.page_num').val());
+        	var totalpage = parseInt($('span.totalpage').text());
+			if(page >0 && page <= totalpage){
+				$(location).attr('href', '/FtpFileController/private/queryFile?page=' + page);
+			}else{
+            	alert('输入的页面数无效，请重新输入！');
+         	}
+		});
+	});
+</script>
 </body>
 </html>

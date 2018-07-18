@@ -34,9 +34,6 @@ $(document).ready(function(){
 			$(this).attr('title',text);
 		}
 	});
-	$('td').on('mouseleave',function(){
-		layer.close(tips);
-	});
 
 	//删除用户/资料
     	$(".delete").click(function(){

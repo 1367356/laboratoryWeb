@@ -1,85 +1,87 @@
-drop table if exists newslist;
-create table newslist(
-	htmlid bigint not null,
-	pid varchar(25) not null,
-	id varchar(25) not null,
-	title varchar(255) not null,
-	date_created date not null,
-	titleImage varchar(255),
-	type       varchar(30),
-	primary key(htmlid)
-	)default charset=utf8;
+-- 修改数据库编码为utf-8
+-- create database labWeb
+-- use labWeb
+-- 先删除具有外键的表
+DROP TABLE IF EXISTS `news`;
+-- 创建新闻索引表
+DROP TABLE IF EXISTS `newslist`;
+CREATE TABLE `newslist`(
+  `htmlid`              BIGINT       NOT NULL,
+  `pid`                 VARCHAR(2) NOT NULL,
+  `id`               VARCHAR(2) NOT NULL,
+  `title`            VARCHAR(255) DEFAULT NULL,
+  `date_created`       date     NOT NULL,
+  `titleImage`       VARCHAR(50) DEFAULT NULL,
+  `type`             VARCHAR(50) DEFAULT NULL,
+  INDEX index_pidid(pid,id),
+  PRIMARY KEY (`htmlid`)
+)ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
+-- InnoDB
+-- 创建科研团队表
+DROP TABLE IF EXISTS `researchTeam`;
+CREATE TABLE `researchTeam`(
+  `htmlid`              BIGINT       NOT NULL,
+  `pid`                 VARCHAR(2) NOT NULL,
+  `id`               VARCHAR(2) NOT NULL,
+  `title`            VARCHAR(255) DEFAULT NULL,
+  `date_created`       date     NOT NULL,
+  `titleImage`       VARCHAR(100) DEFAULT NULL,
+  `type`             VARCHAR(50) DEFAULT NULL,
+  INDEX index_id(id),
+  PRIMARY KEY (`htmlid`)
+)ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
-drop table if exists news;
-create table news(
-    pid       varchar(10) not null,
-    id        varchar(10) not null,
-	htmlid bigint not null,
-	count integer default 1,
-	publisher varchar(30),
-	title varchar(255),
-	type varchar(30),
-	abstractText text default null,
-	content text default null,
-	date_created date default null,
-	unique key `index_id`(`htmlid`),
-	foreign key(`htmlid`) references newslist(`htmlid`)
-	)default charset=utf8;
-
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
-  `uid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `description` TEXT DEFAULT NULL,
-  `roles` varchar(200) DEFAULT 'USER',
-  PRIMARY KEY (`uid`)
-)ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+-- 创建新闻表
+DROP TABLE IF EXISTS `NEWS`;
+CREATE TABLE `news` (
+-- htmlid使用当前毫秒值作为值
+   `pid`                varchar(2) not null,
+   `id`                 varchar(2) not null,
+  `htmlid`              BIGINT       NOT NULL,
+  `count`               INTEGER,
+  `publisher`           VARCHAR(50) DEFAULT 'admin',
+  `title`               VARCHAR(255) DEFAULT NULL,
+  `type`                VARCHAR(50) DEFAULT NULL,
+  `abstractText`            TEXT DEFAULT NULL,
+  `content`             MEDIUMTEXT DEFAULT NULL,
+  `date_created`       date     DEFAULT NULL,
+  UNIQUE KEY `index_id` (`htmlid`)  -- 外键需要建立索引，否则150错误。
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 -- ftp文件描述
 DROP TABLE IF EXISTS `FtpPublicFile`;
 CREATE TABLE `FtpPublicFile`(
-`downloadLink`         varchar(100)  not null,
+`downloadLink`         varchar(150)  not null,
    `id`                   varchar(50)    not null,
-  `filename`              varchar(255)     NOT NULL,
-  `uploaduser`                 VARCHAR(25) NOT NULL,
+  `filename`              varchar(200)     NOT NULL,
+  `uploaduser`                 VARCHAR(50) NOT NULL,
   `description`               VARCHAR(255) default NULL,
-  `date_created`       date     NOT NULL
-)ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+  `date_created`       date     NOT NULL,
+  INDEX index_id(date_created)
+)ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 -- ftp文件描述
 DROP TABLE IF EXISTS `FtpPrivateFile`;
 CREATE TABLE `FtpPrivateFile`(
-`downloadLink`         varchar(100)  not null,
+    `downloadLink`         varchar(100)  not null,
    `id`                   varchar(50)    not null,
-  `filename`              varchar(255)     NOT NULL,
-  `uploaduser`                 VARCHAR(25) NOT NULL,
+  `filename`              varchar(100)     NOT NULL,
+  `uploaduser`                 VARCHAR(50) NOT NULL,
   `description`               VARCHAR(255) default NULL,
-  `date_created`       date     NOT NULL
-)ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+  `date_created`       date     NOT NULL,
+  INDEX index_id(date_created)
+)ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
+-- ftp用户
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL UNIQUE,
+  `password` varchar(255) DEFAULT NULL,
+  `description` TEXT DEFAULT NULL,
+  `roles` varchar(15) DEFAULT 'USER',
+  PRIMARY KEY (`uid`)
+)ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
-
--- newsList
-INSERT INTO `labweb`.`newslist` (`type`,`htmlid`,`pid`, `id`, `title`, `date_created`,`titleImage`) VALUES ('通知公告','238','1', '1', 'JAVA', '2017-08-09 00:00:00','http://www.shiyanshi.com/123.jpg');
-INSERT INTO `labweb`.`newslist` (`type`,`htmlid`,`pid`, `id`, `title`, `date_created`,`titleImage`) VALUES ('通知公告','237','1', '1', 'JAVA', '2017-08-09 00:00:00','http://www.shiyanshi.com/123.jpg');
-INSERT INTO `labweb`.`newslist` (`type`,`htmlid`,`pid`, `id`, `title`, `date_created`,`titleImage`) VALUES ('通知公告','236','1', '1', 'JAVA', '2017-08-09 00:00:00','http://www.shiyanshi.com/123.jpg');
-INSERT INTO `labweb`.`newslist` (`type`,`htmlid`,`pid`, `id`, `title`, `date_created`,`titleImage`) VALUES ('通知公告','235','1', '1', 'JAVA', '2017-08-09 00:00:00','http://www.shiyanshi.com/123.jpg');
-INSERT INTO `labweb`.`newslist` (`type`,`htmlid`,`pid`, `id`, `title`, `date_created`,`titleImage`) VALUES ('通知公告','234','1', '1', 'JAVA', '2017-08-09 00:00:00','http://www.shiyanshi.com/123.jpg');
-INSERT INTO `labweb`.`newslist` (`type`,`htmlid`,`pid`, `id`, `title`, `date_created`,`titleImage`) VALUES ('通知公告','233','1', '1', 'JAVA', '2017-08-09 00:00:00','http://www.shiyanshi.com/123.jpg');
-
--- news
-INSERT INTO `labweb`.`news` (`pid`,`id`,`htmlid`,`count`, `publisher`, `title`,`type`,`abstractText`,`content`, `date_created`) VALUES ('1','1','238',1, 'admin', '标题', '类型','摘要','信息与通信工程学院成立大会在清水河校区图书馆求实厅隆重举行。中国工程院院士李乐民、校党委书记王亚非、副校长熊彩东、党委常委、组织部部长武好明及学院教职员工和学生代表参与本次大会，大会由副校长徐红兵主持。','2017-08-09 00:00:00');
-INSERT INTO `labweb`.`news` (`pid`,`id`,`htmlid`,`count`, `publisher`, `title`,`type`,`abstractText`,`content`, `date_created`) VALUES ('1','1','233',1, 'admin', '标题', '类型','摘要','信息与通信工程学院成立大会在清水河校区图书馆求实厅隆重举行。中国工程院院士李乐民、校党委书记王亚非、副校长熊彩东、党委常委、组织部部长武好明及学院教职员工和学生代表参与本次大会，大会由副校长徐红兵主持。','2017-08-09 00:00:00');
-INSERT INTO `labweb`.`news` (`pid`,`id`,`htmlid`,`count`, `publisher`, `title`,`type`,`abstractText`,`content`, `date_created`) VALUES ('1','1','234',1, 'admin', '标题', '类型','摘要','信息与通信工程学院成立大会在清水河校区图书馆求实厅隆重举行。中国工程院院士李乐民、校党委书记王亚非、副校长熊彩东、党委常委、组织部部长武好明及学院教职员工和学生代表参与本次大会，大会由副校长徐红兵主持。','2017-08-09 00:00:00');
-INSERT INTO `labweb`.`news` (`pid`,`id`,`htmlid`,`count`, `publisher`, `title`,`type`,`abstractText`,`content`, `date_created`) VALUES ('1','1','235',1, 'admin', '标题', '类型','摘要','信息与通信工程学院成立大会在清水河校区图书馆求实厅隆重举行。中国工程院院士李乐民、校党委书记王亚非、副校长熊彩东、党委常委、组织部部长武好明及学院教职员工和学生代表参与本次大会，大会由副校长徐红兵主持。','2017-08-09 00:00:00');
-INSERT INTO `labweb`.`news` (`pid`,`id`,`htmlid`,`count`, `publisher`, `title`,`type`,`abstractText`,`content`, `date_created`) VALUES ('1','1','236',1, 'admin', '标题', '类型','摘要','信息与通信工程学院成立大会在清水河校区图书馆求实厅隆重举行。中国工程院院士李乐民、校党委书记王亚非、副校长熊彩东、党委常委、组织部部长武好明及学院教职员工和学生代表参与本次大会，大会由副校长徐红兵主持。','2017-08-09 00:00:00');
-INSERT INTO `labweb`.`news` (`pid`,`id`,`htmlid`,`count`, `publisher`, `title`,`type`,`abstractText`,`content`, `date_created`) VALUES ('1','1','237',1, 'admin', '标题', '类型','摘要','信息与通信工程学院成立大会在清水河校区图书馆求实厅隆重举行。中国工程院院士李乐民、校党委书记王亚非、副校长熊彩东、党委常委、组织部部长武好明及学院教职员工和学生代表参与本次大会，大会由副校长徐红兵主持。','2017-08-09 00:00:00');
-
--- user
-INSERT INTO `labweb`.`user` (`uid`, `username`, `password`, `description`, `roles`) VALUES ('3', 'admin', '$2a$10$iFu8iwTar3FCq.hBwlQlW.ZhBEtIrVoeC6QyrSHDCUDNBtRWZh5Ta', NULL, 'USER,ADMIN');
-
--- FtpPublicFile  区分大小写
-insert into ftppublicfile values('downloadlink','id','filename','username','des','2017-08-02');
-insert into FtpPrivateFile values('downloadlink','id1','filename','username','des','2017-08-02');
+INSERT INTO `labweb`.`user` (`uid`, `username`, `password`, `description`, `roles`) VALUES ('13', 'admin', '$2a$10$gHonI5g6zgRb0IUHOCP5Xe8hzAl2ptHBdd2Qnc4k8fL4AOTWrQINS', '管理员', 'USER,ADMIN');

@@ -37,11 +37,11 @@
     </delete>
     <!--查询私有文件-->
     <select id="queryPrivateFile" resultMap="FtpFileResultMap">
-        select <include refid="Base_Column_List" /> from (select * from FtpPrivateFile where uploaduser=#{username})t1 limit #{page},10
+        select <include refid="Base_Column_List" /> from (select * from FtpPrivateFile where uploaduser=#{username})t1 order by date_created DESC limit #{page},10
     </select>
 
     <select id="queryPublicFile" resultMap="FtpFileResultMap">
-        select * from FtpPublicFile limit #{page},10
+        select * from FtpPublicFile order by date_created DESC limit #{page},10
     </select>
 
     <!-- 查询页数 -->
