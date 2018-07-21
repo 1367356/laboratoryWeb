@@ -2,705 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9ce91-f763-4a54-a122-139bdaab490a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/DownloadFileController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ErrorController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/ImageUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/logs/info.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/logs/log.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/logs/warn.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/CHANGES.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/adapters/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/build-config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/ckeditor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/contents.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/af.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/bn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/bs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/cy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/en-au.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/en-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/en-gb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/eo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/eu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/fo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/fr-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/gu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/hi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/is.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ka.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/km.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ku.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/mk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/mn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ms.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/nb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/pt-br.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/sq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/sr-latn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/sr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/tt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/ug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/lang/zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/about/dialogs/about.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/div/dialogs/div.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/find/dialogs/find.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/flash/dialogs/flash.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/flash/images/placeholder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/button.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/checkbox.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/radio.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/select.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/textarea.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/dialogs/textfield.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/forms/images/hiddenfield.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/icons_hidpi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/iframe/dialogs/iframe.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/iframe/images/placeholder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/image/dialogs/image.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/image/images/noimage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/link/dialogs/link.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/link/images/anchor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/link/images/hidpi/anchor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/magicline/images/hidpi/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/magicline/images/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/preview/preview.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/scayt/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/scayt/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_address.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_blockquote.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_div.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_h1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_h2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_h3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_h4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_h5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_h6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/showblocks/images/block_pre.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/dialogs/smiley.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/angel_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/angel_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/angry_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/angry_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/broken_heart.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/broken_heart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/confused_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/confused_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/cry_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/cry_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/devil_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/devil_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/embarrassed_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/envelope.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/envelope.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/heart.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/heart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/kiss.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/kiss.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/lightbulb.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/lightbulb.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/omg_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/omg_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/regular_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/regular_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/sad_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/sad_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/shades_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/shades_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/teeth_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/teeth_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/thumbs_down.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/thumbs_down.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/thumbs_up.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/thumbs_up.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/tongue_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/tongue_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/tounge_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/wink_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/smiley/images/wink_smile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/table/dialogs/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/templates/dialogs/templates.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/templates/dialogs/templates.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/templates/templates/default.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/templates/templates/images/template1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/templates/templates/images/template2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/templates/templates/images/template3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/ajax.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/api.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/appendto.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/assets/inlineall/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/assets/outputxhtml/outputxhtml.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/assets/posteddata.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/assets/sample.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/assets/uilanguages/languages.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/datafiltering.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/divreplace.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/inlineall.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/inlinebycode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/inlinetextarea.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/jquery.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/dialog/assets/my_dialog.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/dialog/dialog.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/enterkey/enterkey.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/htmlwriter/outputforflash.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/htmlwriter/outputhtml.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/magicline/magicline.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/toolbar/toolbar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/plugins/wysiwygarea/fullpage.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/readonly.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/replacebyclass.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/replacebycode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/sample.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/sample.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/sample_posteddata.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/tabindex.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/uicolor.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/uilanguages.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/samples/xhtmlstyle.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/dialog.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/dialog_ie.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/dialog_ie7.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/dialog_ie8.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/dialog_iequirks.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/editor.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/editor_gecko.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/editor_ie.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/editor_ie7.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/editor_ie8.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/editor_iequirks.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/icons_hidpi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/hidpi/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/hidpi/lock-open.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/hidpi/lock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/hidpi/refresh.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/lock-open.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/lock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/images/refresh.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/skins/moono/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/ckeditor/styles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/ImgCropping.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/cropper.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/flexslider.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/new_edit.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist.zip" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/font/summernote.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/font/summernote.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/font/summernote.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ar-AR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-bg-BG.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ca-ES.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-cs-CZ.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-da-DK.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-de-DE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-el-GR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-es-ES.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-es-EU.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-fa-IR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-fi-FI.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-fr-FR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-gl-ES.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-he-IL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-hr-HR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-hu-HU.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-id-ID.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-it-IT.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ja-JP.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ko-KR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-lt-LT.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-lt-LV.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-mn-MN.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-nb-NO.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-nl-NL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-pl-PL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-pt-BR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-pt-PT.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ro-RO.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ru-RU.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-sk-SK.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-sl-SI.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-sr-RS-Latin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-sr-RS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-sv-SE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-ta-IN.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-th-TH.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-tr-TR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-uk-UA.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-vi-VN.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-zh-CN.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/lang/summernote-zh-TW.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/plugin/databasic/summernote-ext-databasic.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/plugin/databasic/summernote-ext-databasic.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/plugin/hello/summernote-ext-hello.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/plugin/specialchars/summernote-ext-specialchars.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/summernote.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/summernote.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/dist/summernote.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/addr.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/email.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/left1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/logo_title.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/img/right1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/jquery.flexslider-min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/cropper.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/editor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/new_edit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/new_modify.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/new_edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/new_modify.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/labWeb/src/test/java/test/GenerateSqlData.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/laboratoryWeb.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/laboratoryWeb_main.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/laboratoryWeb_test.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/.gradle/workspace-id.txt.lock" afterPath="$PROJECT_DIR$/labWeb/.gradle/workspace-id.txt.lock" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/SpringBootLabApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ForeController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/FtpFileController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/LoginController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ManageController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/NewsImageController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/ResearchTeamController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/controller/UserController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/ForeMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/FtpFileMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/ManageMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/ResearchTeamMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/dao/UserMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/FtpFile.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/InsertParameter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/News.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/NewsList.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/ResearchTeam.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/ResponseEntity.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/pojo/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/security/MyUserDetailsService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/security/WebSecurityConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/ForeService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/FtpFileService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/ManageService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/ResearchTeamService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/UserService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ForeServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/FtpFileServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ManageServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/ResearchTeamServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/service/impl/UserServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/classes/java/main/com/li/utils/FtpUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.tar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/distributions/laboratoryWeb-1.0-SNAPSHOT.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/libs/laboratoryWeb-1.0-SNAPSHOT.jar.original" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/data.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/log4j2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/logs/debug.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ForeMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/FtpFileMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ManageMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/ResearchTeamMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mapper/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/mybatis/mybatis-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/readme.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/schema.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/shemaAndData.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/changepwd.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/file.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/intro.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_intro.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/manage_news.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/material.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/news.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/team.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/css/teams.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/error.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/arrow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/arrow_down.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/arrow_h.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/arrow_up.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/close.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/delete.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/delete_r.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/edit.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/edit_r.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/login-img.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/login_logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/logo.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/pengzhenming.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/search_icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/show_10.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/show_20.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/show_30.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/show_40.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/show_50.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/uestc_back.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/img/webLogo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/file.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/jquery-3.0.0.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/jquery.cookie.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/login.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/material.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/news.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/js/teams.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/manage_js/jquery-3.0.0.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/manage_js/news.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/static/前端开发手册.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/admin/addNews.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/admin/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/admin/user-login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/admin/user-registration-result.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/admin/user-registration.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/addNews.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/manage_info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/manage_intro.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/privateFile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/publicFile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/background/userManage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/error.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/footer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/header.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/fragments/nav.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/changePwd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/intro.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/news_content.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/news_info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/privateFile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/publicFile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/teams_info.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/front/前端开发手册.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/footer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/header.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/manage_fragments/nav.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/message/200.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/message/403.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/message/404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/message/manage/200.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/resources/main/templates/message/manage/404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/scripts/laboratoryWeb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/scripts/laboratoryWeb.bat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/build/tmp/jar/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ForeController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ForeController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/FtpFileController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/LoginController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ManageController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ManageController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/NewsImageController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/NewsImageController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ResearchTeamController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/ResearchTeamController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/ManageMapper.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/ManageMapper.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/ResearchTeamMapper.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/dao/ResearchTeamMapper.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/ManageService.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/ManageService.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/ResearchTeamService.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/ResearchTeamService.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ManageServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ManageServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ResearchTeamServiceImpl.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/service/impl/ResearchTeamServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/utils/FtpUtil.class" afterPath="$PROJECT_DIR$/labWeb/out/production/classes/com/li/utils/FtpUtil.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/application.yml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/log4j2.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/log4j2.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/FtpFileMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/FtpFileMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ManageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ResearchTeamMapper.xml" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/mybatis/mapper/ResearchTeamMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/schema.sql" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/schema.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/shemaAndData.txt" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/shemaAndData.txt" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/base.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/changepwd.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/changepwd.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/file.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/file.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/index.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/intro.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/intro.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/login.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/login.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_intro.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_intro.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_news.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/manage_news.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/material.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/team.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/teams.css" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/css/teams.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/file.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/file.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/login.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/login.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/news.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/teams.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/js/teams.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/static/manage_js/news.js" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/static/manage_js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/manage_info.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/manage_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/manage_intro.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/privateFile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/teams_info.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/teams_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/background/userManage.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/footer.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/changePwd.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/changePwd.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/index.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/index.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/intro.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/intro.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/login.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/login.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/news_content.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/news_content.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/news_info.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/news_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/privateFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/teams_info.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/front/teams_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/footer.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/footer.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/templates/manage_fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/out/test/classes/test/Test.class" afterPath="$PROJECT_DIR$/labWeb/out/test/classes/test/Test.class" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java" />
+      <change beforePath="$PROJECT_DIR$/labWeb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/labWeb/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/logs/info.log" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/logs/info.log" />
+      <change beforePath="$PROJECT_DIR$/labWeb/out/production/resources/logs/log.log" afterPath="$PROJECT_DIR$/labWeb/out/production/resources/logs/log.log" />
       <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpFileController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/LoginController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ManageController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/NewsImageController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ResearchTeamController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ResearchTeamController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ManageMapper.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ManageMapper.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ResearchTeamMapper.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/dao/ResearchTeamMapper.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ForeService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ForeService.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/FtpFileService.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ManageService.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ResearchTeamService.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/ResearchTeamService.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ManageServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ResearchTeamServiceImpl.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/service/impl/ResearchTeamServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java" afterPath="$PROJECT_DIR$/labWeb/src/main/java/com/li/utils/FtpUtil.java" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/log4j2.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/log4j2.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/FtpFileMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ManageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ResearchTeamMapper.xml" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/mybatis/mapper/ResearchTeamMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/schema.sql" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/shemaAndData.txt" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/shemaAndData.txt" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/base.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/changepwd.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/changepwd.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/file.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/file.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/index.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/intro.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/intro.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/login.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/login.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_intro.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_intro.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_news.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/manage_news.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/material.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/team.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/teams.css" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/css/teams.css" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/file.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/login.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/login.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/news.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/teams.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/js/teams.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/news.js" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/static/manage_js/news.js" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_info.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/manage_intro.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/privateFile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/teams_info.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/teams_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/background/userManage.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/footer.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/changePwd.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/changePwd.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/index.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/intro.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/intro.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/login.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/login.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_content.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_info.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/news_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/privateFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/publicFile.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/teams_info.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/front/teams_info.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/footer.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/footer.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/head.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/head.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/nav.html" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/templates/manage_fragments/nav.html" />
-      <change beforePath="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" afterPath="$PROJECT_DIR$/labWeb/src/test/java/test/Test.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/debug.log" afterPath="$PROJECT_DIR$/src/main/resources/logs/debug.log" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/logs/info.log" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/logs/info.log" />
+      <change beforePath="$PROJECT_DIR$/labWeb/src/main/resources/logs/log.log" afterPath="$PROJECT_DIR$/labWeb/src/main/resources/logs/log.log" />
     </list>
     <ignored path="$PROJECT_DIR$/labWeb/.gradle/" />
     <ignored path="$PROJECT_DIR$/labWeb/build/" />
@@ -795,11 +102,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitattributes" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitattributes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitattributes">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FtpController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -844,16 +161,6 @@
                 <element signature="e#2417#2418#0" expanded="true" />
                 <element signature="e#2478#2479#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/ForeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1701">
-              <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1027,8 +334,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1393,6 +700,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24570815" sideWeight="0.62653565" order="2" side_tool="false" content_ui="tabs" />
@@ -1401,11 +709,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49520382" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19184652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4916067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14699571" sideWeight="0.47420147" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14914162" sideWeight="0.47420147" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.47174448" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.47174448" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1547,13 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1709,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1747,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1821,6 +1120,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labWeb/src/main/java/com/li/controller/FtpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -90,15 +90,27 @@
     padding: 5px 0;
 }
 .main_content .center_content ul.list_block li a{
-	width: 310px;
+	max-width: 300px;
 }
 .main_content .left_content ul.list_block li a{
-	width: 180px;
+	max-width: 150px;
 }
 .main_content ul.list_block li span{
 	float: right;
 	color: #a4a4a4;
 }
+.main_content ul.list_block li span.badge_new{
+    float: none;
+	color: #fff;
+	margin-left: 5px;
+	background-color: #8c1515;
+	border-radius: 3px;
+	padding: 0 2px;
+	font-size:11px;
+	vertical-align: top;
+	display: none;
+}
+
 .main_content section.master_content a:hover,
 .main_content ul.list_block li a:hover,
 .main_content .right_content li a:hover{

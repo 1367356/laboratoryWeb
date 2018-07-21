@@ -45,7 +45,7 @@
 					<h3>科研成果</h3>
 					<span class="more"><a href="/querybycategory?id=2&pid=3&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response1}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response1}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new">New</span><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
@@ -55,7 +55,7 @@
 					<h3>通知公告</h3>
 					<span class="more"><a href="/querybycategory?id=1&pid=2&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response2}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response2}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new">New</span><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
@@ -63,7 +63,7 @@
 					<h3>热点新闻</h3>
 					<span class="more"><a href="/querybycategory?id=2&pid=2&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response3}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span>
+						<li th:each="list : ${response3}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new">New</span><span th:text="${list.date}"></span>
 						</li>
 					</ul>
 				</div>
@@ -117,6 +117,24 @@
 					$(this).attr('title',text);
 				}
 			});
+			//根据时间判断是否显示new
+		$('span.badge_new').each(function(){
+			var str = $(this).next().text();
+			var time = getDate(str).getTime();
+			var current = (new Date()).getTime();
+			if ((current-time)<604800000) {
+				$(this).show();
+			}
+			else {
+				$(this).hide();
+			}
+		});
+		//字符串时间格式转日期格式
+		function getDate(strDate) {
+      	 	var date = eval('new Date(' + strDate.replace(/\d+(?=-[^-]+$)/,
+       		function (a) { return parseInt(a, 10) - 1; }).match(/\d+/g) + ')');
+        		return date;
+    	}
 		})();
 	</script>
 </body>

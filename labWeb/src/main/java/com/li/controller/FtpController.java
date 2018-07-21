@@ -1,7 +1,9 @@
 package com.li.controller;
 
+import com.li.dao.UserMapper;
 import com.li.pojo.FtpFile;
 import com.li.service.impl.FtpFileServiceImpl;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
