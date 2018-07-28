@@ -8,3 +8,18 @@
 	white-space: nowrap;
 	cursor: pointer;
 }
+.main .logo{
+    padding-left: 85px;
+    height: 95px;
+    background: url('/img/logo.png') left center no-repeat;
+    background-size: 90px;
+}
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+    .main .logo{
+        padding-left: 55px;
+        height: 50px;
+        background: url('/img/logo.png') 10px center no-repeat;
+        background-size: 48px;
+    }
+}

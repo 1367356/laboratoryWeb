@@ -7,6 +7,8 @@ import org.apache.ibatis.session.RowBounds;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -54,12 +56,12 @@ public class UserServiceImpl implements UserService {
         return registrationResult;
     }
 
-    @Override
+    @CacheEvict(cacheNames = {"selectUserList"},allEntries=true)
     public int deleteUser(int uid) {
         return userMapper.deleteUser(uid);
     }
 
-    @Override
+    @Cacheable(cacheNames = {"selectUserList"})
     public List<User> selectUserList(RowBounds rowBounds) {
         return userMapper.selectUserList(rowBounds);
     }

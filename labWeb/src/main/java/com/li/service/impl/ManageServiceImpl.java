@@ -8,6 +8,8 @@ import com.li.service.ManageService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -35,14 +37,14 @@ public class ManageServiceImpl implements ManageService{
     }
 
     @Transactional(value="txManager1")
-    @Override
+    @CacheEvict(cacheNames = {"queryByCategory","queryNews","backQuery","selectCount"},allEntries=true)
     public int delete(long htmlid) throws Exception{
         int i1=manageMapper.deleteNewshtmlid(htmlid);
         int i2=manageMapper.deleteNewslistHtmlid(htmlid);
         return i1;
     }
 
-    @Override
+    @Cacheable(cacheNames = {"queryByCategory"})
     public List<NewsList> queryByCategory(String pid, String id, int page) throws Exception{
         logger.debug("查询列表pid:"+pid+"id:"+id+"page:"+page);
         page=(page-1)*10;
@@ -54,7 +56,7 @@ public class ManageServiceImpl implements ManageService{
         return manageMapper.getMaxHtmlId();
     }
 
-    @Override
+    @Cacheable(cacheNames = {"backQuery"})
     public News backQuery(long htmlid) {
         logger.debug(htmlid);
         News news=manageMapper.backQuery(htmlid);
@@ -63,24 +65,25 @@ public class ManageServiceImpl implements ManageService{
     }
 
     @Override
+    @CacheEvict(cacheNames = {"queryByCategory","queryNews","backQuery"},allEntries=true)
     public int update(InsertParameter parameter) {
         return manageMapper.update(parameter);
     }
 
     @Transactional(value="txManager1")
-    @Override
+    @CacheEvict(cacheNames = {"queryByCategory","queryNews","backQuery","selectCount"},allEntries=true)
     public boolean insert(InsertParameter parameter) throws Exception {
         int i1=manageMapper.insertNewsList(parameter);;
         int i2=manageMapper.insertNews(parameter);
-
         if (i1!=i2 || i1!=1) {
             return false;
         }
         return true;
     }
 
-    @Override
+    @Cacheable(cacheNames = {"selectCount"})
     public int selectCount(String pid, String id) {
+        logger.debug("selectCount");
         return manageMapper.selectCount(pid,id);
     }
 

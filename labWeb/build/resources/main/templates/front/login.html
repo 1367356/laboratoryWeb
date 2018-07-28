@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+		<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>电子科技大学图形图像与信号应用处理研究室管理员系统</title>
+		<link rel="icon" href="/img/logo.ico" type="/image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="/css/login.css">
+		<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/js/login.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_main">
+				<ul class="header_nav">
+					<li><a href="http://www.uestc.edu.cn/">学校主页</a></li>
+					<li><a href="/index">实验室主页</a></li>
+				</ul>
+			</div>
+		</header>
+		<section class="main">
+		    <div class="login_img"><img src="/img/login-img.png" /></div>
+		    <div class="login_box">
+		        <div class="login_logo"><a href="#"><img src="/img/login_logo.png" /></a></div>
+				<div class="login_name"><p>登录</p></div>
+				<form method="post">
+					<fieldset>
+						<div class="form-group">
+							<input name="username" id="username" type="text" class="form-control" autofocus="autofocus" placeholder="用户名或Email" required/>
+						</div>
+						<div class="form-group">
+							<input name="password" id="password" type="password" class="form-control" placeholder="密码" required/>
+						</div>
+						<input class="btn btn-success" type="submit" value="登录" />
+					</fieldset>
+					<div th:if="${param.error}" class="alert">
+						<span>*用户名或者密码不正确！</span>
+					</div>
+				</form>
+		    </div>
+		</section>
+		<footer th:replace="fragments/footer :: footer"></footer>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+.main_content{
+	background-color: #fff;
+}
+.main_content .change_content{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.main_content .change_content h1{
+	height: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #086aa3;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 15px;
+}
+.main_content .change_content label{
+	color: #474747;
+	font-size: 16px; 
+}
+input[type=password] { 
+	border: 1px solid #DCDEE0;
+	border-radius: 5px; 
+	height: 40px;
+	font-size: 16px; 
+	color: #888; 
+	width:100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	display: block;
+}
+input[type=password]:focus{ 
+	border: 1px solid #086aa3; 
+	border-radius: 5px; 
+}
+input[type=submit], input[type=button] { 
+	display: inline-block;
+	font-size:16px; 
+	line-height: 30px; 
+	float: right;
+	text-align: center;
+	cursor: pointer; 
+	color: #ffffff; 
+	background-color: #086aa3; 
+	border-radius: 5px; 
+	border: none;
+	width:30%; 
+}
+
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.main_content .change_content{
+		width: 90%;
+		margin: 5% auto 0;
+	}
+	.main_content .change_content h1{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.main_content .change_content label{
+		font-size: 14px; 
+	}
+	input[type=text], input[type=password] { 
+		height: 30px;
+		font-size: 14px; 
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <nav>
+		<ul th:fragment="nav">
+			<li class="nav_item"><a href="/">首页</a></li><!--
+			--><li class="nav_item"><a href="/querybycategory?id=1&pid=1&page=1">实验室简介</a></li><!--
+			--><li class="nav_item">
+				<a href="/querybycategory?id=1&pid=2&page=1">新闻公告</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/querybycategory?id=1&pid=2&page=1">通知公告</a></li>
+					<li class="child_item"><a href="/querybycategory?id=2&pid=2&page=1">教学简报</a></li>
+					<li class="child_item"><a href="/querybycategory?id=3&pid=2&page=1">科研快讯</a></li>
+					<li class="child_item"><a href="/querybycategory?id=4&pid=2&page=1">桃李春风</a></li>
+					<li class="child_item"><a href="/querybycategory?id=5&pid=2&page=1">学子风采</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item">
+				<a href="/querybycategory?id=1&pid=3&page=1">科学研究</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/querybycategory?id=1&pid=3&page=1">研究领域</a></li>
+					<li class="child_item"><a href="/querybycategory?id=2&pid=3&page=1">科研项目</a></li>
+					<li class="child_item"><a href="/querybycategory?id=3&pid=3&page=1">学术论文</a></li>
+					<li class="child_item"><a href="/querybycategory?id=4&pid=3&page=1">获奖</a></li>
+					<li class="child_item"><a href="/querybycategory?id=5&pid=3&page=1">专利</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item">
+				<a href="/researchTeam/query?id=1&pid=4">科研团队</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/researchTeam/query?id=1&pid=4">团队教师</a></li>
+					<li class="child_item"><a href="/researchTeam/query?id=2&pid=4">博士后</a></li>
+					<li class="child_item"><a href="/researchTeam/query?id=3&pid=4">在读博士</a></li>
+					<li class="child_item"><a href="/researchTeam/query?id=4&pid=4">在读硕士</a></li>
+					<li class="child_item"><a href="/researchTeam/query?id=5&pid=4">光电菁英</a></li>
+					<li class="child_item"><a href="/researchTeam/query?id=6&pid=4">毕业学生</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item">
+				<a href="/querybycategory?id=1&pid=5&page=1">人才培养</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/querybycategory?id=1&pid=5&page=1">本科教学</a></li>
+					<li class="child_item"><a href="/querybycategory?id=2&pid=5&page=1">菁英计划</a></li>
+					<li class="child_item"><a href="/querybycategory?id=3&pid=5&page=1">研究生</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item"><a href="/querybycategory?id=1&pid=6&page=1">合作交流</a></li><!--
+			--><li class="nav_item"><a href="/ftp/public/queryFile?page=1">资料下载</a></li><!--
+			--><li class="nav_item"><a href="http://k19847n443.51mypc.cn:11884/">论坛交流</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

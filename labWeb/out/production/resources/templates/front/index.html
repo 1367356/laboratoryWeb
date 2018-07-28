@@ -2,9 +2,9 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
-	<title>电子科技大学图形图像与信号应用处理研究室</title>
-	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
-	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<title>电子科技大学成像探测与智能感知实验室</title>
+	<meta http-equiv="keywords" content="电子科技大学成像探测与智能感知实验室" />
+	<meta http-equiv="description" content="电子科技大学成像探测与智能感知实验室" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="/css/flexslider.css" />
@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="/js/rolling27.js"></script>
 </head>
 
 <body>
@@ -20,19 +21,30 @@
 		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
 		<nav th:replace="fragments/nav :: nav"></nav>
 		<section class="slideshow">
-			<div id="slider" class="flexslider" style="width:950px;margin:0 auto;">
+			<div id="slider" class="flexslider" style="width:1000px;margin:0 auto;height:480px;overflow:hidden">
 				<ul class="slides">
 					<li class="images"><img src="/img/show_10.jpg" alt=""></li>
 					<li class="images"><img src="/img/show_20.jpg" alt=""></li>
 					<li class="images"><img src="/img/show_30.jpg" alt=""></li>
 					<li class="images"><img src="/img/show_40.jpg" alt=""></li>
 					<li class="images"><img src="/img/show_50.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_60.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_70.jpg" alt=""></li>
+					<li class="images"><img src="/img/show_80.jpg" alt=""></li>
 				</ul>
 			</div>
 		</section>
 		<section class="main_content">
-			<div class="left_content">
-				<div class="for_one">
+			<div class="box_wrap">
+				<div class="one_box fl">
+					<h3>实验室简介</h3>
+					<div class="intro_wrap">
+						<div class="intro" th:utext="${introduction.content}">
+						</div>
+						<span class="more_i"><a href="/querybycategory?id=1&pid=1&page=1">更多&gt;&gt;</a></span>
+					</div>
+				</div>
+				<div class="sub_box fr">
 					<h3>团队负责人</h3>
 					<section class="master_content">
 						<a th:href="@{/queryNews(htmlid=${htmlid})}"><img src="/img/pengzhenming.jpg">
@@ -41,53 +53,110 @@
 						<span><strong>个人简介：</strong>彭真明(1966-)，博士，教授，博士生导师，湖南保靖人。</span>
 					</section>
 				</div>
-				<div class="for_two">
-					<h3>科研成果</h3>
-					<span class="more"><a href="/querybycategory?id=2&pid=3&page=1">更多&gt;&gt;</a></span>
-					<ul class="list_block">
-						<li th:each="list : ${response1}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new">New</span><span th:text="${list.date}"></span>
-						</li>
-					</ul>
-				</div>
 			</div>
-			<div class="center_content">
-				<div class="for_one">
-					<h3>通知公告</h3>
-					<span class="more"><a href="/querybycategory?id=1&pid=2&page=1">更多&gt;&gt;</a></span>
-					<ul class="list_block">
-						<li th:each="list : ${response2}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new">New</span><span th:text="${list.date}"></span>
-						</li>
-					</ul>
-				</div>
-				<div class="for_two">
+			<div class="box_wrap">
+				<div class="two_box fl">
 					<h3>热点新闻</h3>
 					<span class="more"><a href="/querybycategory?id=2&pid=2&page=1">更多&gt;&gt;</a></span>
 					<ul class="list_block">
-						<li th:each="list : ${response3}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new">New</span><span th:text="${list.date}"></span>
-						</li>
+						<li th:each="list : ${response3}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new"></span><span th:text="${list.date}"></span></li>
+					</ul>
+				</div>
+				<div class="two_box fr">
+					<h3>通知公告</h3>
+					<span class="more"><a href="/querybycategory?id=1&pid=2&page=1">更多&gt;&gt;</a></span>
+					<ul class="list_block">
+						<li th:each="list : ${response2}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new"></span><span th:text="${list.date}"></span></li>
 					</ul>
 				</div>
 			</div>
-			<div class="right_content">
-				<div class="right_cooperation">
-					<h3><a href="/querybycategory?id=1&pid=6&page=1">合作交流</a></h3>
-					<ul class="cooperation_list">
-						<li th:each="list : ${response4}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a>
-						</li>
+			<div class="box_wrap box_last">
+				<div class="three_box fl">
+					<h3>科研团队</h3>
+					<span class="more"><a href="/querybycategory?id=1&pid=4&page=1">更多&gt;&gt;</a></span>
+					<ul class="list_block j_rolling">
+						<li th:each="list : ${response}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span></li>
 					</ul>
 				</div>
-				<div class="right_links">
+				<div class="three_box fl ml20">
+					<h3>科研成果</h3>
+					<span class="more"><a href="/querybycategory?id=2&pid=3&page=1">更多&gt;&gt;</a></span>
+					<ul class="list_block j_rolling">
+						<li th:each="list : ${response1}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new"></span><span th:text="${list.date}"></span></li>
+					</ul>
+				</div>
+				<div class="sub_box fr">
 					<h3>友情链接</h3>
-					<ul class="links_list">
-						<li><a href="http://blog.sciencenet.cn/u/zmpenguestc" target="_blank">科学网-老马迷图</a></li>
-						<li><a href="http://www.soei.uestc.edu.cn/index.php" target="_blank">光电信息学院</a></li>
-						<li><a href="http://yz.uestc.edu.cn/" target="_blank">研招网-招生信息</a></li>
+					<!--<span class="more"><a href="">更多&gt;&gt;</a></span>-->
+					<ul class="list_block j_rolling">
+						<li><a href="http://www.uestc.edu.cn" target="_blank">电子科技大学</a></li>
+						<li><a href="http://www.sice.uestc.edu.cn/" target="_blank">信息与通信工程学</a></li>
 						<li><a href="http://www.nsfc.gov.cn/" target="_blank">国家自然科学基金委员会</a></li>
+						<li><a href="http://www.csc.edu.cn/" target="_blank">国家留学网</a></li>
+						<li><a href="http://blog.sciencenet.cn/u/zmpenguestc" target="_blank">科学网-老马迷图</a></li>
+						<li><a href="http://yz.uestc.edu.cn/" target="_blank">研招网-招生信息</a></li>
+						<li><a href="https://www.csdn.net" target="_blank">CSDN</a></li>
+						<li><a href="http://bbs.uestc.edu.cn/forum.php" target="_blank">清水河畔</a></li>
 					</ul>
-				</div> 
-				<div>
-					<h3><a href="/ftp/public/queryFile?page=1">资料下载</a></h3>
 				</div>
+			</div>
+			<!--<div class="left_content">-->
+				<!--<div class="for_one">-->
+					<!--<h3>团队负责人</h3>-->
+					<!--<section class="master_content">-->
+						<!--<a th:href="@{/queryNews(htmlid=${htmlid})}"><img src="/img/pengzhenming.jpg">-->
+						<!--<span>彭真明教授</span></a>-->
+						<!--&lt;!&ndash; <span><strong>邮箱：</strong>zmpeng@uestc.edu.cn</span> &ndash;&gt;-->
+						<!--<span><strong>个人简介：</strong>彭真明(1966-)，博士，教授，博士生导师，湖南保靖人。</span>-->
+					<!--</section>-->
+				<!--</div>-->
+				<!--<div class="for_two">-->
+					<!--<h3>科研成果</h3>-->
+					<!--<span class="more"><a href="/querybycategory?id=2&pid=3&page=1">更多&gt;&gt;</a></span>-->
+					<!--<ul class="list_block">-->
+						<!--<li th:each="list : ${response1}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new"></span><span th:text="${list.date}"></span>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="center_content">-->
+				<!--<div class="for_one">-->
+					<!--<h3>通知公告</h3>-->
+					<!--<span class="more"><a href="/querybycategory?id=1&pid=2&page=1">更多&gt;&gt;</a></span>-->
+					<!--<ul class="list_block">-->
+						<!--<li th:each="list : ${response2}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new"></span><span th:text="${list.date}"></span>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+				<!--<div class="for_two">-->
+					<!--<h3>热点新闻</h3>-->
+					<!--<span class="more"><a href="/querybycategory?id=2&pid=2&page=1">更多&gt;&gt;</a></span>-->
+					<!--<ul class="list_block">-->
+						<!--<li th:each="list : ${response3}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span class="badge_new"></span><span th:text="${list.date}"></span>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="right_content">-->
+				<!--<div class="right_cooperation">-->
+					<!--<h3><a href="/querybycategory?id=1&pid=6&page=1">合作交流</a></h3>-->
+					<!--<ul class="cooperation_list">-->
+						<!--<li th:each="list : ${response4}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+				<!--<div class="right_links">-->
+					<!--<h3>友情链接</h3>-->
+					<!--<ul class="links_list">-->
+						<!--<li><a href="http://blog.sciencenet.cn/u/zmpenguestc" target="_blank">科学网-老马迷图</a></li>-->
+						<!--<li><a href="http://www.soei.uestc.edu.cn/index.php" target="_blank">光电信息学院</a></li>-->
+						<!--<li><a href="http://yz.uestc.edu.cn/" target="_blank">研招网-招生信息</a></li>-->
+						<!--<li><a href="http://www.nsfc.gov.cn/" target="_blank">国家自然科学基金委员会</a></li>-->
+					<!--</ul>-->
+				<!--</div> -->
+				<!--<div>-->
+					<!--<h3><a href="/ftp/public/queryFile?page=1">资料下载</a></h3>-->
+				<!--</div>-->
 			</div>
 		</section>
 	</section>
@@ -118,23 +187,34 @@
 				}
 			});
 			//根据时间判断是否显示new
-		$('span.badge_new').each(function(){
-			var str = $(this).next().text();
-			var time = getDate(str).getTime();
-			var current = (new Date()).getTime();
-			if ((current-time)<604800000) {
-				$(this).show();
-			}
-			else {
-				$(this).hide();
-			}
-		});
-		//字符串时间格式转日期格式
-		function getDate(strDate) {
-      	 	var date = eval('new Date(' + strDate.replace(/\d+(?=-[^-]+$)/,
-       		function (a) { return parseInt(a, 10) - 1; }).match(/\d+/g) + ')');
-        		return date;
-    	}
+			$('span.badge_new').each(function(){
+				var str = $(this).next().text();
+				var time = getDate(str).getTime();
+				var current = (new Date()).getTime();
+				if ((current-time)<604800000) {
+					$(this).show();
+				}
+				else {
+					$(this).hide();
+				}
+			});
+			//字符串时间格式转日期格式
+			function getDate(strDate) {
+      	 		var date = eval('new Date(' + strDate.replace(/\d+(?=-[^-]+$)/,
+       			function (a) { return parseInt(a, 10) - 1; }).match(/\d+/g) + ')');
+        			return date;
+    		}
+    		$('.j_rolling').rolling27({
+    			length: 6,
+    		});
+
+    		if($('.intro img').length >0 ){
+    			var intro_img = $('.intro img:eq(0)');
+    			$('.intro img').remove();
+    			$('.intro').before(intro_img);
+
+    			$('.intro').css('width','50%');
+    		}
 		})();
 	</script>
 </body>

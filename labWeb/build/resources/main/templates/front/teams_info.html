@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>电子科技大学图形图像与信号应用处理研究室</title>
+	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/teams.css">
+	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="/js/news.js"></script>
+	<script type="text/javascript" src="/js/teams.js"></script>
+</head>
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<!--<div class="logo"><img src="/img/webLogo.png"></div>-->
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<!--科研团队-->
+		<section class="main_content">
+			<div class="content_nav">
+				<span id="nav_pid" hidden th:text="${pid}">4</span>
+				<span id="nav_id" hidden th:text="${id}">1</span>
+
+				<!--<div class="nav_head">科研团队</div>-->
+					<!--<ul class="nav_ul">-->
+						<!--<li class="nav_li"><a href="/researchTeam/query?id=1&pid=4">团队教师</a></li>-->
+						<!--<li class="nav_li"><a href="/researchTeam/query?id=2&pid=4">博士后</a></li>-->
+						<!--<li class="nav_li"><a href="/researchTeam/query?id=3&pid=4">在读博士</a></li>-->
+						<!--<li class="nav_li"><a href="/researchTeam/query?id=4&pid=4">在读硕士</a></li>-->
+						<!--<li class="nav_li"><a href="/researchTeam/query?id=5&pid=4">光电菁英</a></li>-->
+						<!--<li class="nav_li"><a href="/researchTeam/query?id=6&pid=4">毕业学生</a></li>-->
+					<!--</ul>-->
+			</div>
+			<div class="content_right">
+				<div class="content_head">团队教师</div>
+				<div class="content_list">
+					<div class="content_list_item" th:each="map : ${response}">
+						<span class="list_head" th:text="${map.key}">教授
+							<img src="/img/arrow_down.png"><img src="/img/arrow_up.png" hidden>
+						</span>
+						<div class="container" hidden>
+							<figure  th:each="list : ${map.value}">
+								<a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" >
+									<img th:attr="src=${list.titleImage}">
+								</a>
+								<figcaption th:text="${list.title}"></figcaption>
+							</figure>
+						</div>
+					</div>
+					<!-- <div class="content_list_item">
+						<span class="list_head">教授
+							<img src="img/arrow_down.png"><img src="img/arrow_up.png" hidden>
+						</span>
+						<div class="container" hidden>
+							<figure>
+								<a href="">
+									<img src="img/team1.jpg">
+								</a>
+								<figcaption>team1.jpg</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>	 -->
+			</div>
+		</section>
+	</section>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <nav th:fragment="nav">
+		<ul>
+			<li class="nav_item"><a href="/">实验室首页</a></li><!--
+			--><li class="nav_item"><a href="/background/querybyBackList?id=1&pid=1&page=1">实验室简介</a></li><!--
+			--><li class="nav_item">
+				<a href="/background/querybyBackList?id=1&pid=2&page=1">新闻公告</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/background/querybyBackList?id=1&pid=2&page=1">通知公告</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=2&pid=2&page=1">教学简报</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=3&pid=2&page=1">科研快讯</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=4&pid=2&page=1">桃李春风</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=5&pid=2&page=1">学子风采</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item">
+				<a href="/background/querybyBackList?id=1&pid=3&page=1">科学研究</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/background/querybyBackList?id=1&pid=3&page=1">研究领域</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=2&pid=3&page=1">科研项目</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=3&pid=3&page=1">学术论文</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=4&pid=3&page=1">获奖</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=5&pid=3&page=1">专利</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item">
+				<a href="/researchTeam/backgroundquery?id=1&pid=4">科研团队</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/researchTeam/backgroundquery?id=1&pid=4">团队教师</a></li>
+					<li class="child_item"><a href="/researchTeam/backgroundquery?id=2&pid=4">博士后</a></li>
+					<li class="child_item"><a href="/researchTeam/backgroundquery?id=3&pid=4">在读博士</a></li>
+					<li class="child_item"><a href="/researchTeam/backgroundquery?id=4&pid=4">在读硕士</a></li>
+					<li class="child_item"><a href="/researchTeam/backgroundquery?id=5&pid=4">光电菁英</a></li>
+					<li class="child_item"><a href="/researchTeam/backgroundquery?id=6&pid=4">毕业学生</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item">
+				<a href="/background/querybyBackList?id=1&pid=5&page=1">人才培养</a>
+				<ul class="child_nav">
+					<li class="child_item"><a href="/background/querybyBackList?id=1&pid=5&page=1">本科教学</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=2&pid=5&page=1">菁英计划</a></li>
+					<li class="child_item"><a href="/background/querybyBackList?id=3&pid=5&page=1">研究生</a></li>
+				</ul>
+			</li><!--
+			--><li class="nav_item"><a href="/background/querybyBackList?id=1&pid=6&page=1">合作交流</a></li><!--
+			--><li class="nav_item"><a href="/ftp/public/queryBackgroundPublicFile?page=1">资料下载</a></li><!--
+			--><li class="nav_item"><a href="javascript:void(0);">留言板</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

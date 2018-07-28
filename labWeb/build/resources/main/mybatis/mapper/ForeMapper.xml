@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.dao.ForeMapper" >
+    <!--<resultMap id="BaseResultMap" type="com.li.pojo.News" >-->
+        <!--<constructor >-->
+            <!--<arg column="htmlid" jdbcType="BIGINT" javaType="java.lang.Long" />-->
+            <!--<arg column="count" jdbcType="INTEGER" javaType="java.lang.Integer" />-->
+            <!--<arg column="publisher" jdbcType="VARCHAR" javaType="java.lang.String" />-->
+            <!--<arg column="type" jdbcType="VARCHAR" javaType="java.lang.String" />-->
+            <!--<arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />-->
+            <!--<arg column="abstractText" jdbcType="VARCHAR" javaType="java.lang.String" />-->
+            <!--<arg column="content" jdbcType="VARCHAR" javaType="java.lang.String" />-->
+            <!--<arg column="date_created" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp" />-->
+        <!--</constructor>-->
+    <!--</resultMap>-->
+
+    <resultMap id="NewsResultMap" type="com.li.pojo.News">
+        <result property="pid" column="pid" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="id" column="id" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="htmlid" column="htmlid" jdbcType="BIGINT" javaType="java.lang.Long"/>
+        <result property="count" column="count" jdbcType="INTEGER" javaType="java.lang.Integer"/>
+        <result property="publisher" column="publisher" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="type" column="type" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="title" column="title" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="abstractText" column="abstractText" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="content" column="content" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        <result property="date" column="date_created"/>
+    </resultMap>
+
+    <!--<resultMap id="CategoryResultMap" type="com.qingwenwei.persistence.model.Category">-->
+        <!--<id property="id" column="id"/>-->
+        <!--<result property="weight" column="weight"/>-->
+        <!--<result property="name" column="name"/>-->
+        <!--<result property="displayName" column="display_name"/>-->
+        <!--<result property="username" column="username"/>-->
+        <!--<result property="dateCreated" column="date_created"/>-->
+    <!--</resultMap>-->
+
+
+    <sql id="Base_Column_List" >
+        pid,id,htmlid, count,publisher,type,title,abstractText,content,date_created
+    </sql>
+
+    <select id="queryNews" parameterType="java.lang.Long" resultMap="NewsResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from news
+        where htmlid=#{htmlid};
+    </select>
+
+    <update id="updateCount">
+        update news set count=#{count} where htmlid=#{htmlid}
+    </update>
+
+</mapper>

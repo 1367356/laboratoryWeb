@@ -70,6 +70,7 @@ public class DownloadFileController {
             ftp.connect(host, port);
             // 如果采用默认端口，可以使用ftp.connect(host)的方式直接连接FTP服务器
             ftp.login(username, password);// 登录
+            ftp.setFileType(FTPClient.BINARY_FILE_TYPE);
             ftp.enterLocalPassiveMode();  //将ftp设置为被动模式。否则不成功。
             reply = ftp.getReplyCode();
             if (!FTPReply.isPositiveCompletion(reply)) {
@@ -137,6 +138,7 @@ public class DownloadFileController {
             ftp.connect(host, port);
             // 如果采用默认端口，可以使用ftp.connect(host)的方式直接连接FTP服务器
             ftp.login(username, password);// 登录
+            ftp.setFileType(FTPClient.BINARY_FILE_TYPE);
             ftp.enterLocalPassiveMode();  //将ftp设置为被动模式。否则不成功。
             reply = ftp.getReplyCode();
             if (!FTPReply.isPositiveCompletion(reply)) {

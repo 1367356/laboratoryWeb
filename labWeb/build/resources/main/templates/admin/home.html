@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="panel panel-default panel-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div th:if="${param.logout}"> 
+					    <div class="alert alert-warning alert-dismissible">
+					    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					       你已经登出。
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+				    <a class="panel btn btn-default quick-post-button" href="/new"
+				        th:if="${pageType} == 'homePage'" sec:authorize="isAuthenticated()">  <!--发新帖子按钮-->
+				        <span class="middle-centered">快速发帖</span>
+                    </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

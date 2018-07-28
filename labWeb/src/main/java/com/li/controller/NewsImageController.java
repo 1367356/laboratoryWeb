@@ -71,8 +71,8 @@ public class NewsImageController {
                 //解决跨域问题
                 //Refused to display 'http://localhost:8080/upload/mgmt/img?CKEditor=practice_content&CKEditorFuncNum=1&langCode=zh-cn' in a frame because it set 'X-Frame-Options' to 'DENY'.
                 response.setHeader("X-Frame-Options", "SAMEORIGIN");
-//                PrintWriter out = response.getWriter();  //最新版本的提示response has already call getWriter
-                ServletOutputStream out = response.getOutputStream();
+                PrintWriter out = response.getWriter();  //最新版本的提示response has already call getWriter
+//                ServletOutputStream out = response.getOutputStream();
 
                 String fileClientName = file.getOriginalFilename();
                 String pathName = imagesBasePath + fileClientName;
@@ -95,7 +95,8 @@ public class NewsImageController {
                 out.close();
             } catch (Exception e) {
 //                logger.info("You failed to upload " + name + " => " + e.getMessage());
-                e.printStackTrace();
+//                e.printStackTrace();
+                logger.debug("上传图片");
             }
         } else {
 //            logger.info("You failed to upload " + name + " because the file was empty.");

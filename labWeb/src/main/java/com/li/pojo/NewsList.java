@@ -1,11 +1,12 @@
 package com.li.pojo;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
  * 新闻列表
  */
-public class NewsList {
+public class NewsList implements Serializable{
     private long htmlid;  // 新闻标识符，当点击新闻列表中的链接时，需用它查询新闻
     private String pid;   //上方导航栏 标识
     private String id;    //左方导航栏标识

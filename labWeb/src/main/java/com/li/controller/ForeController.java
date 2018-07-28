@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -91,7 +92,43 @@ public class ForeController {
 
     @RequestMapping("/index")
     public String index(Model model) {
+
+
+        List<NewsList> newsLists = null;
+        try {
+            newsLists=manageService.queryByCategory("1", "1", 1);
+            if (newsLists.size()==0) {
+                News news=new News();
+                model.addAttribute("introduction", news);
+            }else {
+                long htmlid = newsLists.get(0).getHtmlid();
+                News news=foreService.queryNews(htmlid);  //查询简介
+                model.addAttribute("introduction", news);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            model.addAttribute("response", "首页加载失败");
+            return "message/404";
+        }
+
+
         List<ResearchTeam> listGroup = researchTeamService.queryGroup("团队负责人","1");
+        try {
+            List<ResearchTeam> listGroup2 = researchTeamService.queryGroup("教授","1");
+            List<ResearchTeam> listGroup3 = researchTeamService.queryGroup("副教授","1");
+            List<ResearchTeam> listGroup4 = researchTeamService.queryGroup("讲师","1");
+            List<ResearchTeam> listAll = new ArrayList<>();
+            listAll.addAll(listGroup);
+            listAll.addAll(listGroup2);
+            listAll.addAll(listGroup3);
+            listAll.addAll(listGroup4);
+            model.addAttribute("response", listAll);
+        }catch (Exception e){
+            model.addAttribute("response", "首页加载失败");
+            return "message/404";
+        }
+
+
         if (listGroup.size()!=0) {
             ResearchTeam researchTeam = listGroup.get(0);
             long htmlid = researchTeam.getHtmlid();

@@ -1,5 +1,6 @@
 package com.li.controller;
 
+import com.li.pojo.News;
 import com.li.pojo.NewsList;
 import com.li.pojo.ResearchTeam;
 import com.li.service.ResearchTeamService;
@@ -14,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -70,7 +72,41 @@ public class LoginController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showAdminPage(Model model) {
 
+        List<NewsList> newsLists = null;
+        try {
+            newsLists=manageService.queryByCategory("1", "1", 1);
+            if (newsLists.size()==0) {
+                News news=new News();
+                model.addAttribute("introduction", news);
+            }else {
+                long htmlid = newsLists.get(0).getHtmlid();
+                News news=foreService.queryNews(htmlid);  //查询简介
+                model.addAttribute("introduction", news);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            model.addAttribute("response", "首页加载失败");
+            return "message/404";
+        }
+
         List<ResearchTeam> listGroup = researchTeamService.queryGroup("团队负责人","1");
+        try {
+            List<ResearchTeam> listGroup2 = researchTeamService.queryGroup("教授","1");
+            List<ResearchTeam> listGroup3 = researchTeamService.queryGroup("副教授","1");
+            List<ResearchTeam> listGroup4 = researchTeamService.queryGroup("讲师","1");
+            List<ResearchTeam> listAll = new ArrayList<>();
+            listAll.addAll(listGroup);
+            listAll.addAll(listGroup2);
+            listAll.addAll(listGroup3);
+            listAll.addAll(listGroup4);
+            model.addAttribute("response", listAll);
+        }catch (Exception e){
+            model.addAttribute("response", "首页加载失败");
+            return "message/404";
+        }
+
+
+//        List<ResearchTeam> listGroup = researchTeamService.queryGroup("团队负责人","1");
         if (listGroup.size()!=0) {
             ResearchTeam researchTeam = listGroup.get(0);
             long htmlid = researchTeam.getHtmlid();
@@ -83,9 +119,9 @@ public class LoginController {
             List<NewsList> newsLists3 = manageService.queryByCategory("2", "2", 1);
             List<NewsList> newsLists4 = manageService.queryByCategory("6", "1", 1);
 
-            if (newsLists1.size() > 8) {
-                newsLists1 = newsLists1.subList(1, 8);
-            }
+//            if (newsLists1.size() > 8) {
+//                newsLists1 = newsLists1.subList(1, 8);
+//            }
             if (newsLists2.size() > 8) {
                 newsLists2 = newsLists2.subList(0, 8);
             }

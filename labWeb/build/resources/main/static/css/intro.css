@@ -1,0 +1,33 @@
+.main_content{
+	background-color: #fff;
+	padding: 20px 40px;
+}
+.main_content .intro_head{
+	height: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #09588a;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.main_content .intro_content{
+	padding: 0 20px;
+	font-size: 15px;
+	line-height: 30px;
+}
+/*媒体查询，手机端*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.main_content{
+		padding: 20px 0;
+	}
+	.main_content .intro_head{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.main_content .intro_content{
+		padding: 0 20px;
+		font-size: 14px;
+		line-height: 14px;
+	}
+}

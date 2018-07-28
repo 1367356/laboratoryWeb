@@ -27,6 +27,7 @@ spring:
 # 解决ftp外网无法连接
 ftp:
   host: 39.108.79.53
+#  host: localhost
   port: 21
   username: ftp
   password: 1367356

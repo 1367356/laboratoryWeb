@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>电子科技大学图形图像与信号应用处理研究室</title>
+	<meta http-equiv="keywords" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta http-equiv="description" content="电子科技大学图形图像与信号处理应用研究室" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="icon" href="/img/logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/news.css">
+	<script type="text/javascript" src="/js/news.js"></script>
+</head>
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<section class="main">
+		<div class="logo"><a href="/index"><img src="/img/webLogo.png"></a></div>
+		<nav th:replace="fragments/nav :: nav"></nav>
+		<!--新闻页面-->
+		<section class="main_content">
+			<div class="content_nav">
+				<span id="nav_pid" hidden th:text="${response.pid}">2</span>
+				<span id="nav_id" hidden th:text="${response.id}">1</span>
+			</div>
+
+			<div class="content_right">
+				<div class="content_head">通知公告</div>
+				<div class="content_passage">
+					<span class="passage_title" th:text="${response.title}">【开题报告会】关于实验室博士学位论文公开开题的通知</span>
+					<div class="passage_info">
+						作者：<span th:text="${response.publisher}"></span>
+						<!--来源：<span th:text="${response.type}"></span>-->
+						发布时间：<span th:text="${response.date}"></span>
+						点击：<span th:text="${response.count}"></span>
+					</div>
+					<div th:if="${response.pid != '4'}"><div class="passage_abs" th:if="${response.abstractText != ''}"><strong>摘要：</strong><span th:text="${response.abstractText}"></span></div></div>
+					<div class="passage_text" th:utext="${response.content}">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</section>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
