@@ -8,13 +8,16 @@ $(document).ready(function() {
 			$('.for_type').empty();
 			var type_li = '';
 			switch(id){
-				case 1:
-					type_li = '<label>职称:</label><select name="type"><option selected value="教授">教授</option><option value="副教授">副教授</option><option value="讲师">讲师</option><option value="团队负责人">团队负责人</option></select>';
-				    break;
+			    case 1:
+                	type_li = '<label>职称:</label><select name="type"><option selected value="团队负责人">团队负责人</option></select>';
+                	break;
 				case 2:
+					type_li = '<label>职称:</label><select name="type"><option selected value="教授">教授</option><option value="副教授">副教授</option><option value="讲师">讲师</option></select>';
+				    break;
+				case 3:
 					type_li = '<label>职称:</label><select name="type"><option selected value="教授">教授</option><option value="副教授">副教授</option><option value="讲师">讲师</option><option value="博士后">博士后</option></select>';
 					break;
-				case 6:
+				case 7:
 					type_li = '<label>毕业年份:</label>' + createLi('届',10);
 					break;
 				default:

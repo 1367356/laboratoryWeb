@@ -91,14 +91,22 @@ public class LoginController {
 
         List<ResearchTeam> listGroup = researchTeamService.queryGroup("团队负责人","1");
         try {
-            List<ResearchTeam> listGroup2 = researchTeamService.queryGroup("教授","1");
-            List<ResearchTeam> listGroup3 = researchTeamService.queryGroup("副教授","1");
-            List<ResearchTeam> listGroup4 = researchTeamService.queryGroup("讲师","1");
+            List<ResearchTeam> listGroup2 = researchTeamService.queryGroup("教授","2");
+            List<ResearchTeam> listGroup3 = researchTeamService.queryGroup("副教授","2");
+            List<ResearchTeam> listGroup4 = researchTeamService.queryGroup("讲师","2");
+            List<ResearchTeam> listGroup5 = researchTeamService.queryGroup("教授","3");
+            List<ResearchTeam> listGroup6 = researchTeamService.queryGroup("副教授","3");
+            List<ResearchTeam> listGroup7 = researchTeamService.queryGroup("讲师","3");
+
             List<ResearchTeam> listAll = new ArrayList<>();
             listAll.addAll(listGroup);
             listAll.addAll(listGroup2);
             listAll.addAll(listGroup3);
             listAll.addAll(listGroup4);
+
+            listAll.addAll(listGroup5);
+            listAll.addAll(listGroup6);
+            listAll.addAll(listGroup7);
             model.addAttribute("response", listAll);
         }catch (Exception e){
             model.addAttribute("response", "首页加载失败");

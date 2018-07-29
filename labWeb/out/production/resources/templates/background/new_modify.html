@@ -37,7 +37,7 @@
 						<input type="text" name="edit_content" th:value="${response.content}" hidden>
 						<div class="ed_bl"><label th:if="${pid != '4'}">标题:</label><label th:if="${pid == '4'}">姓名:</label><input name="title" type="text" th:value="${response.title}" required></div>
 						<div class="ed_bl"><label>作者:</label><input name="publisher" type="text" th:value="${response.publisher}" onblur="if(this.value==''){this.value='本站编辑'}"></div>
-						<div class="ed_bl for_type"><label>来源:</label><input name="type" type="text" th:value="${response.type}" onblur="if(this.value==''){this.value='本站原创'}"></div>
+						<div class="ed_bl for_type" style="z-index: 4;"><label>来源:</label><input name="type" type="text" th:value="${response.type}" onblur="if(this.value==''){this.value='本站原创'}"></div>
 						<div class="ed_bl" th:if="${pid != '4'}"><label>摘要:</label><input name="abstractText" type="text" th:value="${response.abstractText}"></div>
 						<div th:if="${pid == '4'}" style="margin-bottom:60px;"></div>
 						<textarea rows="10" cols="30" class="ckeditor" name="content" id="editor1" ></textarea>

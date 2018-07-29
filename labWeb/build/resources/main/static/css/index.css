@@ -1,5 +1,5 @@
 .slideshow{
-	width: 980px;
+	width: 1080px;
 	background-color: #fff;
 }
 .flex-control-nav{
@@ -18,34 +18,61 @@
 
 /*------main_content-------*/
 .main section.main_content{
-	margin: 20px 0;
 	font-size: 14px;
+	margin-top: 0;
 }
-.main_content .left_content{
-	float: left;
-	width: 30%;
+.main section.main_content .box_wrap div{
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+   	height: 318px;
+   	margin-top: 20px;
+   	overflow: hidden;
 }
-.main_content .center_content{
-	float: left;
-	width: 45%;
-	margin-left: 2%;
+.main section.main_content .box_last div {
+    height:250px;
 }
-.main_content .right_content{
-	float: right;
-	width: 20%;
-	margin-left: 3%;
+.fl { float: left; }
+.fr { float: right; }
+.ml20 { margin-left: 20px; }
+.main section.main_content .one_box {
+    width: 75.8%;
 }
-.main_content .left_content div,
-.main_content .center_content div{
-	background-color: #fff;
-	position: relative;
-	box-sizing: border-box;
-	height: 340px;
-	overflow: hidden;
+.main section.main_content .two_box {
+    width: 49%;
 }
-.main_content .left_content div.for_two,
-.main_content .center_content div.for_two{
-	margin-top: 20px;
+.main section.main_content .three_box {
+    width: 37%;
+}
+.main section.main_content .sub_box {
+    width: 22.2%;
+}
+.main section.main_content .one_box img {
+    width: auto !important;
+    height: 254px !important;
+    max-width: 46%;
+    vertical-align: top;
+}
+.main section.main_content .one_box .intro_wrap {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    height: 274px;
+    padding: 10px;
+}
+.main section.main_content .one_box .intro_wrap .more_i a{
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    color: #2b93c2;
+}
+.main section.main_content .one_box .intro {
+    margin-top: 0;
+    display: inline-block;
+    height: 230px;
+    word-break: break-all;
+    overflow: hidden;
 }
 .main_content h3{
 	padding-left: 10px;
@@ -64,36 +91,34 @@
 }
 .main_content ul.list_block{
 	padding: 10px;
-	padding-top: 20px;
+	overflow: hidden;
 }
-.main_content .right_content .right_cooperation a:before,
 .main_content ul.list_block a:before{
 	display: inline-block;
 	color: #546bc7;
 	content: '●';
+	margin-right: 8px;
 	transform: scale(1);
 }
-.main_content .right_content .right_cooperation h3 a:before,
-.main_content ul.list_block h3 a:before{
-	content: '';
-}
 .main_content li a{
-	color: #000;
-	text-decoration: none;
-	overflow: hidden;
-	display: inline-block;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	cursor: pointer;
+ 	color: #000;
+ 	text-decoration: none;
+ 	overflow: hidden;
+ 	display: inline-block;
+ 	text-overflow: ellipsis;
+ 	white-space: nowrap;
+ 	cursor: pointer;
+ }
+ .main_content li{
+     padding: 5px 0;
+     height: 32px;
+     box-sizing: border-box;
+ }
+.main_content .two_box ul.list_block li a{
+	max-width: 400px;
 }
-.main_content li{
-    padding: 5px 0;
-}
-.main_content .center_content ul.list_block li a{
-	max-width: 300px;
-}
-.main_content .left_content ul.list_block li a{
-	max-width: 150px;
+.main_content .three_box ul.list_block li a{
+	max-width: 270px;
 }
 .main_content ul.list_block li span{
 	float: right;
@@ -107,15 +132,13 @@
     margin-left: 5px;
     background: url('/img/new.png') no-repeat left center;
 }
-.main_content section.master_content a:hover,
-.main_content ul.list_block li a:hover,
-.main_content .right_content li a:hover{
+.main_content ul.list_block li a:hover{
 	text-decoration: underline;
 }
 
 /*团队负责人*/
 .main_content section.master_content{
-	padding: 20px;
+	padding: 15px;
 }
 .main_content section.master_content a{
 	text-align: center;
@@ -132,41 +155,6 @@
 	margin: 0 auto;
 }
 
-/*右侧*/
-.main_content .right_content{
-	font-size: 15px;
-	height: 700px;
-}
-.main_content .right_content h3,.main_content .right_content h3 a{
-	border: none;
-	background-color: #086aa3;
-	color: #fff;
-	text-align: center;
-	font-weight: normal;
-	height: 44px;
-	line-height:44px;
-}
-.main_content .right_content h3 a{
-	text-decoration: none;
-	cursor: pointer;
-}
-.main_content .right_content li{
-	display: inline-block;
-	width: 100%;
-	padding: 12px 0;
-	border-bottom: 1px solid #cdcdcd;
-}
-.main_content .right_content li a{
-	width: 180px;
-}
-.main_content .right_content .right_links li{
-	text-align: center;
-	padding-bottom: 10px;
-}
-.main_content .right_content .right_cooperation{
-    height: 426px;
-    overflow: hidden;
-}
 
 /*媒体查询，手机端*/
 @media screen and (min-width: 320px) and (max-width: 414px) {
@@ -178,48 +166,27 @@
 	.main section.main_content{
     	margin: 0;
     }
-	.main_content .left_content{
-		width: 100%;
+
+	/*new*/
+	.main section.main_content .box_wrap div{
+	    margin-top:0;
 	}
-	.main_content .center_content{
-		width: 100%;
-		margin-left:0;
-	}
-	.main_content .right_content{
-		width: 100%;
-	}
-	.main_content .left_content div.for_one{
-		height: 320px;
-	}
-	.main_content .left_content div.for_two,
-	.main_content .center_content div.for_two{
-		margin-top: 0;
-	}
-	.main_content .center_content ul.list_block li a{
-		width: 70%;
-	}
-	.main_content .left_content ul.list_block li a{
-		width: 70%;
-	}
-	/*右侧*/
-	.main_content .right_content{
-		font-size: 15px;
-		height: 100%;
-	}
-	.main_content .right_content .right_cooperation,
-	.main_content .right_content div:last-child {
-		display: none;
-	}
-	.main_content .right_content .right_links li{
-		display: inline-block;
-		width: 49%;
-		font-size: 12px;
-		border-bottom: none;
-	}
-	.main_content .right_content .right_links li:nth-child(even) {
-		margin-left: -10%;
-	}
-	.main_content .right_content .right_links ul {
-	    text-align: center;
-	}
+	.fl { float: none; }
+    .fr { float: none; }
+    .ml20 { margin-left: 0; }
+    .main section.main_content .one_box,
+     .main section.main_content .two_box,
+     .main section.main_content .three_box,
+     .main section.main_content .sub_box{
+        width: 100%;
+    }
+    .main_content ul.list_block li a {
+        max-width: 70%;
+    }
+    .main section.main_content .one_box img {
+        display: none;
+    }
+    .main section.main_content .one_box .intro{
+        width: 100% !important;
+    }
 }

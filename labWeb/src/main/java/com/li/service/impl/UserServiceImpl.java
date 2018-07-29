@@ -56,12 +56,12 @@ public class UserServiceImpl implements UserService {
         return registrationResult;
     }
 
-    @CacheEvict(cacheNames = {"selectUserList"},allEntries=true)
+//    @CacheEvict(cacheNames = {"selectUserList"},allEntries=true)
     public int deleteUser(int uid) {
         return userMapper.deleteUser(uid);
     }
 
-    @Cacheable(cacheNames = {"selectUserList"})
+//    @Cacheable(cacheNames = {"selectUserList"})
     public List<User> selectUserList(RowBounds rowBounds) {
         return userMapper.selectUserList(rowBounds);
     }

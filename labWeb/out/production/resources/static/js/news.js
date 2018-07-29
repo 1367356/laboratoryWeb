@@ -26,12 +26,13 @@ $(document).ready(function() {
 				break;
 			case 4:
 				nav_div = '<div class="nav_head">科研团队</div><ul class="nav_ul">';
-				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=1&pid=4">团队教师</a></li>';
-				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=2&pid=4">博士后</a></li>';
-				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=3&pid=4">在读博士</a></li>';
-				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=4&pid=4">在读硕士</a></li>';
-				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=5&pid=4">光电菁英</a></li>';
-				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=6&pid=4">毕业学生</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=1&pid=4">团队负责人</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=2&pid=4">团队教师</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=3&pid=4">博士后</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=4&pid=4">在读博士</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=5&pid=4">在读硕士</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=6&pid=4">光电菁英</a></li>';
+				nav_div += '<li class="nav_li"><a href="/researchTeam/query?id=7&pid=4">毕业学生</a></li>';
 				nav_div += '</ul>';
 				break;
 			case 5:

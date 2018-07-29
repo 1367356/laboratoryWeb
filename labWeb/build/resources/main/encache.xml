@@ -6,10 +6,10 @@
     <defaultCache eternal="true" maxElementsInMemory="1000" overflowToDisk="false" diskPersistent="false"
                   timeToIdleSeconds="0" timeToLiveSeconds="600" memoryStoreEvictionPolicy="LRU" />
 
-    <cache name="queryByCategory" eternal="true" maxElementsInMemory="5000" overflowToDisk="false" diskPersistent="false"
+    <cache name="queryByCategory" eternal="true" maxElementsInMemory="2000" overflowToDisk="false" diskPersistent="false"
            timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" />
 
-    <cache name="queryNews" eternal="true" maxElementsInMemory="5000" overflowToDisk="false" diskPersistent="false"
+    <cache name="queryNews" eternal="true" maxElementsInMemory="2000" overflowToDisk="false" diskPersistent="false"
            timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" />
 
     <cache name="queryGroup" eternal="true" maxElementsInMemory="1000" overflowToDisk="false" diskPersistent="false"
@@ -22,6 +22,12 @@
            timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" />
 
     <cache name="backQuery" eternal="true" maxElementsInMemory="1000" overflowToDisk="false" diskPersistent="false"
+           timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" />
+
+    <cache name="selectCount" eternal="true" maxElementsInMemory="1000" overflowToDisk="false" diskPersistent="false"
+           timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" />
+
+    <cache name="displayImage" eternal="true" maxElementsInMemory="100" overflowToDisk="false" diskPersistent="false"
            timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" />
 
 </ehcache>

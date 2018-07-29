@@ -73,7 +73,7 @@
 			<div class="box_wrap box_last">
 				<div class="three_box fl">
 					<h3>科研团队</h3>
-					<span class="more"><a href="/querybycategory?id=1&pid=4&page=1">更多&gt;&gt;</a></span>
+					<span class="more"><a href="/researchTeam/query?id=1&pid=4">更多&gt;&gt;</a></span>
 					<ul class="list_block j_rolling">
 						<li th:each="list : ${response}" ><a th:href="@{/queryNews(htmlid=${list.htmlid})}" target="_blank" th:text="${list.title}"></a><span th:text="${list.date}"></span></li>
 					</ul>
