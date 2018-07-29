@@ -1,9 +1,0 @@
-20:36:33.239 DEBUG com.li.controller.ForeController 43 query - 1
-20:36:33.278 DEBUG com.li.service.impl.ManageServiceImpl 49 queryByCategory - 查询列表pid:2id:1page:1
-20:36:33.410 DEBUG com.li.service.impl.ManageServiceImpl 86 selectCount - selectCount
-20:36:33.415 DEBUG com.li.controller.ForeController 64 query - pid=2id=1的总数count:17
-20:36:33.417 DEBUG com.li.controller.ForeController 75 query - 返回到news_info
-20:36:43.245 DEBUG com.li.service.impl.ForeServiceImpl 21 queryNews - 1532781113445
-20:36:51.819 DEBUG com.li.controller.ForeController 43 query - 1
-20:36:51.822 DEBUG com.li.controller.ForeController 64 query - pid=2id=1的总数count:17
-20:36:51.823 DEBUG com.li.controller.ForeController 75 query - 返回到news_info
